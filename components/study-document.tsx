@@ -37,13 +37,37 @@ export function StudyDocument({ userId, reviewerId, kind, view }: StudyDocumentP
   // Where the rail shows (wide pack layout, Ask closed) it carries Contents instead of the strip.
   const railActive = useRailActive();
 
+  // The visitor id can arrive seconds after first paint. A restore that late
+  // must not move a reader who has already started scrolling.
+  const awaitingUserId = useRef(!userId);
+  const readerMoved = useRef(false);
+  useEffect(() => {
+    const moved = () => { readerMoved.current = true; };
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (["ArrowDown", "ArrowUp", "PageDown", "PageUp", "Home", "End", " "].includes(event.key)) moved();
+    };
+    window.addEventListener("scroll", moved, { passive: true });
+    window.addEventListener("wheel", moved, { passive: true });
+    window.addEventListener("touchmove", moved, { passive: true });
+    window.addEventListener("keydown", onKeyDown);
+    return () => {
+      window.removeEventListener("scroll", moved);
+      window.removeEventListener("wheel", moved);
+      window.removeEventListener("touchmove", moved);
+      window.removeEventListener("keydown", onKeyDown);
+    };
+  }, []);
+
   useEffect(() => {
     if (!userId || !articleRef.current) return;
+    const lateArrival = awaitingUserId.current;
+    awaitingUserId.current = false;
+    const skipRestore = lateArrival && (readerMoved.current || window.scrollY > 0);
     const key = readingPositionKey(userId, reviewerId, kind, view.contentRevision);
     const storage = getLocalStorage();
     const saved = readReadingPosition(storage, key);
     const restore = () => {
-      if (!saved) return;
+      if (!saved || skipRestore) return;
       const max = Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
       window.scrollTo({ top: max * saved.offset, behavior: "auto" });
     };
