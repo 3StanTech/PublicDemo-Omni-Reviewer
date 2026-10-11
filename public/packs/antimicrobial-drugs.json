@@ -1,0 +1,720 @@
+{
+  "id": "antimicrobial-drugs",
+  "name": "Antimicrobial drugs",
+  "sections": [
+    "14.1",
+    "14.2",
+    "14.3"
+  ],
+  "cardCount": 18,
+  "testItemCount": 9,
+  "views": {
+    "locked_in": {
+      "id": "antimicrobial-drugs-locked-in",
+      "reviewerId": "",
+      "kind": "locked_in",
+      "content": "# Locked In: A Comprehensive Study of Antimicrobial Chemotherapy\n\n---\n\n## Section 1: History of Chemotherapy and Antimicrobial Discovery\n\nThe development of antimicrobial chemotherapy represents one of the most significant milestones in medical history. The transition from traditional herbal remedies to modern synthetic and natural antibiotics occurred over centuries, driven by key scientific discoveries and historical figures [S1]. [[unsourced]]\n\n### 1.1 Antimicrobials in Ancient Societies\nBefore the modern era, ancient societies utilized various natural antimicrobial agents. Chemical analyses of skeletal remains from Nubia (modern-day Sudan) dating between 350 and 550 AD revealed high concentrations of tetracycline residue. This suggests that people purposefully fermented tetracycline-producing *Streptomyces* during the beer-making process. The resulting thick, gruel-like beer was used to treat ailments such as gum disease and wounds [S1 p.1].\n\nAdditionally, traditional medical systems, including Indian and Chinese herbalism, recognized the antimicrobial properties of plants. In the 1970s, Chinese researcher Tu Youyou successfully extracted artemisinin from the plant *Artemisia* by consulting the 4th-century text *Handbook of Prescriptions for Emergencies* by Ge Hong. Her work led to an effective cure for malaria, earning her the Nobel Prize in Physiology or Medicine in 2015 [S1 p.1]. Healers across many cultures also historically applied moldy bread and fungi to treat wounds [S1 p.1].\n\n### 1.2 The Era of Strategic Drug Discovery (Early to Mid-20th Century)\n\n#### Paul Ehrlich and Salvarsan\nIn the early 1900s, German physician Paul Ehrlich pioneered the systematic screening of chemical compounds to find \"magic bullets\" that could kill microbes without harming the patient. In 1909, his assistant Sahachiro Hata identified Compound 606 (arsphenamine), which targeted the bacterium *Treponema pallidum* (the causative agent of syphilis). Marketed as Salvarsan, it became the first modern chemotherapeutic agent [S1 p.2].\n\n#### Gerhard Domagk and the Sulfonamides\nIn the 1930s, German scientists Josef Klarer, Fritz Mietzsch, and Gerhard Domagk discovered the antibacterial properties of prontosil, a synthetic dye. [[unsourced]] Prontosil treated streptococcal and staphylococcal infections in mice. Domagk’s daughter was successfully cured of a severe streptococcal infection using the drug. Domagk was awarded the Nobel Prize in Medicine in 1939. Prontosil is metabolized in the body to sulfanilamide, the first synthetic antimicrobial, which served as the foundation for the sulfa drug family [S1 p.2].\n\n#### Alexander Fleming, Howard Florey, and Ernst Chain: The Discovery of Penicillin\nIn 1928, Alexander Fleming discovered that a contaminating mold (*Penicillium notatum*) inhibited staphylococcal growth on a culture plate. Fleming identified penicillin as the first natural antibiotic [S1 p.2]. \n\nHowever, the isolation and mass production of penicillin were achieved by a team at Oxford University led by Howard Florey and Ernst Chain. In 1940, they purified penicillin and demonstrated its efficacy against streptococcal infections in mice and humans. Fleming, Florey, and Chain shared the Nobel Prize in Physiology and Medicine in 1945 [S1 p.2].\n\n#### Dorothy Hodgkin and the Semisynthetic Era\nIn 1946, Dorothy Hodgkin used X-ray crystallography to determine the chemical structure of penicillin, earning her the Nobel Prize in Chemistry in 1964. Understanding this structure allowed scientists to chemically modify penicillin to create semisynthetic derivatives (semisynthetic antimicrobials) designed to increase the spectrum of activity, improve stability, or decrease toxicity [S1 p.2].\n\n#### Selman Waksman and the Actinomycetes\nIn the 1940s, soil microbiologist Selman Waksman at Rutgers University, alongside Arthur Shatz and Elizabeth Bugie, discovered several new antimicrobials from soil bacteria of the genus *Streptomyces* (Actinobacteria). These included actinomycin, streptomycin, and neomycin. Waksman was awarded the Nobel Prize in Physiology or Medicine in 1952. Soil actinomycetes remain a critical reservoir for over half of all natural antibiotics [S1 p.2-3].\n\n---\n\n## Section 2: Fundamentals of Antimicrobial Chemotherapy\n\nEffective antimicrobial therapy requires balancing several pharmacological principles, including the drug's spectrum of activity, mechanism of action (bacteriostatic vs. bactericidal), dosage, route of administration, and potential drug interactions [S2 p.1].\n\n### 2.1 Bacteriostatic vs. Bactericidal Activity\n*   **Bacteriostatic:** Reversibly inhibits bacterial growth; growth resumes once the drug is eliminated. Effective in immunocompetent patients [S2 p.1].\n*   **Bactericidal:** Kills target bacteria. Essential for immunocompromised patients and life-threatening infections (e.g., acute endocarditis) [S2 p.1].\n\n### 2.2 Spectrum of Activity\n*   **Narrow-spectrum:** Targets specific subsets of bacteria (e.g., only gram-positive or only gram-negative pathogens). Minimizes collateral damage to normal flora when the pathogen is identified [S2 p.1].\n*   **Broad-spectrum:** Targets a wide variety of gram-positive and gram-negative bacteria. Used for empiric therapy, polymicrobial infections, or prophylaxis [S2 p.1].\n*   **Superinfections:** A risk of broad-spectrum use. A superinfection is a secondary infection caused by a pathogen resistant to the initial antibiotic, which proliferates after the protective normal microbiota is killed (e.g., *Clostridioides difficile* colitis or candidiasis) [S2 p.1].\n\n### 2.3 Dosage, Route of Administration, and Pharmacokinetics\n*   **Dosage:** Must achieve therapeutic levels at the site of infection without causing toxicity. Pediatric dosing is weight-based; adult dosing is typically standard (though some experts argue for weight-based dosing) [S2 p.1-2].\n*   **Patient Factors:** Liver or kidney dysfunction can reduce drug clearance, leading to toxic accumulation [S2 p.2].\n*   **Drug Half-life:** Determines dosing frequency. Short half-lives (e.g., 1 hour) require multiple daily doses; long half-lives (e.g., >12 hours) allow once-daily dosing [S2 p.2]. [[unsourced]]\n*   **Dosing Dynamics:** \n    *   *Dose-dependent:* More effective when administered in large doses for a short time [S2 p.2].\n    *   *Time-dependent:* More effective when lower optimum levels are maintained over a longer period [S2 p.2]. [[unsourced]]\n*   **Routes of Administration:**\n    *   *Oral:* Preferred for home convenience [S2 p.2].\n    *   *Topical:* Used for superficial skin infections (e.g., bacitracin, polymyxin) [S2 p.2]. [[unsourced]]\n    *   *Parenteral (IV/IM):* Used when oral intake is not possible or when high plasma concentrations are required [S2 p.2]. [[unsourced]]\n\n### 2.4 Drug Interactions\n*   **Synergistic:** Two drugs combine to produce an effect greater than either alone (e.g., trimethoprim and sulfamethoxazole, which are individually bacteriostatic but combined are bactericidal) [S2 p.2].\n*   **Antagonistic:** Drugs interfere with each other, reducing efficacy or increasing toxicity. For example, antacids increase stomach pH and impair the absorption of acid-dependent antibiotics [S2 p.2].\n\n---\n\n## Section 3: Mechanisms of Antibacterial Drugs\n\nAntibacterial drugs are classified by their biochemical targets, which exploit differences between prokaryotic and eukaryotic cells to achieve selective toxicity [S3 p.1].\n\n### 3.1 Inhibitors of Cell Wall Biosynthesis\nThese drugs target peptidoglycan synthesis, a structure absent in human cells, making them highly selective and typically bactericidal [S3 p.1].\n\n#### β-Lactams\nCharacterized by a β-lactam ring, this class blocks the transpeptidase enzyme (penicillin-binding proteins) responsible for cross-linking peptidoglycan chains [S3 p.1].\n*   **Penicillins:** Natural forms (Penicillin G and V) target gram-positive bacteria. Semisynthetic modifications (e.g., aminopenicillins like ampicillin and amoxicillin) expanded the spectrum to include gram-negative bacteria. Methicillin was developed to resist penicillinase (β-lactamase) degradation [S3 p.1].\n*   **Cephalosporins:** Feature a β-lactam ring fused to a six-membered ring, offering greater resistance to β-lactamases. Classified into generations (1st to 5th) based on spectrum of activity; the 5th generation is active against MRSA [S3 p.1].\n*   **Carbapenems & Monobactams:** Carbapenems (e.g., imipenem) provide very broad-spectrum coverage. The monobactam aztreonam is narrow-spectrum, targeting only gram-negative bacteria [S3 p.1].\n\n#### Other Cell Wall Inhibitors\n*   **Vancomycin (Glycopeptide):** Binds to the terminal peptide chain of cell wall precursors, blocking transglycosylation and transpeptidation. Effective against gram-positive bacteria but cannot penetrate the gram-negative outer membrane [S3 p.1].\n*   **Bacitracin:** Blocks the transport of peptidoglycan precursors across the cell membrane. Used topically due to nephrotoxicity [S3 p.1].\n\n### 3.2 Inhibitors of Protein Biosynthesis\nThese drugs target the bacterial 70S ribosome (distinct from the human 80S ribosome) [S3 p.2].\n\n#### 30S Subunit Inhibitors\n*   **Aminoglycosides (e.g., streptomycin, gentamicin, neomycin):** Bind to the 30S subunit, causing codon-anticodon mismatches and producing faulty, membrane-disrupting proteins. Potent, broad-spectrum, but nephrotoxic, neurotoxic, and ototoxic [S3 p.2].\n*   **Tetracyclines (e.g., doxycycline, tigecycline):** Block tRNA association with the ribosome. Bacteriostatic and broad-spectrum. Side effects include phototoxicity, liver toxicity, and permanent tooth discoloration in developing children [S3 p.2].\n\n#### 50S Subunit Inhibitors\n*   **Macrolides (e.g., erythromycin, azithromycin):** Block peptide bond formation and translocation. Bacteriostatic. Azithromycin has a long half-life (68 hours) allowing short-course therapy [S3 p.2].\n*   **Lincosamides (e.g., clindamycin):** Structurally distinct from macrolides but share the same 50S binding target; active against streptococci and staphylococci [S3 p.2].\n*   **Chloramphenicol:** Inhibits peptide bond formation. Broad-spectrum but limited in human medicine due to severe side effects, including lethal gray baby syndrome, bone marrow suppression, and idiosyncratic aplastic anemia [S3 p.2-3].\n*   **Oxazolidinones (e.g., linezolid):** Bind to the 50S subunit but uniquely interfere with the formation of the translation initiation complex [S3 p.3]. [[unsourced]]\n\n### 3.3 Inhibitors of Membrane Function\n*   **Polymyxins (e.g., polymyxin B, colistin):** Disrupt the lipopolysaccharide layer of the gram-negative outer membrane, leading to cell lysis. Not selectively toxic; they damage host kidney and nervous system cells. Colistin is used intravenously as a last resort for multidrug-resistant infections [S3 p.3].\n*   **Daptomycin:** A cyclic lipopeptide that inserts into gram-positive cell membranes, causing depolarization. It is not active against gram-negative bacteria [S3 p.3].\n\n### 3.4 Inhibitors of Nucleic Acid Synthesis\n*   **Metronidazole:** Interferes with DNA replication (active against anaerobes and protozoa) [S3 p.3].\n*   **Rifampin (Rifamycin):** Blocks bacterial RNA polymerase. Primary treatment for tuberculosis (usually in combination with other drugs). Induces liver enzymes, which can reduce the efficacy of co-administered drugs [S3 p.3].\n*   **Quinolones/Fluoroquinolones (e.g., ciprofloxacin, levofloxacin):** Inhibit DNA gyrase, blocking DNA replication. Broad-spectrum. Side effects include phototoxicity, neurotoxicity, cardiotoxicity, and tendon rupture [S3 p.3-4].\n\n### 3.5 Inhibitors of Metabolic Pathways (Antimetabolites)\n*   **Sulfonamides:** Structural analogues of para-aminobenzoic acid (PABA). Inhibit dihydrofolic acid synthesis, depleting folic acid required for nucleic acid synthesis. Selectively toxic because humans acquire folic acid from dietary sources [S3 p.4].\n*   **Trimethoprim:** Inhibits a later step in the folic acid pathway (dihydrofolate reductase). [[unsourced]] Synergistic with sulfamethoxazole, converting a bacteriostatic effect into a bactericidal one [S3 p.4].\n*   **Isoniazid:** An antimetabolite prodrug specific to mycobacteria. Activated by bacterial peroxidase, it prevents mycolic acid synthesis, destroying the mycobacterial cell wall. Side effects include hepatotoxicity and neurotoxicity [S3 p.4].\n\n### 3.6 Inhibitors of ATP Synthase\n*   **Bedaquiline (Diarylquinoline):** Specifically inhibits mycobacterial ATP synthase, disrupting ATP production. Reserved for severe, drug-resistant tuberculosis due to potential cardiotoxicity and hepatotoxicity [S3 p.4]. [[unsourced]]\n\n---\n\n## Section 4: Drug Comparison Tables\n\n### Table 4.1: Cell Wall Biosynthesis Inhibitors\n| Drug(s) | Mechanism | Key Uses | Adverse Effects | Interactions or Contraindications |\n| :--- | :--- | :--- | :--- | :--- |\n| **Penicillins** (e.g., Penicillin G, Ampicillin, Amoxicillin) | Block transpeptidase (PBP) cross-linking of peptidoglycan [S3 p.1] | Syphilis, streptococcal infections, gram-positive infections [S3 p.1] | Allergic reactions [S2 p.2] | Inactivated by penicillinases (β-lactamases) [S3 p.1] |\n| **Methicillin** | Semisynthetic penicillin with bulky R-group protecting the β-lactam ring [S3 p.1] | Penicillinase-producing *Staphylococcus aureus* [S3 p.1] | Nephrotoxicity [S3 p.1] | Historically used for penicillinase-producing strains [S3 p.1] |\n| **Cephalosporins** (1st to 5th Generation) | Block transpeptidase; 6-membered ring fused to β-lactam ring [S3 p.1] | Broad-spectrum infections; 5th generation targets MRSA [S3 p.1] | Allergic cross-reactivity with penicillins [S2 p.2] | Increased resistance to β-lactamases [[unsourced]] [S3 p.1] |\n| **Vancomycin** | Binds peptide chain of precursors, blocking transglycosylation and transpeptidation [S3 p.1] | Gram-positive infections (including MRSA); not active against gram-negative [S3 p.1] | Ototoxicity, nephrotoxicity [S3 p.1] | Cannot penetrate gram-negative outer membrane [S3 p.1] |\n| **Bacitracin** | Blocks transport of peptidoglycan precursors across the cell membrane [S3 p.1] | Topical skin infections (e.g., Neosporin) [S3 p.1] | Nephrotoxicity (limits systemic use) [S3 p.1] | Combined with neomycin and polymyxin in topical ointments [S3 p.1] |\n\n### Table 4.2: Protein Synthesis Inhibitors\n| Drug(s) | Mechanism | Key Uses | Adverse Effects | Interactions or Contraindications |\n| :--- | :--- | :--- | :--- | :--- |\n| **Aminoglycosides** (Streptomycin, Gentamicin, Neomycin) | Bind 30S subunit; cause codon-anticodon mismatches, producing faulty membrane proteins [S3 p.2] | Broad-spectrum gram-negative and some gram-positive infections; TB (streptomycin) [S3 p.2] | Nephrotoxicity, neurotoxicity, ototoxicity [S3 p.2] | Monitor renal function [S2 p.2] |\n| **Tetracyclines** (Doxycycline, Tigecycline) | Block tRNA association with 30S ribosomal subunit [S3 p.2] | Broad-spectrum; acne, respiratory infections, Lyme disease [S3 p.2] | Phototoxicity, liver toxicity, permanent tooth discoloration [S3 p.2] | Avoid in pregnancy and children under 8 years [[unsourced]] [S3 p.2] |\n| **Macrolides** (Erythromycin, Azithromycin) | Bind 50S subunit; block peptide bond formation and translocation [S3 p.2] | Respiratory infections, STIs, community-acquired pneumonia [S3 p.2] | GI distress; QT prolongation [S2 p.2] | Azithromycin has a long half-life (68 hours) allowing short courses [[unsourced]] [S3 p.2] |\n| **Lincosamides** (Clindamycin) | Bind 50S subunit; prevent peptide bond formation [S3 p.2] | Streptococcal and staphylococcal infections; anaerobic infections [S3 p.2] | *C. difficile* colitis [S2 p.1] | High risk of pseudomembranous colitis [S2 p.1] |\n| **Chloramphenicol** | Binds 50S subunit; inhibits peptide bond formation [S3 p.3] | Severe infections (e.g., typhoid, meningitis) when safer alternatives are unavailable [S3 p.3] | Gray baby syndrome, bone marrow suppression, aplastic anemia [S3 p.3] | Rarely used in human medicine in the US due to severe toxicity [[unsourced]] [S3 p.3] |\n| **Oxazolidinones** (Linezolid) | Bind 50S subunit; interfere with translation initiation complex formation [S3 p.3] | Gram-positive infections, including MRSA and VRE [S3 p.3] | Myelosuppression, peripheral neuropathy [S3 p.3] | Monoamine oxidase inhibitor (MAOI) activity [[unsourced]] [S3 p.3] |\n\n### Table 4.3: Other Mechanisms of Antibacterial Drugs\n| Drug(s) | Mechanism | Key Uses | Adverse Effects | Interactions or Contraindications |\n| :--- | :--- | :--- | :--- | :--- |\n| **Polymyxins** (Polymyxin B, Colistin) | Disrupt outer and inner membranes of gram-negative bacteria via detergent-like action [S3 p.3] | Topical ointments; IV colistin for multidrug-resistant gram-negative infections [S3 p.3] | Nephrotoxicity, neurotoxicity [S3 p.3] | Poor oral absorption; historically used for bowel decontamination [S3 p.3] |\n| **Daptomycin** | Inserts into gram-positive cell membranes, causing depolarization [S3 p.3] | Gram-positive infections (e.g., MRSA, VRE) [S3 p.3] | Reversible skeletal muscle toxicity (myopathy) [S3 p.3] | Inactive against gram-negative bacteria [[unsourced]] [S3 p.3] |\n| **Metronidazole** | Interferes with DNA replication via reductive toxicity [S3 p.3] | Anaerobic bacteria, protozoa (e.g., *Giardia*, *Trichomonas*) [S3 p.3] | Metallic taste, disulfiram-like reaction with alcohol [S3 p.3] | Antiprotozoan and antibacterial [[unsourced]] [S3 p.3] |\n| **Rifampin** | Blocks bacterial RNA polymerase [S3 p.3] | Tuberculosis (in combination therapy), mycobacterial infections [S3 p.3] | Hepatotoxicity, orange body fluids [S3 p.3] | Induces hepatic cytochrome P450 enzymes, accelerating metabolism of other drugs [[unsourced]] [S3 p.3] |\n| **Fluoroquinolones** (Ciprofloxacin, Levofloxacin) | Inhibit DNA gyrase, blocking DNA replication [S3 p.4] | UTIs, respiratory infections, abdominal infections [S3 p.4] | Phototoxicity, neurotoxicity, cardiotoxicity, tendon rupture [S3 p.4] | Avoid in children and pregnant women [[unsourced]] [S3 p.4] |\n| **Sulfonamides** | Inhibit dihydrofolic acid synthesis (PABA analogue) [S3 p.4] | UTIs, bronchitis, ear infections [S3 p.4] | Allergic reactions, kernicterus in newborns [S3 p.4] | Avoid in early pregnancy and newborns [S3 p.4] |\n| **Trimethoprim** | Inhibits dihydrofolate reductase [S3 p.4] | UTIs, bronchitis, ear infections (often combined with sulfamethoxazole) [S3 p.4] | Folate deficiency, hyperkalemia [S3 p.4] | Synergistic with sulfamethoxazole (Bactrim) [[unsourced]] [S2 p.2] |\n| **Isoniazid** | Inhibits mycolic acid synthesis (mycobacterial cell wall) [S3 p.4] | Tuberculosis (first-line therapy) [S3 p.4] | Hepatotoxicity, neurotoxicity (peripheral neuropathy), anemia [S3 p.4] | Administered with rifampin or streptomycin [S3 p.4] |\n| **Bedaquiline** | Inhibits mycobacterial ATP synthase [S3 p.4] | Drug-resistant tuberculosis [S3 p.4] | Hepatotoxicity, QT prolongation, lethal heart arrhythmia [S3 p.4] | Reserved for severe, otherwise untreatable TB cases [[unsourced]] [S3 p.4] |",
+      "contentJson": {
+        "citationSources": [
+          {
+            "index": 1,
+            "sourceId": "source-1",
+            "filename": "OpenStax Microbiology §14.1",
+            "hasPages": true
+          },
+          {
+            "index": 2,
+            "sourceId": "source-2",
+            "filename": "OpenStax Microbiology §14.2",
+            "hasPages": true
+          },
+          {
+            "index": 3,
+            "sourceId": "source-3",
+            "filename": "OpenStax Microbiology §14.3",
+            "hasPages": true
+          }
+        ],
+        "grounding": {
+          "total": 113,
+          "cited": 67,
+          "lexicalSupported": 89,
+          "verifiedSupported": 4,
+          "unsourced": 20,
+          "truncated": false,
+          "verifierFailed": false,
+          "termFlagged": 7,
+          "termFlags": {
+            "45935933": [
+              "Lyme"
+            ],
+            "017eff47": [
+              "reductase"
+            ],
+            "0eb6f998": [
+              "QT"
+            ],
+            "37c7f0a7": [
+              "6-membered",
+              "membered"
+            ],
+            "a983f7a4": [
+              "VRE"
+            ],
+            "b33cac3a": [
+              "QT"
+            ],
+            "da5500a5": [
+              "1930s"
+            ]
+          }
+        }
+      },
+      "generatedAt": "",
+      "updatedAt": "",
+      "contentRevision": 1,
+      "annotationRevision": 1,
+      "revision": 1,
+      "isEdited": false,
+      "isPinned": false
+    },
+    "summary": {
+      "id": "antimicrobial-drugs-summary",
+      "reviewerId": "",
+      "kind": "summary",
+      "content": "## Section 1: History of Chemotherapy and Antimicrobial Discovery\n\n*   Ancient Nubians (350–550 AD) consumed tetracycline-rich fermented gruel to treat gum disease and wounds [S1 p.1]. [[unsourced]]\n*   Chinese researcher Tu Youyou isolated artemisinin from *Artemisia* in the 1970s, curing malaria and earning the 2015 Nobel Prize [S1 p.1].\n*   Healers historically applied moldy bread and fungi directly to wounds to treat localized infections [S1 p.1].\n*   Paul Ehrlich and Sahachiro Hata developed Salvarsan (Compound 606) in 1909, targeting *Treponema pallidum* as the first modern chemotherapeutic [S1 p.2].\n*   Domagk, Klarer, and Mietzsch discovered prontosil; it metabolizes to sulfanilamide, the foundation of sulfa drugs [S1 p.2].\n*   Fleming discovered penicillin in 1928; Florey and Chain purified it for mass production by 1940, winning the 1945 Nobel Prize [S1 p.2].\n*   Dorothy Hodgkin solved penicillin's structure via X-ray crystallography in 1946, enabling the creation of semisynthetic derivatives [S1 p.2].\n*   Waksman, Shatz, and Bugie isolated streptomycin and neomycin from soil *Streptomyces*, which remain key antibiotic reservoirs [S1 p.2-3].\n\n## Section 2: Fundamentals of Antimicrobial Chemotherapy\n\n*   Bacteriostatic drugs reversibly halt bacterial growth, allowing recovery once cleared, while bactericidal drugs actively kill pathogens [S2 p.1].\n*   Narrow-spectrum antibiotics target specific pathogens, minimizing collateral damage to normal flora, whereas broad-spectrum drugs target diverse gram-positive and gram-negative bacteria [S2 p.1].\n*   Broad-spectrum overuse risks superinfections, where resistant pathogens like *C. difficile* or *Candida* proliferate after normal flora is destroyed [S2 p.1]. [[unsourced]]\n*   Dosing must balance therapeutic concentrations against toxicity, adjusting for pediatric weight-based needs and organ dysfunction [S2 p.1-2].\n*   Short half-lives require multiple daily doses, while long half-lives (>12 hours) allow once-daily administration [S2 p.2].\n*   Dose-dependent efficacy relies on high peak concentrations, whereas time-dependent efficacy relies on maintaining optimal levels over a prolonged period [S2 p.2].\n*   Oral routes offer home convenience, topical routes treat superficial skin infections, and parenteral routes achieve high plasma concentrations when oral intake is impossible [S2 p.2].\n*   Synergistic combinations (e.g., trimethoprim and sulfamethoxazole) enhance efficacy, while antagonistic interactions (e.g., antacids with acid-dependent antibiotics) reduce drug absorption and effectiveness [S2 p.2].\n\n### Table: Sources of antimicrobials\n\n| Source | Examples | Key Historical Impact |\n| :--- | :--- | :--- |\n| Soil Actinobacteria | Streptomycin, Neomycin | Over half of all natural antibiotics originate here [S1 p.2-3]. |\n| Fungi / Molds | Penicillin | First natural antibiotic discovered; foundation of modern therapy [S1 p.2]. |\n| Synthetic Dyes | Prontosil / Sulfanilamide | First synthetic antimicrobial; established the sulfa drug family [S1 p.2]. |\n| Plant Extracts | Artemisinin | Provided an effective cure for malaria [S1 p.1]. |\n| Chemical Synthesis | Salvarsan (Compound 606) | First modern synthetic chemotherapeutic agent [S1 p.2]. |\n\n## Section 3: Mechanisms of Antibacterial Drugs\n\n### 3.1 Inhibitors of Cell Wall Biosynthesis\n*   Target peptidoglycan synthesis, a structure absent in human cells, ensuring selective toxicity and typically bactericidal action [S3 p.1].\n*   **β-Lactams:** Characterized by a β-lactam ring that blocks transpeptidase enzymes (PBPs) responsible for peptidoglycan cross-linking [S3 p.1].\n    *   **Penicillins:** Natural forms (G, V) target gram-positives; semisynthetic aminopenicillins (ampicillin, amoxicillin) expand coverage to gram-negatives [S3 p.1].\n    *   **Methicillin:** Developed to resist penicillinase (β-lactamase) degradation [S3 p.1].\n    *   **Cephalosporins:** Feature a β-lactam fused to a 6-membered ring with greater β-lactamase resistance; 5th generation is active against MRSA [S3 p.1]. [[unsourced]]\n    *   **Carbapenems (e.g., imipenem):** Provide very broad-spectrum coverage [S3 p.1].\n    *   **Monobactams (e.g., aztreonam):** Narrow-spectrum, targeting only gram-negative bacteria [S3 p.1].\n*   **Vancomycin (Glycopeptide):** Binds terminal peptide chain of cell wall precursors, blocking transglycosylation and transpeptidation; effective against gram-positives but cannot penetrate the gram-negative outer membrane [S3 p.1].\n*   **Bacitracin:** Blocks transport of peptidoglycan precursors across the cell membrane; used topically due to nephrotoxicity [S3 p.1].\n\n### 3.2 Inhibitors of Protein Biosynthesis\n*   Target the bacterial 70S ribosome, which is distinct from the human 80S ribosome [S3 p.2].\n*   **30S Subunit Inhibitors:**\n    *   **Aminoglycosides (e.g., streptomycin, gentamicin):** Cause codon-anticodon mismatches, producing faulty, membrane-disrupting proteins; potent, broad-spectrum, but nephrotoxic, neurotoxic, and ototoxic [S3 p.2].\n    *   **Tetracyclines (e.g., doxycycline, tigecycline):** Block tRNA association with the ribosome; bacteriostatic and broad-spectrum; side effects include phototoxicity, liver toxicity, and permanent tooth discoloration in developing children [S3 p.2].\n*   **50S Subunit Inhibitors:**\n    *   **Macrolides (e.g., erythromycin, azithromycin):** Block peptide bond formation and translocation; azithromycin has a long half-life (68 hours) allowing short-course therapy [S3 p.2].\n    *   **Lincosamides (e.g., clindamycin):** Structurally distinct but share the same 50S binding target; active against streptococci and staphylococci [S3 p.2].\n    *   **Chloramphenicol:** Inhibits peptide bond formation; broad-spectrum but limited in human medicine due to severe side effects, including lethal gray baby syndrome, bone marrow suppression, and idiosyncratic aplastic anemia [S3 p.2-3].\n    *   **Oxazolidinones (e.g., linezolid):** Bind to the 50S subunit but uniquely interfere with the formation of the translation initiation complex [S3 p.3].\n\n### 3.3 Inhibitors of Membrane Function\n*   **Polymyxins (e.g., polymyxin B, colistin):** Disrupt the lipopolysaccharide layer of the gram-negative outer membrane, leading to cell lysis; not selectively toxic, damaging host kidney and nervous system cells [S3 p.3].\n\n### 3.4 Inhibitors of Nucleic Acid Synthesis\n\n### 3.5 Inhibitors of Metabolic Pathways (Antimetabolites)\n\n### 3.6 Inhibitors of ATP Synthase\n\n---\n\n## Section 4: Drug Comparison Tables\n\n### Table: Cell Wall Biosynthesis Inhibitors\n| Drug(s) | Mechanism | Key Uses | Adverse Effects | Interactions or Contraindications |\n| :--- | :--- | :--- | :--- | :--- |\n| **Penicillins** (e.g., Penicillin G, Ampicillin, Amoxicillin) | Block transpeptidase (PBP) cross-linking of peptidoglycan [S3 p.1] | Syphilis, streptococcal infections, gram-positive infections [S3 p.1] | Allergic reactions [S2 p.2] | Inactivated by penicillinases (β-lactamases) [S3 p.1] |\n| **Methicillin** | Semisynthetic penicillin with bulky R-group protecting the β-lactam ring [S3 p.1] | Penicillinase-producing *Staphylococcus aureus* [S3 p.1] | Nephrotoxicity [S3 p.1] | Historically used for penicillinase-producing strains [S3 p.1] |\n| **Cephalosporins** (1st to 5th Generation) | Block transpeptidase; 6-membered ring fused to β-lactam ring [S3 p.1] | Broad-spectrum infections; 5th generation targets MRSA [S3 p.1] | Allergic cross-reactivity with penicillins [S2 p.2] | Increased resistance to β-lactamases [[unsourced]] [S3 p.1] |\n| **Vancomycin** | Binds peptide chain of precursors, blocking transglycosylation and transpeptidation [S3 p.1] | Gram-positive infections (including MRSA); not active against gram-negative [S3 p.1] | Ototoxicity, nephrotoxicity [S3 p.1] | Cannot penetrate gram-negative outer membrane [S3 p.1] |\n| **Bacitracin** | Blocks transport of peptidoglycan precursors across the cell membrane [S3 p.1] | Topical skin infections (e.g., Neosporin) [S3 p.1] | Nephrotoxicity (limits systemic use) [S3 p.1] | Combined with neomycin and polymyxin in topical ointments [S3 p.1] |\n\n### Table: Protein Synthesis Inhibitors\n| Drug(s) | Mechanism | Key Uses | Adverse Effects | Interactions or Contraindications |\n| :--- | :--- | :--- | :--- | :--- |\n| **Aminoglycosides** (Streptomycin, Gentamicin, Neomycin) | Bind 30S subunit; cause codon-anticodon mismatches, producing faulty membrane proteins [S3 p.2] | Broad-spectrum gram-negative and some gram-positive infections; TB (streptomycin) [S3 p.2] | Nephrotoxicity, neurotoxicity, ototoxicity [S3 p.2] | Monitor renal function [S2 p.2] |\n| **Tetracyclines** (Doxycycline, Tigecycline) | Block tRNA association with 30S ribosomal subunit [S3 p.2] | Broad-spectrum; acne, respiratory infections, Lyme disease [S3 p.2] | Phototoxicity, liver toxicity, permanent tooth discoloration [S3 p.2] | Avoid in pregnancy and children under 8 years [[unsourced]] [S3 p.2] |\n| **Macrolides** (Erythromycin, Azithromycin) | Bind 50S subunit; block peptide bond formation and translocation [S3 p.2] | Respiratory infections, STIs, community-acquired pneumonia [S3 p.2] | GI distress; QT prolongation [S2 p.2] | Azithromycin has a long half-life (68 hours) allowing short courses [[unsourced]] [S3 p.2] |\n| **Lincosamides** (Clindamycin) | Bind 50S subunit; prevent peptide bond formation [S3 p.2] | Streptococcal and staphylococcal infections; anaerobic infections [S3 p.2] | *C. difficile* colitis [S2 p.1] | High risk of pseudomembranous colitis [S2 p.1] |\n| **Chloramphenicol** | Binds 50S subunit; inhibits peptide bond formation [S3 p.3] | Severe infections (e.g., typhoid, meningitis) when safer alternatives are unavailable [S3 p.3] | Gray baby syndrome, bone marrow suppression, aplastic anemia [S3 p.3] | Rarely used in human medicine in the US due to severe toxicity [S3 p.3] |\n| **Oxazolidinones** (Linezolid) | Bind 50S subunit; interfere with translation initiation complex formation [S3 p.3] | Gram-positive infections, including MRSA and VRE [S3 p.3] | Myelosuppression, peripheral neuropathy [S3 p.3] | Monoamine oxidase inhibitor (MAOI) activity [[unsourced]] [S3 p.3] |\n\n### Table: Other Mechanisms of Antibacterial Drugs\n| Drug(s) | Mechanism | Key Uses | Adverse Effects | Interactions or Contraindications |\n| :--- | :--- | :--- | :--- | :--- |\n| **Polymyxins** (Polymyxin B, Colistin) | Disrupt outer and inner membranes of gram-negative bacteria via detergent-like action [S3 p.3] | Topical ointments; IV colistin for multidrug-resistant gram-negative infections [S3 p.3] | Nephrotoxicity, neurotoxicity [S3 p.3] | Poor oral absorption; historically used for bowel decontamination [S3 p.3] |\n| **Daptomycin** | Inserts into gram-positive cell membranes, causing depolarization [S3 p.3] | Gram-positive infections (e.g., MRSA, VRE) [S3 p.3] | Reversible skeletal muscle toxicity (myopathy) [S3 p.3] | Inactive against gram-negative bacteria [[unsourced]] [S3 p.3] |\n| **Metronidazole** | Interferes with DNA replication via reductive toxicity [S3 p.3] | Anaerobic bacteria, protozoa (e.g., *Giardia*, *Trichomonas*) [S3 p.3] | Metallic taste, disulfiram-like reaction with alcohol [S3 p.3] | Antiprotozoan and antibacterial [[unsourced]] [S3 p.3] |\n| **Rifampin** | Blocks bacterial RNA polymerase [S3 p.3] | Tuberculosis (in combination therapy), mycobacterial infections [S3 p.3] | Hepatotoxicity, orange body fluids [S3 p.3] | Induces hepatic cytochrome P450 enzymes, accelerating metabolism of other drugs [[unsourced]] [S3 p.3] |\n| **Fluoroquinolones** (Ciprofloxacin, Levofloxacin) | Inhibit DNA gyrase, blocking DNA replication [S3 p.4] | UTIs, respiratory infections, abdominal infections [S3 p.4] | Phototoxicity, neurotoxicity, cardiotoxicity, tendon rupture [S3 p.4] | Avoid in children and pregnant women [S3 p.4] |\n| **Sulfonamides** | Inhibit dihydrofolic acid synthesis (PABA analogue) [S3 p.4] | UTIs, bronchitis, ear infections [S3 p.4] | Allergic reactions, kernicterus in newborns [S3 p.4] | Avoid in early pregnancy and newborns [S3 p.4] |",
+      "contentJson": {
+        "citationSources": [
+          {
+            "index": 1,
+            "sourceId": "source-1",
+            "filename": "OpenStax Microbiology §14.1",
+            "hasPages": true
+          },
+          {
+            "index": 2,
+            "sourceId": "source-2",
+            "filename": "OpenStax Microbiology §14.2",
+            "hasPages": true
+          },
+          {
+            "index": 3,
+            "sourceId": "source-3",
+            "filename": "OpenStax Microbiology §14.3",
+            "hasPages": true
+          }
+        ],
+        "grounding": {
+          "total": 55,
+          "cited": 55,
+          "lexicalSupported": 37,
+          "verifiedSupported": 8,
+          "unsourced": 10,
+          "truncated": false,
+          "verifierFailed": false,
+          "termFlagged": 10,
+          "termFlags": {
+            "45935933": [
+              "Lyme"
+            ],
+            "37c7f0a7": [
+              "6-membered",
+              "membered"
+            ],
+            "62eb312f": [
+              "Candida"
+            ],
+            "64d3442c": [
+              "P450"
+            ],
+            "871a6342": [
+              "6-membered",
+              "membered"
+            ],
+            "9aabccf0": [
+              "VRE",
+              "oxidase",
+              "MAOI"
+            ],
+            "a1c714d5": [
+              "Nubians",
+              "rich"
+            ],
+            "a983f7a4": [
+              "VRE"
+            ],
+            "b33cac3a": [
+              "QT"
+            ],
+            "efb1161c": [
+              "Giardia",
+              "Trichomonas"
+            ]
+          }
+        }
+      },
+      "generatedAt": "",
+      "updatedAt": "",
+      "contentRevision": 1,
+      "annotationRevision": 1,
+      "revision": 1,
+      "isEdited": false,
+      "isPinned": false
+    },
+    "test_me": {
+      "id": "antimicrobial-drugs-test-me",
+      "reviewerId": "",
+      "kind": "test_me",
+      "content": "[{\"id\":\"test-001\",\"question\":\"What was the primary reason ancient Nubians fermented tetracycline-producing Streptomyces during the beer-making process around 350–550 AD?\",\"choices\":[\"To create a beverage with higher alcohol content\",\"To treat ailments such as gum disease and wounds\",\"To preserve grain for long-term storage\",\"To improve the nutritional value of their diet\"],\"answer\":\"To treat ailments such as gum disease and wounds\",\"explanation\":\"Chemical analyses of skeletal remains from Nubia revealed high concentrations of tetracycline residue, indicating that the fermented beer was used purposefully as a medicinal agent. Historical and archaeological evidence shows that this thick, gruel-like beer was administered to treat specific ailments, including gum disease and wounds, demonstrating an early understanding of antimicrobial properties [S1 p.1].\"},{\"id\":\"test-002\",\"question\":\"Which scientist successfully extracted artemisinin from Artemisia annua by consulting a 4th-century Chinese text, leading to an effective cure for malaria?\",\"choices\":[\"Paul Ehrlich\",\"Gerhard Domagk\",\"Tu Youyou\",\"Selman Waksman\"],\"answer\":\"Tu Youyou\",\"explanation\":\"In the 1970s, Chinese researcher Tu Youyou extracted artemisinin from the plant Artemisia by consulting Ge Hong's 4th-century text, Handbook of Prescriptions for Emergencies. This discovery provided an effective cure for malaria and earned her the Nobel Prize in Physiology or Medicine in 2015 [S1 p.1].\"},{\"id\":\"test-003\",\"question\":\"Which of the following antibiotics discovered by Selman Waksman's team at Rutgers University is correctly paired with its source organism?\",\"choices\":[\"Penicillin — Penicillium notatum\",\"Streptomycin — Streptomyces griseus\",\"Artemisinin — Artemisia annua\",\"Salvarsan — Treponema pallidum\"],\"answer\":\"Streptomycin — Streptomyces griseus\",\"explanation\":\"In the 1940s, soil microbiologist Selman Waksman, alongside Arthur Shatz and Elizabeth Bugie, discovered several antimicrobials from soil bacteria of the genus Streptomyces (Actinobacteria). Among these was streptomycin, which is derived from Streptomyces griseus. Penicillin was discovered by Fleming from Penicillium notatum, artemisinin is a plant-derived antimalarial, and Salvarsan is a synthetic arsenic compound targeting Treponema pallidum [S1 p.2-3].\"},{\"id\":\"test-004\",\"question\":\"A 65-year-old immunocompetent patient is started on a broad-spectrum antibiotic for a suspected urinary tract infection. After 5 days, the patient develops watery diarrhea and abdominal cramps. Which of the following best explains this clinical presentation?\",\"choices\":[\"The patient has developed an allergic reaction to the antibiotic\",\"The antibiotic has caused a superinfection by disrupting the normal gut flora\",\"The patient was infected with a resistant strain of E. coli prior to treatment\",\"The antibiotic is antagonistic with the patient's gut microbiome\"],\"answer\":\"The antibiotic has caused a superinfection by disrupting the normal gut flora\",\"explanation\":\"The patient's symptoms of watery diarrhea and abdominal cramps following broad-spectrum antibiotic use are classic signs of a superinfection. Broad-spectrum antibiotics kill protective normal microbiota, allowing resistant pathogens like Clostridioides difficile to proliferate and cause secondary infections [S2 p.1].\"},{\"id\":\"test-005\",\"question\":\"Which of the following drugs is classified as a glycopeptide that binds to the terminal peptide chain of cell wall precursors to block transglycosylation and transpeptidation, and is effective against gram-positive but not gram-negative bacteria?\",\"choices\":[\"Vancomycin\",\"Bacitracin\",\"Ampicillin\",\"Aztreonam\"],\"answer\":\"Vancomycin\",\"explanation\":\"Vancomycin is a glycopeptide antibiotic that binds to the D-alanyl-D-alanine terminus of peptidoglycan precursors, preventing transglycosylation and transpeptidation. This mechanism is specific to gram-positive bacteria because vancomycin cannot penetrate the outer membrane of gram-negative organisms [S3 p.1].\"},{\"id\":\"test-006\",\"question\":\"A 45-year-old woman presents with a severe pneumonia and is started on intravenous colistin. Which of the following best describes the mechanism of action of colistin?\",\"choices\":[\"Disruption of the lipopolysaccharide layer of the gram-negative outer membrane\",\"Inhibition of bacterial RNA polymerase\",\"Blockade of peptidoglycan cross-linking\",\"Inhibition of dihydrofolic acid synthesis\"],\"answer\":\"Disruption of the lipopolysaccharide layer of the gram-negative outer membrane\",\"explanation\":\"Colistin is a polymyxin antibiotic that disrupts the lipopolysaccharide (LPS) layer of the gram-negative outer membrane, leading to increased permeability and cell lysis. It is not selectively toxic and can damage host kidney and nervous system cells, but is used as a last resort for multidrug-resistant gram-negative infections [S3 p.3].\"},{\"id\":\"test-007\",\"question\":\"Which drug inhibits bacterial ATP synthase specifically in mycobacteria and is reserved for severe, drug-resistant tuberculosis due to potential cardiotoxicity and hepatotoxicity?\",\"choices\":[\"Bedaquiline\",\"Isoniazid\",\"Rifampin\",\"Streptomycin\"],\"answer\":\"Bedaquiline\",\"explanation\":\"Bedaquiline is a diarylquinoline that specifically inhibits mycobacterial ATP synthase, disrupting ATP production. It is reserved for severe, drug-resistant tuberculosis due to its potential for hepatotoxicity and QT prolongation leading to lethal arrhythmias [S3 p.4].\"},{\"id\":\"test-008\",\"question\":\"Which of the following antibiotics is a structural analogue of para-aminobenzoic acid (PABA) and inhibits dihydrofolic acid synthesis, with selective toxicity due to the fact that humans acquire folic acid from dietary sources?\",\"choices\":[\"Sulfonamides\",\"Trimethoprim\",\"Isoniazid\",\"Metronidazole\"],\"answer\":\"Sulfonamides\",\"explanation\":\"Sulfonamides are structural analogues of PABA that competitively inhibit dihydropteroate synthase, blocking dihydrofolic acid synthesis. Humans do not synthesize folic acid and must obtain it from the diet, which provides selective toxicity against bacteria [S3 p.4].\"},{\"id\":\"test-009\",\"question\":\"A patient is prescribed azithromycin for a community-acquired pneumonia. Which of the following best explains the pharmacokinetic advantage that allows for short-course therapy with this drug?\",\"choices\":[\"Long half-life of 68 hours\",\"High renal excretion rate\",\"Rapid hepatic metabolism\",\"Low oral bioavailability\"],\"answer\":\"Long half-life of 68 hours\",\"explanation\":\"Azithromycin has a uniquely long elimination half-life of approximately 68 hours, which allows for sustained therapeutic concentrations at the site of infection and permits short-course therapy (e.g., 3–5 day regimens) [S3 p.2].\"}]",
+      "contentJson": [
+        {
+          "id": "test-001",
+          "question": "What was the primary reason ancient Nubians fermented tetracycline-producing Streptomyces during the beer-making process around 350–550 AD?",
+          "choices": [
+            "To create a beverage with higher alcohol content",
+            "To treat ailments such as gum disease and wounds",
+            "To preserve grain for long-term storage",
+            "To improve the nutritional value of their diet"
+          ],
+          "answer": "To treat ailments such as gum disease and wounds",
+          "explanation": "Chemical analyses of skeletal remains from Nubia revealed high concentrations of tetracycline residue, indicating that the fermented beer was used purposefully as a medicinal agent. Historical and archaeological evidence shows that this thick, gruel-like beer was administered to treat specific ailments, including gum disease and wounds, demonstrating an early understanding of antimicrobial properties [S1 p.1]."
+        },
+        {
+          "id": "test-002",
+          "question": "Which scientist successfully extracted artemisinin from Artemisia annua by consulting a 4th-century Chinese text, leading to an effective cure for malaria?",
+          "choices": [
+            "Paul Ehrlich",
+            "Gerhard Domagk",
+            "Tu Youyou",
+            "Selman Waksman"
+          ],
+          "answer": "Tu Youyou",
+          "explanation": "In the 1970s, Chinese researcher Tu Youyou extracted artemisinin from the plant Artemisia by consulting Ge Hong's 4th-century text, Handbook of Prescriptions for Emergencies. This discovery provided an effective cure for malaria and earned her the Nobel Prize in Physiology or Medicine in 2015 [S1 p.1]."
+        },
+        {
+          "id": "test-003",
+          "question": "Which of the following antibiotics discovered by Selman Waksman's team at Rutgers University is correctly paired with its source organism?",
+          "choices": [
+            "Penicillin — Penicillium notatum",
+            "Streptomycin — Streptomyces griseus",
+            "Artemisinin — Artemisia annua",
+            "Salvarsan — Treponema pallidum"
+          ],
+          "answer": "Streptomycin — Streptomyces griseus",
+          "explanation": "In the 1940s, soil microbiologist Selman Waksman, alongside Arthur Shatz and Elizabeth Bugie, discovered several antimicrobials from soil bacteria of the genus Streptomyces (Actinobacteria). Among these was streptomycin, which is derived from Streptomyces griseus. Penicillin was discovered by Fleming from Penicillium notatum, artemisinin is a plant-derived antimalarial, and Salvarsan is a synthetic arsenic compound targeting Treponema pallidum [S1 p.2-3]."
+        },
+        {
+          "id": "test-004",
+          "question": "A 65-year-old immunocompetent patient is started on a broad-spectrum antibiotic for a suspected urinary tract infection. After 5 days, the patient develops watery diarrhea and abdominal cramps. Which of the following best explains this clinical presentation?",
+          "choices": [
+            "The patient has developed an allergic reaction to the antibiotic",
+            "The antibiotic has caused a superinfection by disrupting the normal gut flora",
+            "The patient was infected with a resistant strain of E. coli prior to treatment",
+            "The antibiotic is antagonistic with the patient's gut microbiome"
+          ],
+          "answer": "The antibiotic has caused a superinfection by disrupting the normal gut flora",
+          "explanation": "The patient's symptoms of watery diarrhea and abdominal cramps following broad-spectrum antibiotic use are classic signs of a superinfection. Broad-spectrum antibiotics kill protective normal microbiota, allowing resistant pathogens like Clostridioides difficile to proliferate and cause secondary infections [S2 p.1]."
+        },
+        {
+          "id": "test-005",
+          "question": "Which of the following drugs is classified as a glycopeptide that binds to the terminal peptide chain of cell wall precursors to block transglycosylation and transpeptidation, and is effective against gram-positive but not gram-negative bacteria?",
+          "choices": [
+            "Vancomycin",
+            "Bacitracin",
+            "Ampicillin",
+            "Aztreonam"
+          ],
+          "answer": "Vancomycin",
+          "explanation": "Vancomycin is a glycopeptide antibiotic that binds to the D-alanyl-D-alanine terminus of peptidoglycan precursors, preventing transglycosylation and transpeptidation. This mechanism is specific to gram-positive bacteria because vancomycin cannot penetrate the outer membrane of gram-negative organisms [S3 p.1]."
+        },
+        {
+          "id": "test-006",
+          "question": "A 45-year-old woman presents with a severe pneumonia and is started on intravenous colistin. Which of the following best describes the mechanism of action of colistin?",
+          "choices": [
+            "Disruption of the lipopolysaccharide layer of the gram-negative outer membrane",
+            "Inhibition of bacterial RNA polymerase",
+            "Blockade of peptidoglycan cross-linking",
+            "Inhibition of dihydrofolic acid synthesis"
+          ],
+          "answer": "Disruption of the lipopolysaccharide layer of the gram-negative outer membrane",
+          "explanation": "Colistin is a polymyxin antibiotic that disrupts the lipopolysaccharide (LPS) layer of the gram-negative outer membrane, leading to increased permeability and cell lysis. It is not selectively toxic and can damage host kidney and nervous system cells, but is used as a last resort for multidrug-resistant gram-negative infections [S3 p.3]."
+        },
+        {
+          "id": "test-007",
+          "question": "Which drug inhibits bacterial ATP synthase specifically in mycobacteria and is reserved for severe, drug-resistant tuberculosis due to potential cardiotoxicity and hepatotoxicity?",
+          "choices": [
+            "Bedaquiline",
+            "Isoniazid",
+            "Rifampin",
+            "Streptomycin"
+          ],
+          "answer": "Bedaquiline",
+          "explanation": "Bedaquiline is a diarylquinoline that specifically inhibits mycobacterial ATP synthase, disrupting ATP production. It is reserved for severe, drug-resistant tuberculosis due to its potential for hepatotoxicity and QT prolongation leading to lethal arrhythmias [S3 p.4]."
+        },
+        {
+          "id": "test-008",
+          "question": "Which of the following antibiotics is a structural analogue of para-aminobenzoic acid (PABA) and inhibits dihydrofolic acid synthesis, with selective toxicity due to the fact that humans acquire folic acid from dietary sources?",
+          "choices": [
+            "Sulfonamides",
+            "Trimethoprim",
+            "Isoniazid",
+            "Metronidazole"
+          ],
+          "answer": "Sulfonamides",
+          "explanation": "Sulfonamides are structural analogues of PABA that competitively inhibit dihydropteroate synthase, blocking dihydrofolic acid synthesis. Humans do not synthesize folic acid and must obtain it from the diet, which provides selective toxicity against bacteria [S3 p.4]."
+        },
+        {
+          "id": "test-009",
+          "question": "A patient is prescribed azithromycin for a community-acquired pneumonia. Which of the following best explains the pharmacokinetic advantage that allows for short-course therapy with this drug?",
+          "choices": [
+            "Long half-life of 68 hours",
+            "High renal excretion rate",
+            "Rapid hepatic metabolism",
+            "Low oral bioavailability"
+          ],
+          "answer": "Long half-life of 68 hours",
+          "explanation": "Azithromycin has a uniquely long elimination half-life of approximately 68 hours, which allows for sustained therapeutic concentrations at the site of infection and permits short-course therapy (e.g., 3–5 day regimens) [S3 p.2]."
+        }
+      ],
+      "generatedAt": "",
+      "updatedAt": "",
+      "contentRevision": 1,
+      "annotationRevision": 1,
+      "revision": 1,
+      "isEdited": false,
+      "isPinned": false
+    },
+    "carded": {
+      "id": "antimicrobial-drugs-carded",
+      "reviewerId": "",
+      "kind": "carded",
+      "content": "[{\"id\":\"card-001\",\"front\":\"What was Salvarsan (Compound 606)?\",\"back\":\"The first modern chemotherapeutic agent, targeting Treponema pallidum, developed in 1909. [S1 p.2]\",\"kind\":\"basic\"},{\"id\":\"card-002\",\"front\":\"What did prontosil metabolize into?\",\"back\":\"Metabolizes to sulfanilamide, the foundation of sulfa drugs. [S1 p.2]\",\"kind\":\"basic\"},{\"id\":\"card-003\",\"front\":\"List the sources of antimicrobials.\",\"back\":\"Soil Actinobacteria, Fungi/Molds, Synthetic Dyes, Plant Extracts, and Chemical Synthesis. [S1 p.1-3]\",\"kind\":\"basic\"},{\"id\":\"card-004\",\"front\":\"What is the difference between bacteriostatic and bactericidal drugs?\",\"back\":\"Bacteriostatic drugs reversibly halt growth, while bactericidal drugs actively kill pathogens. [S2 p.1]\",\"kind\":\"basic\"},{\"id\":\"card-005\",\"front\":\"Distinguish between narrow-spectrum and broad-spectrum antibiotics.\",\"back\":\"Narrow-spectrum antibiotics target specific pathogens, while broad-spectrum drugs target diverse gram-positive and gram-negative bacteria. [S2 p.1]\",\"kind\":\"basic\"},{\"id\":\"card-006\",\"front\":\"What is a risk of broad-spectrum antibiotic overuse?\",\"back\":\"Superinfections, where resistant pathogens like C. difficile or Candida proliferate after normal flora is destroyed. [S2 p.1]\",\"kind\":\"basic\"},{\"id\":\"card-007\",\"front\":\"Differentiate between dose-dependent and time-dependent antibiotic efficacy.\",\"back\":\"Dose-dependent efficacy relies on high peak concentrations, whereas time-dependent efficacy relies on maintaining optimal levels over a prolonged period. [S2 p.2]\",\"kind\":\"basic\"},{\"id\":\"card-008\",\"front\":\"What is the mechanism of action of β-Lactams?\",\"back\":\"Β-Lactams block transpeptidase enzymes (PBPs) responsible for peptidoglycan cross-linking. [S3 p.1]\",\"kind\":\"basic\"},{\"id\":\"card-009\",\"front\":\"How do aminoglycosides disrupt protein synthesis?\",\"back\":\"Aminoglycosides cause codon-anticodon mismatches, producing faulty, membrane-disrupting proteins. [S3 p.2]\",\"kind\":\"basic\"},{\"id\":\"card-010\",\"front\":\"What is the mechanism of action of macrolides?\",\"back\":\"Macrolides block peptide bond formation and translocation. [S3 p.2]\",\"kind\":\"basic\"},{\"id\":\"card-011\",\"front\":\"What class of antibiotics includes drugs such as penicillin G, amoxicillin, and ampicillin?\",\"back\":\"Penicillins are a class of cell wall biosynthesis inhibitors that block transpeptidase (PBP) cross-linking of peptidoglycan; they are used to treat syphilis, streptococcal infections, and gram-positive infections. [S3 p.1]\",\"kind\":\"basic\"},{\"id\":\"card-012\",\"front\":\"Which drug is a semisynthetic penicillin with a bulky R-group that protects the β-lactam ring?\",\"back\":\"Methicillin is a semisynthetic penicillin with a bulky R-group protecting the β-lactam ring, historically used for penicillinase-producing Staphylococcus aureus. [S3 p.1]\",\"kind\":\"basic\"},{\"id\":\"card-013\",\"front\":\"What is the primary mechanism of action of cephalosporins?\",\"back\":\"Cephalosporins block transpeptidase; they contain a 6-membered ring fused to a β-lactam ring, providing broad-spectrum antibacterial activity. [S3 p.1]\",\"kind\":\"basic\"},{\"id\":\"card-014\",\"front\":\"Which antibiotic binds the peptide chain of peptidoglycan precursors and is used for MRSA infections?\",\"back\":\"Vancomycin binds the peptide chain of peptidoglycan precursors, blocking transglycosylation and transpeptidation; it treats gram-positive infections including MRSA. [S3 p.1]\",\"kind\":\"basic\"},{\"id\":\"card-015\",\"front\":\"What adverse effect limits systemic use of bacitracin?\",\"back\":\"Bacitracin can cause nephrotoxicity, which limits its systemic use and confines it to topical applications. [S3 p.1]\",\"kind\":\"basic\"},{\"id\":\"card-016\",\"front\":\"Which class of antibiotics includes streptomycin, gentamicin, and neomycin and causes nephrotoxicity and ototoxicity?\",\"back\":\"Aminoglycosides are a class of protein synthesis inhibitors that bind the 30S ribosomal subunit; they cause nephrotoxicity, neurotoxicity, and ototoxicity. [S3 p.2]\",\"kind\":\"basic\"},{\"id\":\"card-017\",\"front\":\"What drug class blocks tRNA association with the 30S ribosomal subunit and is used for acne and respiratory infections?\",\"back\":\"Tetracyclines (e.g., doxycycline, tigecycline) block tRNA association with the 30S ribosomal subunit; they are used for broad-spectrum infections, acne, and respiratory infections. [S3 p.2]\",\"kind\":\"basic\"},{\"id\":\"card-018\",\"front\":\"Which antibiotic is known to cause gray baby syndrome and bone marrow suppression?\",\"back\":\"Chloramphenicol binds the 50S ribosomal subunit, inhibiting peptide bond formation; it can cause gray baby syndrome, bone marrow suppression, and aplastic anemia. [S3 p.3]\",\"kind\":\"basic\"}]",
+      "contentJson": [
+        {
+          "id": "card-001",
+          "front": "What was Salvarsan (Compound 606)?",
+          "back": "The first modern chemotherapeutic agent, targeting Treponema pallidum, developed in 1909. [S1 p.2]",
+          "kind": "basic"
+        },
+        {
+          "id": "card-002",
+          "front": "What did prontosil metabolize into?",
+          "back": "Metabolizes to sulfanilamide, the foundation of sulfa drugs. [S1 p.2]",
+          "kind": "basic"
+        },
+        {
+          "id": "card-003",
+          "front": "List the sources of antimicrobials.",
+          "back": "Soil Actinobacteria, Fungi/Molds, Synthetic Dyes, Plant Extracts, and Chemical Synthesis. [S1 p.1-3]",
+          "kind": "basic"
+        },
+        {
+          "id": "card-004",
+          "front": "What is the difference between bacteriostatic and bactericidal drugs?",
+          "back": "Bacteriostatic drugs reversibly halt growth, while bactericidal drugs actively kill pathogens. [S2 p.1]",
+          "kind": "basic"
+        },
+        {
+          "id": "card-005",
+          "front": "Distinguish between narrow-spectrum and broad-spectrum antibiotics.",
+          "back": "Narrow-spectrum antibiotics target specific pathogens, while broad-spectrum drugs target diverse gram-positive and gram-negative bacteria. [S2 p.1]",
+          "kind": "basic"
+        },
+        {
+          "id": "card-006",
+          "front": "What is a risk of broad-spectrum antibiotic overuse?",
+          "back": "Superinfections, where resistant pathogens like C. difficile or Candida proliferate after normal flora is destroyed. [S2 p.1]",
+          "kind": "basic"
+        },
+        {
+          "id": "card-007",
+          "front": "Differentiate between dose-dependent and time-dependent antibiotic efficacy.",
+          "back": "Dose-dependent efficacy relies on high peak concentrations, whereas time-dependent efficacy relies on maintaining optimal levels over a prolonged period. [S2 p.2]",
+          "kind": "basic"
+        },
+        {
+          "id": "card-008",
+          "front": "What is the mechanism of action of β-Lactams?",
+          "back": "Β-Lactams block transpeptidase enzymes (PBPs) responsible for peptidoglycan cross-linking. [S3 p.1]",
+          "kind": "basic"
+        },
+        {
+          "id": "card-009",
+          "front": "How do aminoglycosides disrupt protein synthesis?",
+          "back": "Aminoglycosides cause codon-anticodon mismatches, producing faulty, membrane-disrupting proteins. [S3 p.2]",
+          "kind": "basic"
+        },
+        {
+          "id": "card-010",
+          "front": "What is the mechanism of action of macrolides?",
+          "back": "Macrolides block peptide bond formation and translocation. [S3 p.2]",
+          "kind": "basic"
+        },
+        {
+          "id": "card-011",
+          "front": "What class of antibiotics includes drugs such as penicillin G, amoxicillin, and ampicillin?",
+          "back": "Penicillins are a class of cell wall biosynthesis inhibitors that block transpeptidase (PBP) cross-linking of peptidoglycan; they are used to treat syphilis, streptococcal infections, and gram-positive infections. [S3 p.1]",
+          "kind": "basic"
+        },
+        {
+          "id": "card-012",
+          "front": "Which drug is a semisynthetic penicillin with a bulky R-group that protects the β-lactam ring?",
+          "back": "Methicillin is a semisynthetic penicillin with a bulky R-group protecting the β-lactam ring, historically used for penicillinase-producing Staphylococcus aureus. [S3 p.1]",
+          "kind": "basic"
+        },
+        {
+          "id": "card-013",
+          "front": "What is the primary mechanism of action of cephalosporins?",
+          "back": "Cephalosporins block transpeptidase; they contain a 6-membered ring fused to a β-lactam ring, providing broad-spectrum antibacterial activity. [S3 p.1]",
+          "kind": "basic"
+        },
+        {
+          "id": "card-014",
+          "front": "Which antibiotic binds the peptide chain of peptidoglycan precursors and is used for MRSA infections?",
+          "back": "Vancomycin binds the peptide chain of peptidoglycan precursors, blocking transglycosylation and transpeptidation; it treats gram-positive infections including MRSA. [S3 p.1]",
+          "kind": "basic"
+        },
+        {
+          "id": "card-015",
+          "front": "What adverse effect limits systemic use of bacitracin?",
+          "back": "Bacitracin can cause nephrotoxicity, which limits its systemic use and confines it to topical applications. [S3 p.1]",
+          "kind": "basic"
+        },
+        {
+          "id": "card-016",
+          "front": "Which class of antibiotics includes streptomycin, gentamicin, and neomycin and causes nephrotoxicity and ototoxicity?",
+          "back": "Aminoglycosides are a class of protein synthesis inhibitors that bind the 30S ribosomal subunit; they cause nephrotoxicity, neurotoxicity, and ototoxicity. [S3 p.2]",
+          "kind": "basic"
+        },
+        {
+          "id": "card-017",
+          "front": "What drug class blocks tRNA association with the 30S ribosomal subunit and is used for acne and respiratory infections?",
+          "back": "Tetracyclines (e.g., doxycycline, tigecycline) block tRNA association with the 30S ribosomal subunit; they are used for broad-spectrum infections, acne, and respiratory infections. [S3 p.2]",
+          "kind": "basic"
+        },
+        {
+          "id": "card-018",
+          "front": "Which antibiotic is known to cause gray baby syndrome and bone marrow suppression?",
+          "back": "Chloramphenicol binds the 50S ribosomal subunit, inhibiting peptide bond formation; it can cause gray baby syndrome, bone marrow suppression, and aplastic anemia. [S3 p.3]",
+          "kind": "basic"
+        }
+      ],
+      "generatedAt": "",
+      "updatedAt": "",
+      "contentRevision": 1,
+      "annotationRevision": 1,
+      "revision": 1,
+      "isEdited": false,
+      "isPinned": false
+    },
+    "currentGenerationRunId": null,
+    "staleKinds": []
+  },
+  "cards": [
+    {
+      "id": "card-001",
+      "front": "What was Salvarsan (Compound 606)?",
+      "back": "The first modern chemotherapeutic agent, targeting Treponema pallidum, developed in 1909. [S1 p.2]",
+      "kind": "basic"
+    },
+    {
+      "id": "card-002",
+      "front": "What did prontosil metabolize into?",
+      "back": "Metabolizes to sulfanilamide, the foundation of sulfa drugs. [S1 p.2]",
+      "kind": "basic"
+    },
+    {
+      "id": "card-003",
+      "front": "List the sources of antimicrobials.",
+      "back": "Soil Actinobacteria, Fungi/Molds, Synthetic Dyes, Plant Extracts, and Chemical Synthesis. [S1 p.1-3]",
+      "kind": "basic"
+    },
+    {
+      "id": "card-004",
+      "front": "What is the difference between bacteriostatic and bactericidal drugs?",
+      "back": "Bacteriostatic drugs reversibly halt growth, while bactericidal drugs actively kill pathogens. [S2 p.1]",
+      "kind": "basic"
+    },
+    {
+      "id": "card-005",
+      "front": "Distinguish between narrow-spectrum and broad-spectrum antibiotics.",
+      "back": "Narrow-spectrum antibiotics target specific pathogens, while broad-spectrum drugs target diverse gram-positive and gram-negative bacteria. [S2 p.1]",
+      "kind": "basic"
+    },
+    {
+      "id": "card-006",
+      "front": "What is a risk of broad-spectrum antibiotic overuse?",
+      "back": "Superinfections, where resistant pathogens like C. difficile or Candida proliferate after normal flora is destroyed. [S2 p.1]",
+      "kind": "basic"
+    },
+    {
+      "id": "card-007",
+      "front": "Differentiate between dose-dependent and time-dependent antibiotic efficacy.",
+      "back": "Dose-dependent efficacy relies on high peak concentrations, whereas time-dependent efficacy relies on maintaining optimal levels over a prolonged period. [S2 p.2]",
+      "kind": "basic"
+    },
+    {
+      "id": "card-008",
+      "front": "What is the mechanism of action of β-Lactams?",
+      "back": "Β-Lactams block transpeptidase enzymes (PBPs) responsible for peptidoglycan cross-linking. [S3 p.1]",
+      "kind": "basic"
+    },
+    {
+      "id": "card-009",
+      "front": "How do aminoglycosides disrupt protein synthesis?",
+      "back": "Aminoglycosides cause codon-anticodon mismatches, producing faulty, membrane-disrupting proteins. [S3 p.2]",
+      "kind": "basic"
+    },
+    {
+      "id": "card-010",
+      "front": "What is the mechanism of action of macrolides?",
+      "back": "Macrolides block peptide bond formation and translocation. [S3 p.2]",
+      "kind": "basic"
+    },
+    {
+      "id": "card-011",
+      "front": "What class of antibiotics includes drugs such as penicillin G, amoxicillin, and ampicillin?",
+      "back": "Penicillins are a class of cell wall biosynthesis inhibitors that block transpeptidase (PBP) cross-linking of peptidoglycan; they are used to treat syphilis, streptococcal infections, and gram-positive infections. [S3 p.1]",
+      "kind": "basic"
+    },
+    {
+      "id": "card-012",
+      "front": "Which drug is a semisynthetic penicillin with a bulky R-group that protects the β-lactam ring?",
+      "back": "Methicillin is a semisynthetic penicillin with a bulky R-group protecting the β-lactam ring, historically used for penicillinase-producing Staphylococcus aureus. [S3 p.1]",
+      "kind": "basic"
+    },
+    {
+      "id": "card-013",
+      "front": "What is the primary mechanism of action of cephalosporins?",
+      "back": "Cephalosporins block transpeptidase; they contain a 6-membered ring fused to a β-lactam ring, providing broad-spectrum antibacterial activity. [S3 p.1]",
+      "kind": "basic"
+    },
+    {
+      "id": "card-014",
+      "front": "Which antibiotic binds the peptide chain of peptidoglycan precursors and is used for MRSA infections?",
+      "back": "Vancomycin binds the peptide chain of peptidoglycan precursors, blocking transglycosylation and transpeptidation; it treats gram-positive infections including MRSA. [S3 p.1]",
+      "kind": "basic"
+    },
+    {
+      "id": "card-015",
+      "front": "What adverse effect limits systemic use of bacitracin?",
+      "back": "Bacitracin can cause nephrotoxicity, which limits its systemic use and confines it to topical applications. [S3 p.1]",
+      "kind": "basic"
+    },
+    {
+      "id": "card-016",
+      "front": "Which class of antibiotics includes streptomycin, gentamicin, and neomycin and causes nephrotoxicity and ototoxicity?",
+      "back": "Aminoglycosides are a class of protein synthesis inhibitors that bind the 30S ribosomal subunit; they cause nephrotoxicity, neurotoxicity, and ototoxicity. [S3 p.2]",
+      "kind": "basic"
+    },
+    {
+      "id": "card-017",
+      "front": "What drug class blocks tRNA association with the 30S ribosomal subunit and is used for acne and respiratory infections?",
+      "back": "Tetracyclines (e.g., doxycycline, tigecycline) block tRNA association with the 30S ribosomal subunit; they are used for broad-spectrum infections, acne, and respiratory infections. [S3 p.2]",
+      "kind": "basic"
+    },
+    {
+      "id": "card-018",
+      "front": "Which antibiotic is known to cause gray baby syndrome and bone marrow suppression?",
+      "back": "Chloramphenicol binds the 50S ribosomal subunit, inhibiting peptide bond formation; it can cause gray baby syndrome, bone marrow suppression, and aplastic anemia. [S3 p.3]",
+      "kind": "basic"
+    }
+  ],
+  "testItems": [
+    {
+      "id": "test-001",
+      "question": "What was the primary reason ancient Nubians fermented tetracycline-producing Streptomyces during the beer-making process around 350–550 AD?",
+      "choices": [
+        "To create a beverage with higher alcohol content",
+        "To treat ailments such as gum disease and wounds",
+        "To preserve grain for long-term storage",
+        "To improve the nutritional value of their diet"
+      ],
+      "answer": "To treat ailments such as gum disease and wounds",
+      "explanation": "Chemical analyses of skeletal remains from Nubia revealed high concentrations of tetracycline residue, indicating that the fermented beer was used purposefully as a medicinal agent. Historical and archaeological evidence shows that this thick, gruel-like beer was administered to treat specific ailments, including gum disease and wounds, demonstrating an early understanding of antimicrobial properties [S1 p.1]."
+    },
+    {
+      "id": "test-002",
+      "question": "Which scientist successfully extracted artemisinin from Artemisia annua by consulting a 4th-century Chinese text, leading to an effective cure for malaria?",
+      "choices": [
+        "Paul Ehrlich",
+        "Gerhard Domagk",
+        "Tu Youyou",
+        "Selman Waksman"
+      ],
+      "answer": "Tu Youyou",
+      "explanation": "In the 1970s, Chinese researcher Tu Youyou extracted artemisinin from the plant Artemisia by consulting Ge Hong's 4th-century text, Handbook of Prescriptions for Emergencies. This discovery provided an effective cure for malaria and earned her the Nobel Prize in Physiology or Medicine in 2015 [S1 p.1]."
+    },
+    {
+      "id": "test-003",
+      "question": "Which of the following antibiotics discovered by Selman Waksman's team at Rutgers University is correctly paired with its source organism?",
+      "choices": [
+        "Penicillin — Penicillium notatum",
+        "Streptomycin — Streptomyces griseus",
+        "Artemisinin — Artemisia annua",
+        "Salvarsan — Treponema pallidum"
+      ],
+      "answer": "Streptomycin — Streptomyces griseus",
+      "explanation": "In the 1940s, soil microbiologist Selman Waksman, alongside Arthur Shatz and Elizabeth Bugie, discovered several antimicrobials from soil bacteria of the genus Streptomyces (Actinobacteria). Among these was streptomycin, which is derived from Streptomyces griseus. Penicillin was discovered by Fleming from Penicillium notatum, artemisinin is a plant-derived antimalarial, and Salvarsan is a synthetic arsenic compound targeting Treponema pallidum [S1 p.2-3]."
+    },
+    {
+      "id": "test-004",
+      "question": "A 65-year-old immunocompetent patient is started on a broad-spectrum antibiotic for a suspected urinary tract infection. After 5 days, the patient develops watery diarrhea and abdominal cramps. Which of the following best explains this clinical presentation?",
+      "choices": [
+        "The patient has developed an allergic reaction to the antibiotic",
+        "The antibiotic has caused a superinfection by disrupting the normal gut flora",
+        "The patient was infected with a resistant strain of E. coli prior to treatment",
+        "The antibiotic is antagonistic with the patient's gut microbiome"
+      ],
+      "answer": "The antibiotic has caused a superinfection by disrupting the normal gut flora",
+      "explanation": "The patient's symptoms of watery diarrhea and abdominal cramps following broad-spectrum antibiotic use are classic signs of a superinfection. Broad-spectrum antibiotics kill protective normal microbiota, allowing resistant pathogens like Clostridioides difficile to proliferate and cause secondary infections [S2 p.1]."
+    },
+    {
+      "id": "test-005",
+      "question": "Which of the following drugs is classified as a glycopeptide that binds to the terminal peptide chain of cell wall precursors to block transglycosylation and transpeptidation, and is effective against gram-positive but not gram-negative bacteria?",
+      "choices": [
+        "Vancomycin",
+        "Bacitracin",
+        "Ampicillin",
+        "Aztreonam"
+      ],
+      "answer": "Vancomycin",
+      "explanation": "Vancomycin is a glycopeptide antibiotic that binds to the D-alanyl-D-alanine terminus of peptidoglycan precursors, preventing transglycosylation and transpeptidation. This mechanism is specific to gram-positive bacteria because vancomycin cannot penetrate the outer membrane of gram-negative organisms [S3 p.1]."
+    },
+    {
+      "id": "test-006",
+      "question": "A 45-year-old woman presents with a severe pneumonia and is started on intravenous colistin. Which of the following best describes the mechanism of action of colistin?",
+      "choices": [
+        "Disruption of the lipopolysaccharide layer of the gram-negative outer membrane",
+        "Inhibition of bacterial RNA polymerase",
+        "Blockade of peptidoglycan cross-linking",
+        "Inhibition of dihydrofolic acid synthesis"
+      ],
+      "answer": "Disruption of the lipopolysaccharide layer of the gram-negative outer membrane",
+      "explanation": "Colistin is a polymyxin antibiotic that disrupts the lipopolysaccharide (LPS) layer of the gram-negative outer membrane, leading to increased permeability and cell lysis. It is not selectively toxic and can damage host kidney and nervous system cells, but is used as a last resort for multidrug-resistant gram-negative infections [S3 p.3]."
+    },
+    {
+      "id": "test-007",
+      "question": "Which drug inhibits bacterial ATP synthase specifically in mycobacteria and is reserved for severe, drug-resistant tuberculosis due to potential cardiotoxicity and hepatotoxicity?",
+      "choices": [
+        "Bedaquiline",
+        "Isoniazid",
+        "Rifampin",
+        "Streptomycin"
+      ],
+      "answer": "Bedaquiline",
+      "explanation": "Bedaquiline is a diarylquinoline that specifically inhibits mycobacterial ATP synthase, disrupting ATP production. It is reserved for severe, drug-resistant tuberculosis due to its potential for hepatotoxicity and QT prolongation leading to lethal arrhythmias [S3 p.4]."
+    },
+    {
+      "id": "test-008",
+      "question": "Which of the following antibiotics is a structural analogue of para-aminobenzoic acid (PABA) and inhibits dihydrofolic acid synthesis, with selective toxicity due to the fact that humans acquire folic acid from dietary sources?",
+      "choices": [
+        "Sulfonamides",
+        "Trimethoprim",
+        "Isoniazid",
+        "Metronidazole"
+      ],
+      "answer": "Sulfonamides",
+      "explanation": "Sulfonamides are structural analogues of PABA that competitively inhibit dihydropteroate synthase, blocking dihydrofolic acid synthesis. Humans do not synthesize folic acid and must obtain it from the diet, which provides selective toxicity against bacteria [S3 p.4]."
+    },
+    {
+      "id": "test-009",
+      "question": "A patient is prescribed azithromycin for a community-acquired pneumonia. Which of the following best explains the pharmacokinetic advantage that allows for short-course therapy with this drug?",
+      "choices": [
+        "Long half-life of 68 hours",
+        "High renal excretion rate",
+        "Rapid hepatic metabolism",
+        "Low oral bioavailability"
+      ],
+      "answer": "Long half-life of 68 hours",
+      "explanation": "Azithromycin has a uniquely long elimination half-life of approximately 68 hours, which allows for sustained therapeutic concentrations at the site of infection and permits short-course therapy (e.g., 3–5 day regimens) [S3 p.2]."
+    }
+  ],
+  "sources": [
+    {
+      "id": "source-1",
+      "label": "OpenStax Microbiology §14.1",
+      "pages": [
+        {
+          "n": 1,
+          "text": "## 14.1 History of Chemotherapy and Antimicrobial Discovery\n\n### Learning Objectives\n\nBy the end of this section, you will be able to:\n\n- Compare and contrast natural, semisynthetic, and synthetic antimicrobial drugs\n\n- Describe the chemotherapeutic approaches of ancient societies\n\n- Describe the historically important individuals and events that led to the development of antimicrobial drugs\n\n### Clinical Focus\n\n#### Part 1\n\nMarisa, a 52-year-old woman, was suffering from severe abdominal pain, swollen lymph nodes, fatigue, and a fever. She had just returned home from visiting extended family in her native country of Cambodia. While abroad, she received medical care in neighboring Vietnam for a compressed spinal cord. She still had discomfort when leaving Cambodia, but the pain increased as her trip home continued and her husband drove her straight from the airport to the emergency room.\n\nHer doctor considers whether Marisa could be suffering from appendicitis, a urinary tract infection (UTI), or pelvic inflammatory disease (PID). However, each of those conditions is typically preceded or accompanied by additional symptoms. He considers the treatment she received in Vietnam for her compressed spinal cord, but abdominal pain is not usually associated with spinal cord compression. He examines her health history further.\n\n- What type of infection or other condition may be responsible?\n\n- What type of lab tests might the doctor order?\n\nJump to the next Clinical Focus box.\n\nMost people associate the term chemotherapy with treatments for cancer. However, chemotherapy is actually a broader term that refers to any use of chemicals or drugs to treat disease. Chemotherapy may involve drugs that target cancerous cells or tissues, or it may involve antimicrobial drugs that target infectious microorganisms. Antimicrobial drugs typically work by destroying or interfering with microbial structures and enzymes, either killing microbial cells or inhibiting their growth. But before we examine how these drugs work, we will briefly explore the history of humans’ use of antimicrobials for the purpose of chemotherapy.\n\n### Use of Antimicrobials in Ancient Societies\n\nAlthough the discovery of antimicrobials and their subsequent widespread use is commonly associated with modern medicine, there is evidence that humans have been exposed to antimicrobial compounds for millennia. Chemical analyses of the skeletal remains of people from Nubia2 (now found in present-day Sudan) dating from between 350 and 550 AD have shown residue of the antimicrobial agent tetracycline in high enough quantities to suggest the purposeful fermentation of tetracycline-producing Streptomyces during the beer-making process. The resulting beer, which was thick and gruel-like, was used to treat a variety of ailments in both adults and children, including gum disease and wounds. The antimicrobial properties of certain plants may also have been recognized by various cultures around the world, including Indian and Chinese herbalists (Figure 14.2) who have long used plants for a wide variety of medical purposes. More contemporary researchers have utilized practices and even texts from these traditional sources. For example, Chinese researcher Tu Youyou, who in the 1970s was selected to lead a government effort to find a cure for malaria, utilized Artemisia, a plant she identified by consulting 4th Century physician Ge Hong's Handbook of Prescription's for Emergencies. After initial efforts were unsuccessful, Youyou and her team more carefully followed the 1650-year-old text's method of extracting the plant's chemicals, and within a year had conducted a trial that successfully cured malaria patients.3Youyou was awarded the Nobel Prize in Physiology or Medicine in 2015. Healers of many cultures understood the antimicrobial properties of fungi and their use of moldy bread or other mold-containing products to treat wounds has been well documented for centuries.4 Today, while about 80% of the world’s population still relies on plant-derived medicines,5 scientists are now discovering the active compounds conferring the medicinal benefits contained in many of these traditionally used plants."
+        },
+        {
+          "n": 2,
+          "text": "### Check Your Understanding\n\n- Give examples of how antimicrobials were used in ancient societies.\n\n### The First Antimicrobial Drugs\n\nSocieties relied on traditional medicine for thousands of years; however, the first half of the 20th century brought an era of strategic drug discovery. In the early 1900s, the German physician and scientist Paul Ehrlich (1854–1915) set out to discover or synthesize chemical compounds capable of killing infectious microbes without harming the patient. In 1909, after screening more than 600 arsenic-containing compounds, Ehrlich’s assistant Sahachiro Hata (1873–1938) found one such “magic bullet.” Compound 606 targeted the bacterium Treponema pallidum, the causative agent of syphilis. Compound 606 was found to successfully cure syphilis in rabbits and soon after was marketed under the name Salvarsan as a remedy for the disease in humans (Figure 14.3). Ehrlich’s innovative approach of systematically screening a wide variety of compounds remains a common strategy for the discovery of new antimicrobial agents even today.\n\nA few decades later, German scientists Josef Klarer, Fritz Mietzsch, and Gerhard Domagk discovered the antibacterial activity of a synthetic dye, prontosil, that could treat streptococcal and staphylococcal infections in mice. Domagk’s own daughter was one of the first human recipients of the drug, which completely cured her of a severe streptococcal infection that had resulted from a poke with an embroidery needle. Gerhard Domagk (1895–1964) was awarded the Nobel Prize in Medicine in 1939 for his work with prontosil and sulfanilamide, the active breakdown product of prontosil in the body. Sulfanilamide, the first synthetic antimicrobial created, served as the foundation for the chemical development of a family of sulfa drugs. A synthetic antimicrobial is a drug that is developed from a chemical not found in nature. The success of the sulfa drugs led to the discovery and production of additional important classes of synthetic antimicrobials, including the quinolines and oxazolidinones.\n\nA few years before the discovery of prontosil, scientist Alexander Fleming (1881–1955) made his own accidental discovery that turned out to be monumental. In 1928, Fleming returned from holiday and examined some old plates of staphylococci in his research laboratory at St. Mary’s Hospital in London. He observed that contaminating mold growth (subsequently identified as a strain of Penicillium notatum) inhibited staphylococcal growth on one plate. Fleming, therefore, is credited with the discovery of penicillin, the first natural antibiotic, (Figure 14.4). Further experimentation showed that penicillin from the mold was antibacterial against streptococci, meningococci, and Corynebacterium diphtheriae, the causative agent of diphtheria.\n\nFleming and his colleagues were credited with discovering and identifying penicillin, but its isolation and mass production were accomplished by a team of researchers at Oxford University under the direction of Howard Florey (1898–1968) and Ernst Chain (1906–1979) (Figure 14.4). In 1940, the research team purified penicillin and reported its success as an antimicrobial agent against streptococcal infections in mice. Their subsequent work with human subjects also showed penicillin to be very effective. Because of their important work, Fleming, Florey, and Chain were awarded the Nobel Prize in Physiology and Medicine in 1945.\n\nIn the early 1940s, scientist Dorothy Hodgkin (1910–1994), who studied crystallography at Oxford University, used X-rays to analyze the structure of a variety of natural products. In 1946, she determined the structure of penicillin, for which she was awarded the Nobel Prize in Chemistry in 1964. Once the structure was understood, scientists could modify it to produce a variety of semisynthetic penicillins. A semisynthetic antimicrobial is a chemically modified derivative of a natural antibiotic. The chemical modifications are generally designed to increase the range of bacteria targeted, increase stability, decrease toxicity, or confer other properties beneficial for treating infections.\n\nPenicillin is only one example of a natural antibiotic. Also in the 1940s, Selman Waksman (1888–1973) (Figure 14.5), a prominent soil microbiologist at Rutgers University, led a research team that discovered several antimicrobials, including actinomycin, streptomycin, and neomycin. The discoveries of these antimicrobials stemmed from Waksman’s study of fungi and the Actinobacteria, including soil bacteria in the genus Streptomyces, known for their natural production of a wide variety of antimicrobials. Key collaborators included Arthur Shatz, who first isolated streptomycin, and Elizabeth Bugie, who performed the antibacterial testing for the substance. All three were included on the critical paper about the discovery, but Waksman was noted for playing down the role of his collaborators in later writings and in the patent process. He was given the Nobel Prize in Physiology and Medicine in 1952. The actinomycetes are the source of more than half of all natural antibiotics6 and continue to serve as an excellent reservoir for the discovery of novel antimicrobial agents. Some researchers argue that we have not yet come close to tapping the full antimicrobial potential of this group.7"
+        },
+        {
+          "n": 3,
+          "text": "### Check Your Understanding\n\n- Why is the soil a reservoir for antimicrobial resistance genes?"
+        }
+      ]
+    },
+    {
+      "id": "source-2",
+      "label": "OpenStax Microbiology §14.2",
+      "pages": [
+        {
+          "n": 1,
+          "text": "## 14.2 Fundamentals of Antimicrobial Chemotherapy\n\n### Learning Objectives\n\nBy the end of this section, you will be able to:\n\n- Contrast bacteriostatic versus bactericidal antibacterial activities\n\n- Contrast broad-spectrum drugs versus narrow-spectrum drugs\n\n- Explain the significance of superinfections\n\n- Discuss the significance of dosage and the route of administration of a drug\n\n- Identify factors and variables that can influence the side effects of a drug\n\n- Describe the significance of positive and negative interactions between drugs\n\nSeveral factors are important in choosing the most appropriate antimicrobial drug therapy, including bacteriostatic versus bactericidal mechanisms, spectrum of activity, dosage and route of administration, the potential for side effects, and the potential interactions between drugs. The following discussion will focus primarily on antibacterial drugs, but the concepts translate to other antimicrobial classes.\n\n### Bacteriostatic Versus Bactericidal\n\nAntibacterial drugs can be either bacteriostatic or bactericidal in their interactions with target bacteria. Bacteriostatic drugs cause a reversible inhibition of growth, with bacterial growth restarting after elimination of the drug. By contrast, bactericidal drugs kill their target bacteria. The decision of whether to use a bacteriostatic or bactericidal drugs depends on the type of infection and the immune status of the patient. In a patient with strong immune defenses, bacteriostatic and bactericidal drugs can be effective in achieving clinical cure. However, when a patient is immunocompromised, a bactericidal drug is essential for the successful treatment of infections. Regardless of the immune status of the patient, life-threatening infections such as acute endocarditis require the use of a bactericidal drug.\n\n### Spectrum of Activity\n\nThe spectrum of activity of an antibacterial drug relates to diversity of targeted bacteria. A narrow-spectrum antimicrobial targets only specific subsets of bacterial pathogens. For example, some narrow-spectrum drugs only target gram-positive bacteria, whereas others target only gram-negative bacteria. If the pathogen causing an infection has been identified, it is best to use a narrow-spectrum antimicrobial and minimize collateral damage to the normal microbiota. A broad-spectrum antimicrobial targets a wide variety of bacterial pathogens, including both gram-positive and gram-negative species, and is frequently used as empiric therapy to cover a wide range of potential pathogens while waiting on the laboratory identification of the infecting pathogen. Broad-spectrum antimicrobials are also used for polymicrobic infections (mixed infection with multiple bacterial species), or as prophylactic prevention of infections with surgery/invasive procedures. Finally, broad-spectrum antimicrobials may be selected to treat an infection when a narrow-spectrum drug fails because of development of drug resistance by the target pathogen.\n\nThe risk associated with using broad-spectrum antimicrobials is that they will also target a broad spectrum of the normal microbiota, increasing the risk of a superinfection, a secondary infection in a patient having a preexisting infection. A superinfection develops when the antibacterial intended for the preexisting infection kills the protective microbiota, allowing another pathogen resistant to the antibacterial to proliferate and cause a secondary infection (Figure 14.6). Common examples of superinfections that develop as a result of antimicrobial usage include yeast infections (candidiasis) and pseudomembranous colitis caused by Clostridioides difficile, which can be fatal.\n\n### Check Your Understanding\n\n- What is a superinfection and how does one arise?\n\n### Dosage and Route of Administration\n\nThe amount of medication given during a certain time interval is the dosage, and it must be determined carefully to ensure that optimum therapeutic drug levels are achieved at the site of infection without causing significant toxicity (side effects) to the patient. Each drug class is associated with a variety of potential side effects, and some of these are described for specific drugs later in this chapter. Despite best efforts to optimize dosing, allergic reactions and other potentially serious side effects do occur. Therefore, the goal is to select the optimum dosage that will minimize the risk of side effects while still achieving clinical cure, and there are important factors to consider when selecting the best dose and dosage interval. For example, in children, dose is based upon the patient’s mass. However, the same is not true for adults and children 12 years of age and older, for which there is typically a single standard dose regardless of the patient’s mass. With the great variability in adult body mass, some experts have argued that mass should be considered for all patients when determining appropriate dosage.8 An additional consideration is how drugs are metabolized and eliminated from the body. In general, patients with a history of liver or kidney dysfunction may experience reduced drug metabolism or clearance from the body, resulting in increased drug levels that may lead to toxicity and make them more prone to side effects.\n\nThere are also some factors specific to the drugs themselves that influence appropriate dose and time interval between doses. For example, the half-life, or rate at which 50% of a drug is eliminated from the plasma, can vary significantly between drugs. Some drugs have a short half-life of only 1 hour and must be given multiple times a day, whereas other drugs have half-lives exceeding 12 hours and can be given as a single dose every 24 hours. Although a longer half-life can be considered an advantage for an antibacterial when it comes to convenient dosing intervals, the longer half-life can also be a concern for a drug that has serious side effects because drug levels may remain toxic for a longer time. Last, some drugs are dose dependent, meaning they are more effective when administered in large doses to provide high levels for a short time at the site of infection. Others are time dependent, meaning they are more effective when lower optimum levels are maintained over a longer period of time.\n\nThe route of administration, the method used to introduce a drug into the body, is also an important consideration for drug therapy. Drugs that can be administered orally are generally preferred because patients can more conveniently take these drugs at home. However, some drugs are not absorbed easily from the gastrointestinal (GI) tract into the bloodstream. These drugs are often useful for treating diseases of the intestinal tract, such as tapeworms treated with niclosamide, or for decontaminating the bowel, as with colistin. Some drugs that are not absorbed easily, such as bacitracin, polymyxin, and several antifungals, are available as topical preparations for treatment of superficial skin infections. Sometimes, patients may not initially be able to take oral medications because of their illness (e.g., vomiting, intubation for respirator). When this occurs, and when a chosen drug is not absorbed in the GI tract, administration of the drug by a parenteral route (intravenous or intramuscular injection) is preferred and typically is performed in health-care settings. For most drugs, the plasma levels achieved by intravenous administration is substantially higher than levels achieved by oral or intramuscular administration, and this can also be an important consideration when choosing the route of administration for treating an infection (Figure 14.7)."
+        },
+        {
+          "n": 2,
+          "text": "### Check Your Understanding\n\n- List five factors to consider when determining the dosage of a drug.\n\n- Name some typical side effects associated with drugs and identify some factors that might contribute to these side effects.\n\n### Drug Interactions\n\nFor the optimum treatment of some infections, two antibacterial drugs may be administered together to provide a synergistic interaction that is better than the efficacy of either drug alone. A classic example of synergistic combinations is trimethoprim and sulfamethoxazole (Bactrim). Individually, these two drugs provide only bacteriostatic inhibition of bacterial growth, but combined, the drugs are bactericidal.\n\nWhereas synergistic drug interactions provide a benefit to the patient, antagonistic interactions produce harmful effects. Antagonism can occur between two antimicrobials or between antimicrobials and nonantimicrobials being used to treat other conditions. The effects vary depending on the drugs involved, but antagonistic interactions may cause loss of drug activity, decreased therapeutic levels due to increased metabolism and elimination, or increased potential for toxicity due to decreased metabolism and elimination. As an example, some antibacterials are absorbed most effectively from the acidic environment of the stomach. If a patient takes antacids, however, this increases the pH of the stomach and negatively impacts the absorption of these antimicrobials, decreasing their effectiveness in treating an infection. Studies have also shown an association between use of some antimicrobials and failure of oral contraceptives.9\n\n### Check Your Understanding\n\n- Explain the difference between synergistic and antagonistic drug interactions.\n\n### Eye on Ethics\n\n#### Resistance Regulation\n\nIn the United States and many other countries, most antimicrobial drugs are self-administered by patients at home. Unfortunately, many patients stop taking antimicrobials once their symptoms dissipate and they feel better. If a 10-day course of treatment is prescribed, many patients only take the drug for 5 or 6 days, unaware of the negative consequences of not completing the full course of treatment. A shorter course of treatment not only fails to kill the target organisms to expected levels, it also selects for drug-resistant variants within the target population and within the patient’s microbiota.\n\nPatients’ nonadherence especially amplifies drug resistance when the recommended course of treatment is long. Treatment for tuberculosis (TB) is a case in point, with the recommended treatment lasting from 6 months to a year. The CDC estimates that about one-third of the world’s population is infected with TB, most living in underdeveloped or underserved regions where antimicrobial drugs are available over the counter. In such countries, there may be even lower rates of adherence than in developed areas. Nonadherence leads to antibiotic resistance and more difficulty in controlling pathogens. As a direct result, the emergence of multidrug-resistant and extensively drug-resistant strains of TB is becoming a huge problem.\n\nOverprescription of antimicrobials also contributes to antibiotic resistance. Patients often demand antibiotics for diseases that do not require them, like viral colds and ear infections. Pharmaceutical companies aggressively market drugs to physicians and clinics, making it easy for them to give free samples to patients, and some pharmacies even offer certain antibiotics free to low-income patients with a prescription.\n\nIn recent years, various initiatives have aimed to educate parents and clinicians about the judicious use of antibiotics. However, a recent study showed that, between 2000 and 2013, the parental expectation for antimicrobial prescriptions for children actually increased (Figure 14.8).\n\nOne possible solution is a regimen called directly observed therapy (DOT), which involves the supervised administration of medications to patients. Patients are either required to visit a health-care facility to receive their medications, or health-care providers must administer medication in patients’ homes or another designated location. DOT has been implemented in many cases for the treatment of TB and has been shown to be effective; indeed, DOT is an integral part of WHO’s global strategy for eradicating TB.10,11 But is this a practical strategy for all antibiotics? Would patients taking penicillin, for example, be more or less likely to adhere to the full course of treatment if they had to travel to a health-care facility for each dose? And who would pay for the increased cost associated with DOT? When it comes to overprescription, should someone be policing physicians or drug companies to enforce best practices? What group should assume this responsibility, and what penalties would be effective in discouraging overprescription?"
+        }
+      ]
+    },
+    {
+      "id": "source-3",
+      "label": "OpenStax Microbiology §14.3",
+      "pages": [
+        {
+          "n": 1,
+          "text": "## 14.3 Mechanisms of Antibacterial Drugs\n\n### Learning Objective\n\n- Describe the mechanisms of action associated with drugs that inhibit cell wall biosynthesis, protein synthesis, membrane function, nucleic acid synthesis, and metabolic pathways\n\nAn important quality for an antimicrobial drug is selective toxicity, meaning that it selectively kills or inhibits the growth of microbial targets while causing minimal or no harm to the host. Most antimicrobial drugs currently in clinical use are antibacterial because the prokaryotic cell provides a greater variety of unique targets for selective toxicity, in comparison to fungi, parasites, and viruses. Each class of antibacterial drugs has a unique mode of action (the way in which a drug affects microbes at the cellular level), and these are summarized in Figure 14.9 and Table 14.1.\n\n### Inhibitors of Cell Wall Biosynthesis\n\nSeveral different classes of antibacterials block steps in the biosynthesis of peptidoglycan, making cells more susceptible to osmotic lysis (Table 14.2). Therefore, antibacterials that target cell wall biosynthesis are bactericidal in their action. Because human cells do not make peptidoglycan, this mode of action is an excellent example of selective toxicity.\n\nPenicillin, the first antibiotic discovered, is one of several antibacterials within a class called β-lactams. This group of compounds includes the penicillins, cephalosporins, monobactams, and carbapenems, and is characterized by the presence of a β-lactam ring found within the central structure of the drug molecule (Figure 14.10). The β-lactam antibacterials block the crosslinking of peptide chains during the biosynthesis of new peptidoglycan in the bacterial cell wall. They are able to block this process because the β-lactam structure is similar to the structure of the peptidoglycan subunit component that is recognized by the crosslinking transpeptidase enzyme, also known as a penicillin-binding protein (PBP). Although the β-lactam ring must remain unchanged for these drugs to retain their antibacterial activity, strategic chemical changes to the R groups have allowed for development of a wide variety of semisynthetic β-lactam drugs with increased potency, expanded spectrum of activity, and longer half-lives for better dosing, among other characteristics.\n\nPenicillin G and penicillin V are natural antibiotics from fungi and are primarily active against gram-positive bacterial pathogens, and a few gram-negative bacterial pathogens such as Pasteurella multocida. Figure 14.10 summarizes the semisynthetic development of some of the penicillins. Adding an amino group (-NH2) to penicillin G created the aminopenicillins (i.e., ampicillin and amoxicillin) that have increased spectrum of activity against more gram-negative pathogens. Furthermore, the addition of a hydroxyl group (-OH) to amoxicillin increased acid stability, which allows for improved oral absorption. Methicillin is a semisynthetic penicillin that was developed to address the spread of enzymes (penicillinases) that were inactivating the other penicillins. Changing the R group of penicillin G to the more bulky dimethoxyphenyl group provided protection of the β-lactam ring from enzymatic destruction by penicillinases, giving us the first penicillinase-resistant penicillin.\n\nSimilar to the penicillins, cephalosporins contain a β-lactam ring (Figure 14.10) and block the transpeptidase activity of penicillin-binding proteins. However, the β-lactam ring of cephalosporins is fused to a six-member ring, rather than the five-member ring found in penicillins. This chemical difference provides cephalosporins with an increased resistance to enzymatic inactivation by β-lactamases. The drug cephalosporin C was originally isolated from the fungus Cephalosporium acremonium in the 1950s and has a similar spectrum of activity to that of penicillin against gram-positive bacteria but is active against more gram-negative bacteria than penicillin. Another important structural difference is that cephalosporin C possesses two R groups, compared with just one R group for penicillin, and this provides for greater diversity in chemical alterations and development of semisynthetic cephalosporins. The family of semisynthetic cephalosporins is much larger than the penicillins, and these drugs have been classified into generations based primarily on their spectrum of activity, increasing in spectrum from the narrow-spectrum, first-generation cephalosporins to the broad-spectrum, fourth-generation cephalosporins. A new fifth-generation cephalosporin has been developed that is active against methicillin-resistant Staphylococcus aureus (MRSA).\n\nThe carbapenems and monobactams also have a β-lactam ring as part of their core structure, and they inhibit the transpeptidase activity of penicillin-binding proteins. The only monobactam used clinically is aztreonam. It is a narrow-spectrum antibacterial with activity only against gram-negative bacteria. In contrast, the carbapenem family includes a variety of semisynthetic drugs (imipenem, meropenem, and doripenem) that provide very broad-spectrum activity against gram-positive and gram-negative bacterial pathogens.\n\nThe drug vancomycin, a member of a class of compounds called the glycopeptides, was discovered in the 1950s as a natural antibiotic from the actinomycete Amycolatopsis orientalis. Similar to the β-lactams, vancomycin inhibits cell wall biosynthesis and is bactericidal. However, in contrast to the β-lactams, the structure of vancomycin is not similar to that of cell-wall peptidoglycan subunits and does not directly inactivate penicillin-binding proteins. Rather, vancomycin is a very large, complex molecule that binds to the end of the peptide chain of cell wall precursors, creating a structural blockage that prevents the cell wall subunits from being incorporated into the growing N-acetylglucosamine and N-acetylmuramic acid (NAM-NAG) backbone of the peptidoglycan structure (transglycosylation). Vancomycin also structurally blocks transpeptidation. Vancomycin is bactericidal against gram-positive bacterial pathogens, but it is not active against gram-negative bacteria because of its inability to penetrate the protective outer membrane.\n\nThe drug bacitracin consists of a group of structurally similar peptide antibiotics originally isolated from Bacillus subtilis. Bacitracin blocks the activity of a specific cell-membrane molecule that is responsible for the movement of peptidoglycan precursors from the cytoplasm to the exterior of the cell, ultimately preventing their incorporation into the cell wall. Bacitracin is effective against a wide range of bacteria, including gram-positive organisms found on the skin, such as Staphylococcus and Streptococcus. Although it may be administered orally or intramuscularly in some circumstances, bacitracin has been shown to be nephrotoxic (damaging to the kidneys). Therefore, it is more commonly combined with neomycin and polymyxin in topical ointments such as Neosporin."
+        },
+        {
+          "n": 2,
+          "text": "### Check Your Understanding\n\n- Describe the mode of action of β-lactams.\n\n### Inhibitors of Protein Biosynthesis\n\nThe cytoplasmic ribosomes found in animal cells (80S) are structurally distinct from those found in bacterial cells (70S), making protein biosynthesis a good selective target for antibacterial drugs. Several types of protein biosynthesis inhibitors are discussed in this section and are summarized in Figure 14.11.\n\n#### Protein Synthesis Inhibitors That Bind the 30S Subunit\n\nAminoglycosides are large, highly polar antibacterial drugs that bind to the 30S subunit of bacterial ribosomes, impairing the proofreading ability of the ribosomal complex. This impairment causes mismatches between codons and anticodons, resulting in the production of proteins with incorrect amino acids and shortened proteins that insert into the cytoplasmic membrane. Disruption of the cytoplasmic membrane by the faulty proteins kills the bacterial cells. The aminoglycosides, which include drugs such as streptomycin, gentamicin, neomycin, and kanamycin, are potent broad-spectrum antibacterials. However, aminoglycosides have been shown to be nephrotoxic (damaging to kidney), neurotoxic (damaging to the nervous system), and ototoxic (damaging to the ear).\n\nAnother class of antibacterial compounds that bind to the 30S subunit is the tetracyclines. In contrast to aminoglycosides, these drugs are bacteriostatic and inhibit protein synthesis by blocking the association of tRNAs with the ribosome during translation. Naturally occurring tetracyclines produced by various strains of Streptomyces were first discovered in the 1940s, and several semisynthetic tetracyclines, including doxycycline and tigecycline have also been produced. Although the tetracyclines are broad spectrum in their coverage of bacterial pathogens, side effects that can limit their use include phototoxicity, permanent discoloration of developing teeth, and liver toxicity with high doses or in patients with kidney impairment.\n\n#### Protein Synthesis Inhibitors That Bind the 50S Subunit\n\nThere are several classes of antibacterial drugs that work through binding to the 50S subunit of bacterial ribosomes. The macrolide antibacterial drugs have a large, complex ring structure and are part of a larger class of naturally produced secondary metabolites called polyketides, complex compounds produced in a stepwise fashion through the repeated addition of two-carbon units by a mechanism similar to that used for fatty acid synthesis. Macrolides are broad-spectrum, bacteriostatic drugs that block elongation of proteins by inhibiting peptide bond formation between specific combinations of amino acids. The first macrolide was erythromycin. It was isolated in 1952 from Streptomyces erythreus and prevents translocation. Semisynthetic macrolides include azithromycin and telithromycin. Compared with erythromycin, azithromycin has a broader spectrum of activity, fewer side effects, and a significantly longer half-life (1.5 hours for erythromycin versus 68 hours for azithromycin) that allows for once-daily dosing and a short 3-day course of therapy (i.e., Zpac formulation) for most infections. Telithromycin is the first semisynthetic within the class known as ketolides. Although telithromycin shows increased potency and activity against macrolide-resistant pathogens, the US Food and Drug Administration (FDA) has limited its use to treatment of community-acquired pneumonia and requires the strongest “black box warning” label for the drug because of serious hepatotoxicity.\n\nThe lincosamides include the naturally produced lincomycin and semisynthetic clindamycin. Although structurally distinct from macrolides, lincosamides are similar in their mode of action to the macrolides through binding to the 50S ribosomal subunit and preventing peptide bond formation. Lincosamides are particularly active against streptococcal and staphylococcal infections.\n\nThe drug chloramphenicol represents yet another structurally distinct class of antibacterials that also bind to the 50S ribosome, inhibiting peptide bond formation. Chloramphenicol, produced by Streptomyces venezuelae, was discovered in 1947; in 1949, it became the first broad-spectrum antibiotic that was approved by the FDA. Although it is a natural antibiotic, it is also easily synthesized and was the first antibacterial drug synthetically mass produced. As a result of its mass production, broad-spectrum coverage, and ability to penetrate into tissues efficiently, chloramphenicol was historically used to treat a wide range of infections, from meningitis to typhoid fever to conjunctivitis. Unfortunately, serious side effects, such as lethal gray baby syndrome, and suppression of bone marrow production, have limited its clinical role. Chloramphenicol also causes anemia in two different ways. One mechanism involves the targeting of mitochondrial ribosomes within hematopoietic stem cells, causing a reversible, dose-dependent suppression of blood cell production. Once chloramphenicol dosing is discontinued, blood cell production returns to normal. This mechanism highlights the similarity between 70S ribosomes of bacteria and the 70S ribosomes within our mitochondria. The second mechanism of anemia is idiosyncratic (i.e., the mechanism is not understood), and involves an irreversible lethal loss of blood cell production known as aplastic anemia. This mechanism of aplastic anemia is not dose dependent and can develop after therapy has stopped. Because of toxicity concerns, chloramphenicol usage in humans is now rare in the United States and is limited to severe infections unable to be treated by less toxic antibiotics. Because its side effects are much less severe in animals, it is used in veterinary medicine.\n\nThe oxazolidinones, including linezolid, are a new broad-spectrum class of synthetic protein synthesis inhibitors that bind to the 50S ribosomal subunit of both gram-positive and gram-negative bacteria. However, their mechanism of action seems somewhat different from that of the other 50S subunit-binding protein synthesis inhibitors already discussed. Instead, they seem to interfere with formation of the initiation complex (association of the 50S subunit, 30S subunit, and other factors) for translation, and they prevent translocation of the growing protein from the ribosomal A site to the P site. Table 14.3 summarizes the protein synthesis inhibitors."
+        },
+        {
+          "n": 3,
+          "text": "### Check Your Understanding\n\n- Compare and contrast the different types of protein synthesis inhibitors.\n\n### Inhibitors of Membrane Function\n\nA small group of antibacterials target the bacterial membrane as their mode of action (Table 14.4). The polymyxins are natural polypeptide antibiotics that were first discovered in 1947 as products of Bacillus polymyxa; only polymyxin B and polymyxin E (colistin) have been used clinically. They are lipophilic with detergent-like properties and interact with the lipopolysaccharide component of the outer membrane of gram-negative bacteria, ultimately disrupting both their outer and inner membranes and killing the bacterial cells. Unfortunately, the membrane-targeting mechanism is not a selective toxicity, and these drugs also target and damage the membrane of cells in the kidney and nervous system when administered systemically. Because of these serious side effects and their poor absorption from the digestive tract, polymyxin B is used in over-the-counter topical antibiotic ointments (e.g., Neosporin), and oral colistin was historically used only for bowel decontamination to prevent infections originating from bowel microbes in immunocompromised patients or for those undergoing certain abdominal surgeries. However, the emergence and spread of multidrug-resistant pathogens has led to increased use of intravenous colistin in hospitals, often as a drug of last resort to treat serious infections. The antibacterial daptomycin is a cyclic lipopeptide produced by Streptomyces roseosporus that seems to work like the polymyxins, inserting in the bacterial cell membrane and disrupting it. However, in contrast to polymyxin B and colistin, which target only gram-negative bacteria, daptomycin specifically targets gram-positive bacteria. It is typically administered intravenously and seems to be well tolerated, showing reversible toxicity in skeletal muscles.\n\n### Check Your Understanding\n\n- How do polymyxins inhibit membrane function?\n\n### Inhibitors of Nucleic Acid Synthesis\n\nSome antibacterial drugs work by inhibiting nucleic acid synthesis (Table 14.5). For example, metronidazole is a semisynthetic member of the nitroimidazole family that is also an antiprotozoan. It interferes with DNA replication in target cells. The drug rifampin is a semisynthetic member of the rifamycin family and functions by blocking RNA polymerase activity in bacteria. The RNA polymerase enzymes in bacteria are structurally different from those in eukaryotes, providing for selective toxicity against bacterial cells. It is used for the treatment of a variety of infections, but its primary use, often in a cocktail with other antibacterial drugs, is against mycobacteria that cause tuberculosis. Despite the selectivity of its mechanism, rifampin can induce liver enzymes to increase metabolism of other drugs being administered (antagonism), leading to hepatotoxicity (liver toxicity) and negatively influencing the bioavailability and therapeutic effect of the companion drugs.\n\nOne member of the quinolone family, a group of synthetic antimicrobials, is nalidixic acid. It was discovered in 1962 as a byproduct during the synthesis of chloroquine, an antimalarial drug. Nalidixic acid selectively inhibits the activity of bacterial DNA gyrase, blocking DNA replication. Chemical modifications to the original quinolone backbone have resulted in the production of fluoroquinolones, like ciprofloxacin and levofloxacin, which also inhibit the activity of DNA gyrase. Ciprofloxacin and levofloxacin are effective against a broad spectrum of gram-positive or gram-negative bacteria, and are among the most commonly prescribed antibiotics used to treat a wide range of infections, including urinary tract infections, respiratory infections, abdominal infections, and skin infections. However, despite their selective toxicity against DNA gyrase, side effects associated with different fluoroquinolones include phototoxicity, neurotoxicity, cardiotoxicity, glucose metabolism dysfunction, and increased risk for tendon rupture."
+        },
+        {
+          "n": 4,
+          "text": "### Check Your Understanding\n\n- Why do inhibitors of bacterial nucleic acid synthesis not target host cells?\n\n### Inhibitors of Metabolic Pathways\n\nSome synthetic drugs control bacterial infections by functioning as antimetabolites, competitive inhibitors for bacterial metabolic enzymes (Table 14.6). The sulfonamides (sulfa drugs) are the oldest synthetic antibacterial agents and are structural analogues of para-aminobenzoic acid (PABA), an early intermediate in folic acid synthesis (Figure 14.12). By inhibiting the enzyme involved in the production of dihydrofolic acid, sulfonamides block bacterial biosynthesis of folic acid and, subsequently, pyrimidines and purines required for nucleic acid synthesis. This mechanism of action provides bacteriostatic inhibition of growth against a wide spectrum of gram-positive and gram-negative pathogens. Because humans obtain folic acid from food instead of synthesizing it intracellularly, sulfonamides are selectively toxic for bacteria. However, allergic reactions to sulfa drugs are common. The sulfones are structurally similar to sulfonamides but are not commonly used today except for the treatment of Hansen’s disease (leprosy).\n\nTrimethoprim is a synthetic antimicrobial compound that serves as an antimetabolite within the same folic acid synthesis pathway as sulfonamides. However, trimethoprim is a structural analogue of dihydrofolic acid and inhibits a later step in the metabolic pathway (Figure 14.12). Trimethoprim is used in combination with the sulfa drug sulfamethoxazole to treat urinary tract infections, ear infections, and bronchitis. As discussed, the combination of trimethoprim and sulfamethoxazole is an example of antibacterial synergy. When used alone, each antimetabolite only decreases production of folic acid to a level where bacteriostatic inhibition of growth occurs. However, when used in combination, inhibition of both steps in the metabolic pathway decreases folic acid synthesis to a level that is lethal to the bacterial cell. Because of the importance of folic acid during fetal development, sulfa drugs and trimethoprim use should be carefully considered during early pregnancy.\n\nThe drug isoniazid is an antimetabolite with specific toxicity for mycobacteria and has long been used in combination with rifampin or streptomycin in the treatment of tuberculosis. It is administered as a prodrug, requiring activation through the action of an intracellular bacterial peroxidase enzyme, forming isoniazid-nicotinamide adenine dinucleotide (NAD) and isoniazid-nicotinamide adenine dinucleotide phosphate (NADP), ultimately preventing the synthesis of mycolic acid, which is essential for mycobacterial cell walls. Possible side effects of isoniazid use include hepatotoxicity, neurotoxicity, and hematologic toxicity (anemia).\n\n### Check Your Understanding\n\n- How do sulfonamides and trimethoprim selectively target bacteria?\n\n### Inhibitor of ATP Synthase\n\nBedaquiline, representing the synthetic antibacterial class of compounds called the diarylquinolines, uses a novel mode of action that specifically inhibits mycobacterial growth. Although the specific mechanism has yet to be elucidated, this compound appears to interfere with the function of ATP synthases, perhaps by interfering with the use of the hydrogen ion gradient for ATP synthesis by oxidative phosphorylation, leading to reduced ATP production. Due to its side effects, including hepatotoxicity and potentially lethal heart arrhythmia, its use is reserved for serious, otherwise untreatable cases of tuberculosis.\n\n### Clinical Focus\n\n#### Part 2\n\nReading thorough Marisa’s health history, the doctor noticed that during her hospitalization in Vietnam, she was catheterized and received the antimicrobial drugs ceftazidime and metronidazole. Upon learning this, the doctor ordered a CT scan of Marisa’s abdomen to rule out appendicitis; the doctor also requested blood work to see if she had an elevated white blood cell count, and ordered a urine analysis test and urine culture to look for the presence of white blood cells, red blood cells, and bacteria.\n\nMarisa’s urine sample came back positive for the presence of bacteria, indicating a urinary tract infection (UTI). The doctor prescribed ciprofloxacin. In the meantime, her urine was cultured to grow the bacterium for further testing.\n\n- What types of antimicrobials are typically prescribed for UTIs?\n\n- Based upon the antimicrobial drugs she was given in Vietnam, which of the antimicrobials for treatment of a UTI would you predict to be ineffective?\n\nJump to the next Clinical Focus box. Go back to the previous Clinical Focus box."
+        }
+      ]
+    }
+  ],
+  "generation": [
+    {
+      "step": "locked_in",
+      "ms": 65848
+    },
+    {
+      "step": "summary",
+      "ms": 38670
+    },
+    {
+      "step": "test_me",
+      "ms": 1045
+    },
+    {
+      "step": "carded",
+      "ms": 22624
+    }
+  ],
+  "asks": [
+    {
+      "id": "ask-1",
+      "question": "What is the difference between a bacteriostatic drug and a bactericidal drug?",
+      "answer": "A bacteriostatic drug causes a reversible inhibition of growth, meaning bacterial growth restarts once the drug is eliminated [S2 p.1]. In contrast, a bactericidal drug kills its target bacteria [S2 p.1]. The choice between them depends on the type of infection and the patient's immune status; for example, immunocompromised patients or those with life-threatening infections like acute endocarditis require a bactericidal drug [S2 p.1]."
+    },
+    {
+      "id": "ask-2",
+      "question": "How do beta-lactam antibiotics such as penicillin kill bacteria?",
+      "answer": "Beta-lactam antibiotics like penicillin kill bacteria by inhibiting cell wall biosynthesis [S3 p.1]. They block the crosslinking of peptide chains during the synthesis of new peptidoglycan in the bacterial cell wall [S3 p.1]. This action is facilitated by the similarity between the beta-lactam ring structure and the peptidoglycan subunit component, which allows the drug to bind to and inactivate the transpeptidase enzyme (penicillin-binding protein) [S3 p.1]. Because human cells do not produce peptidoglycan, this mechanism provides selective toxicity, making the cells more susceptible to osmotic lysis [S3 p.1]."
+    }
+  ],
+  "unsourcedPercent": 17.7
+}

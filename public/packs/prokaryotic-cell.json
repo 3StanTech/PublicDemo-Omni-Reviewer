@@ -1,0 +1,517 @@
+{
+  "id": "prokaryotic-cell",
+  "name": "Prokaryotic cell structure",
+  "sections": [
+    "3.3"
+  ],
+  "cardCount": 12,
+  "testItemCount": 7,
+  "views": {
+    "locked_in": {
+      "id": "prokaryotic-cell-locked-in",
+      "reviewerId": "",
+      "kind": "locked_in",
+      "content": "# Locked In: Prokaryotic Cell Morphology, Arrangements, and Structural Specializations\n\n## Introduction and Scope\nIt covers fundamental cellular definitions, common morphologies, internal and external structural components (membranes, walls, appendages, inclusions, and spores), and key distinctions between the Bacterial and Archaeal domains. All information is strictly derived from the provided text; where the sources are silent on specific comparative details, that absence is explicitly noted.\n\n---\n\n## 1. Cell Theory, Morphology, and Arrangements\n\n### 1.1 Defining Prokaryotic Cells\nAll cells share four fundamental components: cytoplasm (a gel-like aqueous solution of dissolved chemicals), a plasma membrane (which exhibits selective permeability), one or more chromosomes (containing genetic blueprints), and ribosomes (organelles responsible for protein synthesis) [S1 p.1]. \n\nProkaryotic cells are distinguished from eukaryotic cells by the following major structural differences [S1 p.1]:\n*   **Nuclear Structure:** Prokaryotes lack a nucleus enclosed by a complex nuclear membrane. Instead, their genetic material is concentrated in a region called the **nucleoid**.\n*   **Chromosome Type:** Prokaryotes typically possess a single, circular, haploid (unpaired) chromosome, whereas eukaryotes have multiple, rod-shaped, linear chromosomes bound by a nuclear membrane.\n*   **Organelles:** Prokaryotes generally lack membrane-bound organelles, though they often contain protein-bound cytoplasmic compartments called **inclusions** [S1 p.1].\n*   **Size:** Eukaryotic cells are generally larger, necessitating complex compartmentalization, whereas prokaryotes are smaller and rely on diffusion and specialized inclusions [S1 p.1].\n\n### 1.2 Common Cell Morphologies\nIndividual cells of a given prokaryotic species typically exhibit a consistent shape (cell morphology). The source identifies several common morphological shapes (illustrated in Figure 3.13 of the text) [S1 p.1]:\n*   **Coccus (spherical)**\n*   **Bacillus (rod-shaped)**\n*   **Spirillum (spiral-shaped)**\n*   **Vibrio (comma-shaped)**\n*   **Spirochete (corkscrew-shaped, flexible)**\n\n### 1.3 Cellular Arrangements\nProkaryotic cells of the same species group together in specific spatial arrangements depending on the plane of cell division [S1 p.1]. Common arrangements (illustrated in Figure 3.14 of the text) include:\n*   **Diplococci:** Pairs of cocci.\n*   **Streptococci:** Chains of cocci.\n*   **Tetrads:** Groups of four cocci in a square.\n*   **Sarcinae:** Cubical packets of eight or more cocci.\n*   **Staphylococci:** Clusters resembling bunches of grapes.\n\n### 1.4 Maintenance of Morphology: The Cell Wall and Tonicity\nCell morphology is maintained by the cell wall in conjunction with cytoskeletal elements [S1 p.1]. The cell wall protects the cell from osmotic pressure, which arises from differences in solute concentrations across the semipermeable plasma membrane [S1 p.1]. The external environment is classified by tonicity [S1 p.1]:\n*   **Isotonic:** Equal solute concentrations inside and outside; no net water movement.\n*   **Hypertonic:** Higher solute concentration outside; water diffuses out of the cell.\n*   **Hypotonic:** Higher solute concentration inside; water moves into the cell, causing it to swell.\n\n#### Table 1.1: Cellular Responses to Osmotic Stress [S1 p.1]\n| Cell Type | Response in Hypertonic Environment | Response in Hypotonic Environment |\n| :--- | :--- | :--- |\n| **Cells with a Cell Wall** | Undergo **plasmolysis**: The plasma membrane contracts and detaches from the cell wall. The cell wall remains intact, preserving cell shape and integrity for a period of time. | Withstands lysis longer; the cell wall maintains shape and integrity. |\n| **Cells without a Cell Wall** | Undergo **crenation**: The cell shrivels, and the plasma membrane contracts and appears scalloped or notched. | Highly prone to **lysis** (bursting) due to rapid water influx. |\n\n---\n\n## 2. Internal Structures: Nucleoid, Plasmids, Ribosomes, and Inclusions\n\n### 2.1 The Nucleoid and Genetic Material\nProkaryotic DNA is organized in the nucleoid region, which is not bound by a membrane [S1 p.2]. The chromosome is typically circular and haploid. DNA organization is assisted by **Nucleoid-Associated Proteins (NAPs)** [S1 p.2]:\n*   In **Bacteria**, NAPs function similarly to eukaryotic histones to package DNA.\n*   In **Archaea**, the nucleoid is organized by either NAPs or histone-like DNA organizing proteins.\n\n### 2.2 Plasmids\nProkaryotes often contain **plasmids**, which are small, circular, double-stranded DNA molecules separate from the main chromosome (extrachromosomal DNA) [S1 p.2]. Plasmids can number in the hundreds within a single cell and are more common in bacteria than in archaea [S1 p.2]. They frequently carry genes that provide advantageous traits, such as antibiotic resistance [S1 p.2].\n\n### 2.3 Ribosomes\nRibosomes are responsible for protein synthesis and are found in the cytoplasm of all cellular life [S1 p.2]. Prokaryotic ribosomes are designated **70S** (where \"S\" is the Svedberg unit, a measure of sedimentation rate based on size, shape, and surface qualities) [S1 p.2]. This contrasts with eukaryotic cytoplasmic ribosomes, which are 80S [S1 p.2]. While bacterial and archaeal ribosomes are both 70S, they contain different proteins and rRNA molecules; archaeal ribosomes are structurally more similar to eukaryotic ribosomes than to bacterial ribosomes [S1 p.2].\n\n### 2.4 Inclusions\nInclusions are cytoplasmic structures that store excess nutrients in a polymerized form, which reduces the buildup of osmotic pressure [S1 p.2]. Some inclusions are surrounded by a phospholipid monolayer embedded with protein [S1 p.2]. \n\n#### Table 2.1: Types of Prokaryotic Inclusions [S1 pp.2-3]\n| Inclusion Type | Composition / Structure | Function / Organism Examples |\n| :--- | :--- | :--- |\n| **Glycogen / Starch Granules** | Storage of carbon-containing polymers. | Access carbon for cellular energy. |\n| **Volutin (Metachromatic) Granules** | Polymerized inorganic phosphate. | Used in metabolism; assist in biofilm formation. Found in *Methanosarcina* (archaea), *Corynebacterium diphtheriae* (bacterium), and *Chlamydomonas* (eukaryotic alga). |\n| **Sulfur Granules** | Elemental sulfur. | Used for metabolism by sulfur bacteria of the genus *Thiobacillus*. |\n| **Polyhydroxybutyrate (PHB)** | Surrounded by a phospholipid monolayer embedded with protein. | Produced by *Bacillus* and *Pseudomonas* species; used industrially for biodegradable bioplastics. |\n| **Gas Vacuoles** | Accumulations of small, protein-lined vesicles of gas. | Alter cellular buoyancy to adjust position in the water column. |\n| **Magnetosomes** | Inclusions of magnetic iron oxide or iron sulfide surrounded by a lipid layer. | Allow magnetotactic bacteria (e.g., *Magnetospirillum magnetotacticum*) to align along magnetic fields to aid movement. |\n| **Carboxysomes** | Outer shells of thousands of protein subunits; interior filled with RuBisCO and carbonic anhydrase. | Sequester carbon-metabolism enzymes. Produced by cyanobacteria (e.g., *Anabaena cylindrica*) and bacteria (e.g., *Halothiobacillus neapolitanus*). Considered proto-organelles because they compartmentalize chemical reactions. |\n\n---\n\n## 3. Endospores\n\n### 3.1 Definition and Function\nEndospores are highly resistant, dormant structures formed by certain bacteria to protect their genetic material during unfavorable environmental conditions [S1 p.3]. They are distinct from fungal reproductive spores [S1 p.3]. Endospores enable survival against starvation, dehydration, extreme temperatures, chemicals, and radiation [S1 p.3].\n\n### 3.2 Sporulation (Formation) Process\nSporulation is triggered by nutrient depletion or harsh environmental conditions [S1 p.3]. The sequential steps are [S1 p.3]:\n1.  **Septum Formation:** An asymmetric septum divides the vegetative cell, separating a DNA forespore from the mother cell.\n2.  **Forespore Separation:** A second membrane surrounds the forespore (a copy of the cell's chromosome).\n3.  **Cortex Formation:** Layers of calcium and dipicolinic acid are laid down between the membranes.\n4.  **Protein Coat Deposition:** A tough protein coat forms around the cortex, while the mother cell's DNA disintegrates.\n5.  **Exosporium Formation:** An outermost exosporium layer is formed during maturation.\n6.  **Release:** The endospore is released upon the disintegration and lysis of the mother cell.\n\n### 3.3 Germination\nWhen conditions improve, endospores undergo **germination**, transitioning back into metabolically active vegetative cells capable of growth and division [S1 p.3].\n\n### 3.4 Clinical Significance of Endospore-Formers\nNot all bacteria form endospores, but clinically significant, spore-forming, Gram-positive genera include *Bacillus* and *Clostridium* [S1 p.3]:\n*   *Bacillus anthracis* (causes anthrax; spores can survive for decades).\n*   *Clostridium tetani* (causes tetanus).\n*   *Clostridium perfringens* (causes gas gangrene).\n*   *Clostridium botulinum* (causes botulism).\n*   *Clostridioides difficile* (causes pseudomembranous colitis).\n\n---\n\n## 4. The Cell Envelope: Plasma Membrane and Cell Wall\n\n### 4.1 The Plasma Membrane\nThe plasma membrane (or cytoplasmic membrane) exhibits selective permeability, controlling the passage of molecules into and out of the cell [S1 p.3]. It is described by the **fluid mosaic model**, highlighting its fluid, mosaic-like composition of lipids and proteins that can move laterally within the plane of the membrane [S1 p.3].\n\n#### Table 4.1: Structural Comparison of Plasma Membranes [S1 p.3]\n| Feature | Bacterial & Eukaryotic Membranes | Archaeal Membranes |\n| :--- | :--- | :--- |\n| **Chemical Linkages** | Phospholipids formed with **ester linkages**. | Phospholipids formed with **ether linkages**. |\n| **Hydrocarbon Chains** | Straight chains. | Branched chains. |\n| **Membrane Bilayer Structure** | Typically a standard phospholipid bilayer. | Can be a bilayer or a **lipid monolayer**. |\n\nMembrane surfaces are often modified with carbohydrates to form **glycoproteins** and **glycolipids** that extend outward, facilitating interaction with the external environment [S1 p.3]. These surface molecules vary chemically across domains and are used for microbial identification [S1 p.3]. Furthermore, phospholipid-derived fatty acid analysis (**PLFA profiles**) can be used to distinguish between Archaea, Bacteria, and Eukarya based on unique fatty acid signatures [S1 p.3].\n\n### 4.2 Membrane Transport Mechanisms\nThe plasma membrane controls internal environments via several transport modes [S1 p.4]:\n*   **Simple (Passive) Diffusion:** Molecules move down their concentration gradient (high to low) directly across the membrane (e.g., carbon dioxide) [S1 p.4].\n*   **Facilitated Diffusion:** Charged or large molecules cross the membrane down their gradient via protein carriers or channels [S1 p.4].\n*   **Active Transport:** Molecules are moved against their concentration gradient using metabolic energy (ATP) via structures often called \"pumps\" [S1 p.4].\n*   **Group Translocation:** Molecules are moved against their concentration gradient and are chemically modified (e.g., phosphorylated) upon entry. The bacterial **phosphotransferase system (PTS)** phosphorylates sugars (like glucose) as they enter, making the process energy-neutral [S1 p.4]. [[unsourced]]\n\n### 4.3 Photosynthetic Membrane Structures\nPhotosynthetic prokaryotes contain specialized internal membrane infoldings housing photosynthetic pigments (chlorophylls and bacteriochlorophylls) [S1 p.4]:\n*   **Cyanobacteria:** Utilize infoldings called **thylakoids**.\n*   **Photosynthetic Bacteria:** Utilize infoldings called **chromatophores**, **lamellae**, or **chlorosomes**.\n\n---\n\n## 5. Cell Wall Architecture and Gram Staining\n\n### 5.1 Peptidoglycan: The Bacterial Wall Component\nThe primary component of bacterial cell walls is **peptidoglycan** (or murein), a unique polymer not found in archaea or eukaryotes [S1 p.4]. It is structured as a mesh-like fabric of alternating sugar derivatives: **N-acetylglucosamine (NAG)** and **N-acetylmuramic acid (NAM)** [S1 p.4]. Tensile strength is provided by peptide bridges cross-linking the NAG-NAM chains [S1 p.4]: [[unsourced]]\n*   **Gram-negative bacteria:** Tetrapeptide chains extending from NAM units are cross-linked directly.\n*   **Gram-positive bacteria:** Tetrapeptide chains are cross-linked via **pentaglycine cross-bridges** [S1 p.4].\n\nBecause peptidoglycan is unique to bacteria, it is a primary target for antibacterial drugs (e.g., penicillin derivatives like amoxicillin) and is recognized by host immune cells (using enzymes like lysozyme) [S1 p.4].\n\n### 5.2 Gram-Positive vs. Gram-Negative Cell Walls\nThe Gram staining protocol divides bacteria into two major groups based on cell wall structure [S1 p.4].\n\n#### Table 5.1: Comparison of Gram-Positive and Gram-Negative Cell Walls [S1 p.4]\n| Feature | Gram-Positive Cell Wall | Gram-Negative Cell Wall |\n| :--- | :--- | :--- |\n| **Peptidoglycan Thickness** | Thick: 30–100 nm; consists of many layers. | Thin: No more than about 4 nm. |\n| **Additional Polymers** | Embedded with **teichoic acids (TAs)** (carbohydrate chains that stabilize peptidoglycan and aid in pathogenic binding). | Outer membrane present; attached to peptidoglycan by murein lipoprotein. |\n| **Outer Membrane** | Absent. | Present; external to the peptidoglycan layer. |\n| **Periplasmic Space** | Absent (or not defined as a separate gel-like matrix). | Present; a gel-like matrix occupies the space between the cell wall and plasma membrane. |\n| **Lipopolysaccharide (LPS)** | Absent. | Present in the outer leaflet of the outer membrane; functions as an **endotoxin** (Lipid A, core polysaccharide, and O side chain). |\n\n### 5.3 Acid-Fast Bacteria\nBacteria of the family *Mycobacteriaceae* (e.g., *Mycobacterium tuberculosis*) possess an external layer of waxy **mycolic acids** in their cell wall [S1 p.4]. [[unsourced]] This structure prevents standard staining; they are classified as **acid-fast** and require specialized acid-fast stains (e.g., Ziehl-Neelsen or Kinyoun) [S1 p.4]. [[unsourced]]\n\n### 5.4 Archaeal Cell Wall Composition\nArchaeal cell walls do not contain peptidoglycan [S1 p.4]. Instead, they utilize alternative structural polymers [S1 p.4]:\n*   **Pseudopeptidoglycan (Pseudomurein):** A similar polymer in which N-acetylmuramic acid (NAM) is replaced by a different subunit.\n*   **Glycoproteins or Polysaccharides:** Serves as the structural wall in other archaeal species.\n*   **S-Layer:** In some archaea, a layer of structural proteins and glycoproteins serves as the cell wall. Some archaea lack a cell wall entirely [S1 p.4].\n\n---\n\n## 6. External Appendages and Surface Layers\n\n### 6.1 Glycocalyces and S-Layers\n*   **Glycocalyx:** A sugar coat found outside the cell wall, existing in two forms [S1 p.5]:\n    *   **Capsule:** An organized, tightly bound layer of polysaccharides or proteins.\n    *   **Slime Layer:** A loose, unorganized, easily washed-off layer of polysaccharides, glycoproteins, or glycolipids.\n    *   *Function:* Adherence to surfaces, biofilm formation, protection from desiccation, predation, antibiotics, and disinfectants. Capsules also enhance pathogenicity by helping bacteria evade phagocytosis (e.g., *Streptococcus pneumoniae*) [S1 p.5].\n*   **S-Layer:** A surface layer of structural proteins and glycoproteins [S1 p.5]. In bacteria, it lies outside the cell wall; in some archaea, it serves as the cell wall. It helps the cell withstand osmotic pressure and, in pathogens, may interact with the host immune system [S1 p.5].\n\n### 6.2 Fimbriae and Pili\nThese are protein appendages extending from the cell envelope to interact with the environment [S1 p.5]. Because differentiation is difficult, the terms are often used interchangeably [S1 p.5]:\n*   **Fimbriae:** Short, bristle-like protein projections (numbering in the hundreds) that enable attachment to surfaces and other cells, promoting colonization, virulence, and biofilm formation [S1 p.5].\n*   **Pili:** Longer, less numerous protein appendages [S1 p.5].\n    *   **F Pilus (Sex Pilus):** A specialized pilus used to transfer DNA between bacterial cells during conjugation [S1 p.5].\n\n### 6.3 Flagella and Motility\nFlagella are stiff, spiral filaments composed of the protein **flagellin** that rotate like propellers to provide motility in aqueous environments [S1 p.5]. The basal body, embedded in the plasma membrane, acts as the motor, connected to the filament by a hook region [S1 p.5].\n\n#### Table 6.1: Flagellar Arrangements [S1 p.5]\n| Arrangement | Description | Example Organism |\n| :--- | :--- | :--- |\n| **Monotrichous** | Single flagellum at one end (polar). | *Vibrio cholerae* (causes cholera). |\n| **Amphitrichous** | Flagella (or tufts) at both ends of the cell. | *Spirillum minor* (causes rat-bite fever/sodoku). |\n| **Lophotrichous** | A tuft of flagella at one end of the cell. | *Pseudomonas aeruginosa* (opportunistic pathogen). |\n| **Peritrichous** | Flagella covering the entire surface of the cell. | *Escherichia coli*. |\n\n#### Chemotaxis and Run/Tumble Mechanics [S1 pp.5-6]\nBacteria navigate chemical gradients (chemotaxis) by modulating two behaviors:\n*   **Run:** Flagella rotate counterclockwise, bundling together to propel the cell forward.\n*   **Tumble:** Flagella rotate clockwise, splaying outward to loop and reorient the cell.\n*   In the presence of an attractant, the cell increases the duration of runs and decreases the duration of tumbles, achieving net movement toward the higher concentration. In the absence of a gradient, runs and tumbles are of equal length, resulting in random movement [S1 p.6].\n\n---\n\n## 7. Clinical Correlation: Antibiotic Failure and Cell Wall Targeting\nIn clinical settings, beta-lactam antibiotics like **amoxicillin** target the peptidoglycan layer of bacterial cell walls, causing cell lysis [S1 p.5]. If a patient with pneumonia fails to recover after a full course of amoxicillin, the causative agent may be:\n1.  A **virus** or **fungus** (which completely lack peptidoglycan).\n2.  A **bacterium that lacks peptidoglycan** (such as *Mycoplasma* species or Archaea). [[unsourced]]\n3.  A **peptidoglycan-containing bacterium** that has developed resistance to the drug [S1 p.5].",
+      "contentJson": {
+        "citationSources": [
+          {
+            "index": 1,
+            "sourceId": "source-1",
+            "filename": "OpenStax Microbiology §3.3",
+            "hasPages": true
+          }
+        ],
+        "grounding": {
+          "total": 123,
+          "cited": 62,
+          "lexicalSupported": 100,
+          "verifiedSupported": 18,
+          "unsourced": 5,
+          "truncated": false,
+          "verifierFailed": false,
+          "termFlagged": 5,
+          "termFlags": {
+            "383c9a9d": [
+              "PTS"
+            ],
+            "38aa32f5": [
+              "Ziehl",
+              "Neelsen",
+              "Kinyoun"
+            ],
+            "59319e74": [
+              "NAG-NAM"
+            ],
+            "61621da9": [
+              "Mycoplasma"
+            ],
+            "ee8f5730": [
+              "Mycobacterium tuberculosis",
+              "tuberculosis"
+            ]
+          }
+        }
+      },
+      "generatedAt": "",
+      "updatedAt": "",
+      "contentRevision": 1,
+      "annotationRevision": 1,
+      "revision": 1,
+      "isEdited": false,
+      "isPinned": false
+    },
+    "summary": {
+      "id": "prokaryotic-cell-summary",
+      "reviewerId": "",
+      "kind": "summary",
+      "content": "## Introduction and Scope\n*   Covers fundamental cellular definitions, common morphologies, internal/external structural components, and key distinctions between Bacterial and Archaeal domains [S1 p.1].\n*   Strictly derived from the provided text; specific comparative details not covered in the sources are explicitly noted as absent [S1 p.1]. [[unsourced]]\n\n## 1. Cell Theory, Morphology, and Arrangements\n*   All cells share four fundamental components: cytoplasm, a selectively permeable plasma membrane, genetic material (chromosomes), and ribosomes for protein synthesis [S1 p.1].\n*   Prokaryotes differ from eukaryotes by lacking a nuclear membrane, possessing a single circular haploid chromosome, lacking membrane-bound organelles, and being smaller in size [S1 p.1].\n*   Common cell morphologies include cocci (spherical), bacilli (rod-shaped), spirilla (spiral), vibrios (comma-shaped), and spirochetes (flexible corkscrew) [S1 p.1].\n*   Cellular arrangements depend on division planes and include diplococci (pairs), streptococci (chains), tetrads (groups of four), sarcinae (cubical packets of eight+), and staphylococci (grape-like clusters) [S1 p.1].\n*   Cell wall and cytoskeletal elements maintain morphology and protect against osmotic pressure; tonicity classifications dictate cellular responses to water movement [S1 p.1].\n\n### Table: Cellular Responses to Osmotic Stress\n| Cell Type | Response in Hypertonic Environment | Response in Hypotonic Environment |\n| :--- | :--- | :--- |\n| **Cells with a Cell Wall** | Undergo plasmolysis (membrane detaches from wall); wall remains intact [S1 p.1]. | Withstands lysis longer; wall maintains shape and integrity [S1 p.1]. |\n| **Cells without a Cell Wall** | Undergo crenation (cell shrivels, membrane contracts and appears scalloped) [S1 p.1]. | Highly prone to lysis (bursting) due to rapid water influx [S1 p.1]. |\n\n## 2. Internal Structures: Nucleoid, Plasmids, Ribosomes, and Inclusions\n*   The nucleoid is a non-membrane-bound region containing a typical circular, haploid chromosome, organized by Nucleoid-Associated Proteins (NAPs) or histone-like proteins [S1 p.2].\n*   Plasmids are small, circular, double-stranded DNA molecules (extrachromosomal) that can number in the hundreds and commonly carry advantageous genes like antibiotic resistance [S1 p.2].\n*   Prokaryotic ribosomes are 70S in size, contrasting with eukaryotic 80S ribosomes; archaeal ribosomes are structurally more similar to eukaryotic ribosomes than to bacterial ribosomes [S1 p.2].\n*   Inclusions are cytoplasmic storage structures that package excess nutrients in polymerized form to reduce osmotic pressure buildup [S1 p.2].\n*   Specific inclusions include carbon-storing glycogen/starch, phosphate-storing volutin, sulfur granules, and bioplastic-producing PHB [S1 pp.2-3].\n\n### Table: Types of Prokaryotic Inclusions\n| Inclusion Type | Composition / Structure | Function / Organism Examples |\n| :--- | :--- | :--- |\n| **Glycogen / Starch Granules** | Carbon-containing polymer storage [S1 p.2]. | Access carbon for cellular energy [S1 p.2]. |\n| **Volutin (Metachromatic) Granules** | Polymerized inorganic phosphate [S1 p.2]. | Assist in metabolism and biofilm formation; found in *Methanosarcina*, *Corynebacterium diphtheriae*, and *Chlamydomonas* [S1 p.2]. |\n| **Sulfur Granules** | Elemental sulfur [S1 p.2]. | Used for metabolism by sulfur bacteria of the genus *Thiobacillus* [S1 p.2]. |\n| **Polyhydroxybutyrate (PHB)** | Phospholipid monolayer embedded with protein [S1 p.2]. | Produced by *Bacillus* and *Pseudomonas*; used industrially for biodegradable bioplastics [S1 p.2]. |\n| **Gas Vacuoles** | Accumulations of protein-lined vesicles of gas [S1 p.2]. | Alter cellular buoyancy to adjust position in the water column [S1 p.2]. |\n| **Magnetosomes** | Magnetic iron oxide or iron sulfide surrounded by a lipid layer [S1 p.2]. | Allow magnetotactic bacteria (e.g., *Magnetospirillum magnetotacticum*) to align along magnetic fields [S1 p.2]. |\n\n## 3. Endospores\n*   Endospores are highly resistant, dormant structures formed to protect genetic material during unfavorable environmental conditions, distinct from fungal reproductive spores [S1 p.3].\n*   Sporulation is triggered by nutrient depletion and proceeds sequentially through asymmetric septum formation, forespore separation, cortex formation (calcium/dipicolinic acid), protein coat deposition, exosporium formation, and final release [S1 p.3].\n*   When conditions improve, endospores undergo germination, transitioning back into metabolically active vegetative cells [S1 p.3].\n\n## 4. The Cell Envelope: Plasma Membrane and Cell Wall\n\n### 4.1 The Plasma Membrane\n* The plasma membrane exhibits selective permeability, controlling the passage of molecules into and out of the cell [S1 p.3].\n* It is described by the fluid mosaic model, highlighting its fluid, mosaic-like composition of lipids and proteins that can move laterally within the plane of the membrane [S1 p.3].\n\nTable: Structural Comparison of Plasma Membranes [[unsourced]] [S1 p.3]\n| Feature | Bacterial & Eukaryotic Membranes | Archaeal Membranes |\n| :--- | :--- | :--- |\n| **Chemical Linkages** | Phospholipids formed with ester linkages. | Phospholipids formed with ether linkages. |\n| **Hydrocarbon Chains** | Straight chains. | Branched chains. |\n| **Membrane Bilayer Structure** | Typically a standard phospholipid bilayer. | Can be a bilayer or a lipid monolayer. |\n\n* Membrane surfaces are often modified with carbohydrates to form glycoproteins and glycolipids that extend outward, facilitating interaction with the external environment [S1 p.3].\n* Phospholipid-derived fatty acid analysis (PLFA profiles) can be used to distinguish between Archaea, Bacteria, and Eukarya based on unique fatty acid signatures [S1 p.3].\n\n### 4.2 Membrane Transport Mechanisms\n\n### 4.3 Photosynthetic Membrane Structures\n\n---\n\n## 5. Cell Wall Architecture and Gram Staining\n\n### 5.1 Peptidoglycan: The Bacterial Wall Component\n* The primary component of bacterial cell walls is peptidoglycan (or murein), a unique polymer not found in archaea or eukaryotes [S1 p.4].\n* It is structured as a mesh-like fabric of alternating sugar derivatives: N-acetylglucosamine (NAG) and N-acetylmuramic acid (NAM) [S1 p.4].\n* Tensile strength is provided by peptide bridges cross-linking the NAG-NAM chains [S1 p.4]. [[unsourced]]\n* Gram-negative bacteria: Tetrapeptide chains extending from NAM units are cross-linked directly [S1 p.4].\n* Gram-positive bacteria: Tetrapeptide chains are cross-linked via pentaglycine cross-bridges [S1 p.4].\n\n### 5.2 Gram-Positive vs. Gram-Negative Cell Walls\n\nTable: Comparison of Gram-Positive and Gram-Negative Cell Walls [S1 p.4]\n| Feature | Gram-Positive Cell Wall | Gram-Negative Cell Wall |\n| :--- | :--- | :--- |\n| **Peptidoglycan Thickness** | Thick: 30–100 nm; consists of many layers. | Thin: No more than about 4 nm. |\n| **Additional Polymers** | Embedded with teichoic acids (TAs) (carbohydrate chains that stabilize peptidoglycan and aid in pathogenic binding). | Outer membrane present; attached to peptidoglycan by murein lipoprotein. |\n| **Outer Membrane** | Absent. | Present; external to the peptidoglycan layer. |\n| **Periplasmic Space** | Absent (or not defined as a separate gel-like matrix). | Present; a gel-like matrix occupies the space between the cell wall and plasma membrane. |\n| **Lipopolysaccharide (LPS)** | Absent. | Present in the outer leaflet of the outer membrane; functions as an endotoxin (Lipid A, core polysaccharide, and O side chain). |\n\n### 5.3 Acid-Fast Bacteria\n\n### 5.4 Archaeal Cell Wall Composition\n\n---\n\n## 6. External Appendages and Surface Layers\n\n### 6.1 Glycocalyces and S-Layers\n* Glycocalyx: A sugar coat found outside the cell wall, existing in two forms [S1 p.5]:\n  * Capsule: An organized, tightly bound layer of polysaccharides or proteins [S1 p.5].\n  * Slime Layer: A loose, unorganized, easily washed-off layer of polysaccharides, glycoproteins, or glycolipids [S1 p.5].\n* Function: Adherence to surfaces, biofilm formation, protection from desiccation, predation, antibiotics, and disinfectants. Capsules also enhance pathogenicity by helping bacteria evade phagocytosis (e.g., Streptococcus pneumoniae) [S1 p.5].\n* S-Layer: A surface layer of structural proteins and glycoproteins [S1 p.5]. In bacteria, it lies outside the cell wall; in some archaea, it serves as the cell wall. It helps the cell withstand osmotic pressure and, in pathogens, may interact with the host immune system [S1 p.5].\n\n### 6.2 Fimbriae and Pili\n* These are protein appendages extending from the cell envelope to interact with the environment [S1 p.5]. Because differentiation is difficult, the terms are often used interchangeably [S1 p.5]: [[unsourced]]\n* Fimbriae: Short, bristle-like protein projections (numbering in the hundreds) that enable attachment to surfaces and other cells, promoting colonization, virulence, and biofilm formation [S1 p.5].\n\n### 6.3 Flagella and Motility\n\nTable: Flagellar Arrangements [S1 p.5]\n| Arrangement | Description | Example Organism |\n| :--- | :--- | :--- |\n| **Monotrichous** | Single flagellum at one end (polar). | Vibrio cholerae (causes cholera). [[unsourced]] |\n| **Amphitrichous** | Flagella (or tufts) at both ends of the cell. | Spirillum minor (causes rat-bite fever/sodoku). [[unsourced]] |\n| **Lophotrichous** | A tuft of flagella at one end of the cell. | Pseudomonas aeruginosa (opportunistic pathogen). [[unsourced]] |\n| **Peritrichous** | Flagella covering the entire surface of the cell. | Escherichia coli. [[unsourced]] |\n\n\n---\n\n## 7. Clinical Correlation: Antibiotic Failure and Cell Wall Targeting\n* In clinical settings, beta-lactam antibiotics like amoxicillin target the peptidoglycan layer of bacterial cell walls, causing cell lysis [S1 p.5].\n* If a patient with pneumonia fails to recover after a full course of amoxicillin, the causative agent may be a virus or fungus (which completely lack peptidoglycan) [S1 p.5].",
+      "contentJson": {
+        "citationSources": [
+          {
+            "index": 1,
+            "sourceId": "source-1",
+            "filename": "OpenStax Microbiology §3.3",
+            "hasPages": true
+          }
+        ],
+        "grounding": {
+          "total": 59,
+          "cited": 45,
+          "lexicalSupported": 47,
+          "verifiedSupported": 4,
+          "unsourced": 8,
+          "truncated": false,
+          "verifierFailed": false,
+          "termFlagged": 1,
+          "termFlags": {
+            "59319e74": [
+              "NAG-NAM"
+            ]
+          }
+        }
+      },
+      "generatedAt": "",
+      "updatedAt": "",
+      "contentRevision": 1,
+      "annotationRevision": 1,
+      "revision": 1,
+      "isEdited": false,
+      "isPinned": false
+    },
+    "test_me": {
+      "id": "prokaryotic-cell-test-me",
+      "reviewerId": "",
+      "kind": "test_me",
+      "content": "[{\"id\":\"test-001\",\"question\":\"Which of the following lists correctly identifies the four fundamental components shared by all cells, as defined?\",\"choices\":[\"Cytoplasm, plasma membrane, chromosomes, and ribosomes\",\"Nucleoid, cell wall, flagella, and ribosomes\",\"Cytoplasm, nucleus, DNA, and mitochondria\",\"Plasma membrane, cell wall, cytoplasm, and plasmids\"],\"answer\":\"Cytoplasm, plasma membrane, chromosomes, and ribosomes\",\"explanation\":\"The text explicitly states that all cells share four fundamental components: cytoplasm (a gel-like aqueous solution), a plasma membrane (with selective permeability), one or more chromosomes (genetic blueprints), and ribosomes (for protein synthesis) [S1 p.1]. The other options include structures not shared by all cells (such as cell walls, nuclei, or mitochondria) or misidentify prokaryotic features.\"},{\"id\":\"test-002\",\"question\":\"A microbiologist observes a bacterial sample under a microscope and notes cells arranged in cubical packets of eight or more cocci. What is this specific arrangement called?\",\"choices\":[\"Tetrads\",\"Sarcinae\",\"Streptococci\",\"Staphylococci\"],\"answer\":\"Sarcinae\",\"explanation\":\"The text defines cellular arrangements based on the plane of cell division. It specifies that cubical packets of eight or more cocci are termed sarcinae [S1 p.1]. In contrast, tetrads are groups of four cocci in a square, streptococci are chains of cocci, and staphylococci are irregular clusters resembling bunches of grapes.\"},{\"id\":\"test-003\",\"question\":\"In a clinical lab, a patient's wound culture grows Gram-positive, spore-forming, rod-shaped bacteria that produce potent neurotoxins. Which of the following genera is most likely responsible for the patient's infection?\",\"choices\":[\"Clostridium\",\"Bacillus\",\"Escherichia\",\"Staphylococcus\"],\"answer\":\"Clostridium\",\"explanation\":\"The text notes that clinically significant spore-forming, Gram-positive genera include Bacillus and Clostridium [S1 p.3]. Among the choices, Clostridium is a genus of rod-shaped (bacillus) bacteria that includes species causing severe clinical conditions like tetanus (C. tetani) and botulism (C. botulinum) via potent neurotoxins [S1 p.3]. Escherichia is Gram-negative and non-spore-forming, and Staphylococcus is cocci-shaped and does not form endospores.\"},{\"id\":\"test-004\",\"question\":\"According to the structural comparison of plasma membranes, what chemical linkage distinguishes bacterial and eukaryotic membranes from archaeal membranes?\",\"choices\":[\"Ether linkages\",\"Ester linkages\",\"Glycosidic bonds\",\"Peptide bonds\"],\"answer\":\"Ester linkages\",\"explanation\":\"Bacterial and eukaryotic membranes utilize phospholipids formed with ester linkages, whereas archaeal membranes are characterized by phospholipids formed with ether linkages [S1 p.3].\"},{\"id\":\"test-005\",\"question\":\"A patient with pneumonia is prescribed a full course of amoxicillin but fails to recover. Which of the following causative agents would be completely unaffected by this drug because it entirely lacks a peptidoglycan cell wall?\",\"choices\":[\"Streptococcus pneumoniae\",\"Mycoplasma pneumoniae\",\"Staphylococcus aureus\",\"Haemophilus influenzae\"],\"answer\":\"Mycoplasma pneumoniae\",\"explanation\":\"Amoxicillin is a beta-lactam antibiotic that targets peptidoglycan synthesis, leading to cell lysis. Organisms that completely lack peptidoglycan, such as Mycoplasma species, are naturally resistant to this mechanism of action [S1 p.5].\"},{\"id\":\"test-006\",\"question\":\"Which flagellar arrangement is characterized by a single flagellum located at one pole of the cell, as exemplified by Vibrio cholerae?\",\"choices\":[\"Peritrichous\",\"Amphitrichous\",\"Lophotrichous\",\"Monotrichous\"],\"answer\":\"Monotrichous\",\"explanation\":\"The monotrichous arrangement is defined by a single flagellum at one end (polar) of the bacterial cell, which is the specific flagellar pattern observed in Vibrio cholerae [S1 p.5].\"},{\"id\":\"test-007\",\"question\":\"What is the primary component of bacterial cell walls that is absent in archaea and eukaryotes?\",\"choices\":[\"Lipopolysaccharide\",\"Peptidoglycan\",\"Mycolic acid\",\"Teichoic acid\"],\"answer\":\"Peptidoglycan\",\"explanation\":\"The primary structural component of bacterial cell walls is peptidoglycan (also known as murein), which is a unique polymer composed of alternating N-acetylglucosamine (NAG) and N-acetylmuramic acid (NAM) sugar derivatives cross-linked by peptide bridges. This polymer is entirely absent in the cell walls of archaea and eukaryotic organisms, making it a distinctive target for antibacterial agents [S1 p.4].\"}]",
+      "contentJson": [
+        {
+          "id": "test-001",
+          "question": "Which of the following lists correctly identifies the four fundamental components shared by all cells, as defined?",
+          "choices": [
+            "Cytoplasm, plasma membrane, chromosomes, and ribosomes",
+            "Nucleoid, cell wall, flagella, and ribosomes",
+            "Cytoplasm, nucleus, DNA, and mitochondria",
+            "Plasma membrane, cell wall, cytoplasm, and plasmids"
+          ],
+          "answer": "Cytoplasm, plasma membrane, chromosomes, and ribosomes",
+          "explanation": "The text explicitly states that all cells share four fundamental components: cytoplasm (a gel-like aqueous solution), a plasma membrane (with selective permeability), one or more chromosomes (genetic blueprints), and ribosomes (for protein synthesis) [S1 p.1]. The other options include structures not shared by all cells (such as cell walls, nuclei, or mitochondria) or misidentify prokaryotic features."
+        },
+        {
+          "id": "test-002",
+          "question": "A microbiologist observes a bacterial sample under a microscope and notes cells arranged in cubical packets of eight or more cocci. What is this specific arrangement called?",
+          "choices": [
+            "Tetrads",
+            "Sarcinae",
+            "Streptococci",
+            "Staphylococci"
+          ],
+          "answer": "Sarcinae",
+          "explanation": "The text defines cellular arrangements based on the plane of cell division. It specifies that cubical packets of eight or more cocci are termed sarcinae [S1 p.1]. In contrast, tetrads are groups of four cocci in a square, streptococci are chains of cocci, and staphylococci are irregular clusters resembling bunches of grapes."
+        },
+        {
+          "id": "test-003",
+          "question": "In a clinical lab, a patient's wound culture grows Gram-positive, spore-forming, rod-shaped bacteria that produce potent neurotoxins. Which of the following genera is most likely responsible for the patient's infection?",
+          "choices": [
+            "Clostridium",
+            "Bacillus",
+            "Escherichia",
+            "Staphylococcus"
+          ],
+          "answer": "Clostridium",
+          "explanation": "The text notes that clinically significant spore-forming, Gram-positive genera include Bacillus and Clostridium [S1 p.3]. Among the choices, Clostridium is a genus of rod-shaped (bacillus) bacteria that includes species causing severe clinical conditions like tetanus (C. tetani) and botulism (C. botulinum) via potent neurotoxins [S1 p.3]. Escherichia is Gram-negative and non-spore-forming, and Staphylococcus is cocci-shaped and does not form endospores."
+        },
+        {
+          "id": "test-004",
+          "question": "According to the structural comparison of plasma membranes, what chemical linkage distinguishes bacterial and eukaryotic membranes from archaeal membranes?",
+          "choices": [
+            "Ether linkages",
+            "Ester linkages",
+            "Glycosidic bonds",
+            "Peptide bonds"
+          ],
+          "answer": "Ester linkages",
+          "explanation": "Bacterial and eukaryotic membranes utilize phospholipids formed with ester linkages, whereas archaeal membranes are characterized by phospholipids formed with ether linkages [S1 p.3]."
+        },
+        {
+          "id": "test-005",
+          "question": "A patient with pneumonia is prescribed a full course of amoxicillin but fails to recover. Which of the following causative agents would be completely unaffected by this drug because it entirely lacks a peptidoglycan cell wall?",
+          "choices": [
+            "Streptococcus pneumoniae",
+            "Mycoplasma pneumoniae",
+            "Staphylococcus aureus",
+            "Haemophilus influenzae"
+          ],
+          "answer": "Mycoplasma pneumoniae",
+          "explanation": "Amoxicillin is a beta-lactam antibiotic that targets peptidoglycan synthesis, leading to cell lysis. Organisms that completely lack peptidoglycan, such as Mycoplasma species, are naturally resistant to this mechanism of action [S1 p.5]."
+        },
+        {
+          "id": "test-006",
+          "question": "Which flagellar arrangement is characterized by a single flagellum located at one pole of the cell, as exemplified by Vibrio cholerae?",
+          "choices": [
+            "Peritrichous",
+            "Amphitrichous",
+            "Lophotrichous",
+            "Monotrichous"
+          ],
+          "answer": "Monotrichous",
+          "explanation": "The monotrichous arrangement is defined by a single flagellum at one end (polar) of the bacterial cell, which is the specific flagellar pattern observed in Vibrio cholerae [S1 p.5]."
+        },
+        {
+          "id": "test-007",
+          "question": "What is the primary component of bacterial cell walls that is absent in archaea and eukaryotes?",
+          "choices": [
+            "Lipopolysaccharide",
+            "Peptidoglycan",
+            "Mycolic acid",
+            "Teichoic acid"
+          ],
+          "answer": "Peptidoglycan",
+          "explanation": "The primary structural component of bacterial cell walls is peptidoglycan (also known as murein), which is a unique polymer composed of alternating N-acetylglucosamine (NAG) and N-acetylmuramic acid (NAM) sugar derivatives cross-linked by peptide bridges. This polymer is entirely absent in the cell walls of archaea and eukaryotic organisms, making it a distinctive target for antibacterial agents [S1 p.4]."
+        }
+      ],
+      "generatedAt": "",
+      "updatedAt": "",
+      "contentRevision": 1,
+      "annotationRevision": 1,
+      "revision": 1,
+      "isEdited": false,
+      "isPinned": false
+    },
+    "carded": {
+      "id": "prokaryotic-cell-carded",
+      "reviewerId": "",
+      "kind": "carded",
+      "content": "[{\"id\":\"card-001\",\"front\":\"What are the four fundamental components shared by all cells?\",\"back\":\"Four components shared by all cells are cytoplasm, a selectively permeable plasma membrane, genetic material (chromosomes), and ribosomes for protein synthesis [S1 p.1].\",\"kind\":\"basic\"},{\"id\":\"card-002\",\"front\":\"How do prokaryotes differ from eukaryotes?\",\"back\":\"Prokaryotes lack a nuclear membrane, have a single circular haploid chromosome, lack membrane-bound organelles, and are smaller than eukaryotes [S1 p.1].\",\"kind\":\"basic\"},{\"id\":\"card-003\",\"front\":\"What are plasmids and what genes do they commonly carry?\",\"back\":\"Plasmids are small, circular, double-stranded DNA molecules that are extrachromosomal, can number in the hundreds, and commonly carry advantageous genes such as antibiotic resistance [S1 p.2].\",\"kind\":\"basic\"},{\"id\":\"card-004\",\"front\":\"How do the ribosomes of prokaryotes, eukaryotes, and archaea differ in size and structure?\",\"back\":\"Prokaryotic ribosomes are 70S, whereas eukaryotic ribosomes are 80S. Archaeal ribosomes are structurally more similar to eukaryotic ribosomes than to bacterial ribosomes [S1 p.2].\",\"kind\":\"basic\"},{\"id\":\"card-005\",\"front\":\"How do cells with and without a cell wall respond in a hypertonic environment?\",\"back\":\"In a hypertonic environment, cells with a cell wall undergo plasmolysis (membrane detaches from the wall) while the wall remains intact. Cells without a cell wall undergo crenation (cell shrivels, membrane contracts and appears scalloped) [S1 p.1].\",\"kind\":\"basic\"},{\"id\":\"card-006\",\"front\":\"What are the two key characteristics of the plasma membrane according to the fluid mosaic model?\",\"back\":\"The plasma membrane is selectively permeable, controlling the passage of molecules into and out of the cell. It is described by the fluid mosaic model, which highlights its fluid, mosaic-like composition of lipids and proteins that can move laterally within the plane of the membrane. [S1 p.3]\",\"kind\":\"basic\"},{\"id\":\"card-007\",\"front\":\"Compare the chemical linkages and hydrocarbon chains of bacterial/eukaryotic membranes to archaeal membranes.\",\"back\":\"Bacterial and eukaryotic membranes contain phospholipids formed with ester linkages and have straight hydrocarbon chains, typically arranged in a standard phospholipid bilayer. [S1 p.3]\",\"kind\":\"basic\"},{\"id\":\"card-008\",\"front\":\"What are the unique structural features of archaeal membranes compared to bacterial and eukaryotic membranes?\",\"back\":\"Archaeal membranes contain phospholipids formed with ether linkages, have branched hydrocarbon chains, and can be structured as either a bilayer or a lipid monolayer. [S1 p.3]\",\"kind\":\"basic\"},{\"id\":\"card-009\",\"front\":\"How can PLFA profiles be used to differentiate between the three domains of life?\",\"back\":\"Phospholipid-derived fatty acid analysis (PLFA profiles) can be used to distinguish between Archaea, Bacteria, and Eukarya based on unique fatty acid signatures. [S1 p.3]\",\"kind\":\"basic\"},{\"id\":\"card-010\",\"front\":\"What is the primary component of bacterial cell walls, and what are its repeating sugar units?\",\"back\":\"Peptidoglycan (murein) is the primary component of bacterial cell walls, consisting of alternating N-acetylglucosamine (NAG) and N-acetylmuramic acid (NAM) sugar derivatives cross-linked by peptide bridges. [S1 p.4]\",\"kind\":\"basic\"},{\"id\":\"card-011\",\"front\":\"What is a glycocalyx, what are its two forms, and what are its functions?\",\"back\":\"A sugar coat found outside the cell wall, existing in two forms: capsule (organized, tightly bound) and slime layer (loose, unorganized, easily washed off). It aids in adherence, biofilm formation, protection from desiccation, predation, antibiotics, and disinfectants. Capsules also enhance pathogenicity by helping bacteria evade phagocytosis (e.g., Streptococcus pneumoniae). [S1 p.5]\",\"kind\":\"basic\"},{\"id\":\"card-012\",\"front\":\"What mechanism do beta-lactam antibiotics such as amoxicillin use to kill bacteria?\",\"back\":\"Beta-lactam antibiotics target the peptidoglycan layer of bacterial cell walls, leading to cell lysis [S1 p.5].\",\"kind\":\"basic\"}]",
+      "contentJson": [
+        {
+          "id": "card-001",
+          "front": "What are the four fundamental components shared by all cells?",
+          "back": "Four components shared by all cells are cytoplasm, a selectively permeable plasma membrane, genetic material (chromosomes), and ribosomes for protein synthesis [S1 p.1].",
+          "kind": "basic"
+        },
+        {
+          "id": "card-002",
+          "front": "How do prokaryotes differ from eukaryotes?",
+          "back": "Prokaryotes lack a nuclear membrane, have a single circular haploid chromosome, lack membrane-bound organelles, and are smaller than eukaryotes [S1 p.1].",
+          "kind": "basic"
+        },
+        {
+          "id": "card-003",
+          "front": "What are plasmids and what genes do they commonly carry?",
+          "back": "Plasmids are small, circular, double-stranded DNA molecules that are extrachromosomal, can number in the hundreds, and commonly carry advantageous genes such as antibiotic resistance [S1 p.2].",
+          "kind": "basic"
+        },
+        {
+          "id": "card-004",
+          "front": "How do the ribosomes of prokaryotes, eukaryotes, and archaea differ in size and structure?",
+          "back": "Prokaryotic ribosomes are 70S, whereas eukaryotic ribosomes are 80S. Archaeal ribosomes are structurally more similar to eukaryotic ribosomes than to bacterial ribosomes [S1 p.2].",
+          "kind": "basic"
+        },
+        {
+          "id": "card-005",
+          "front": "How do cells with and without a cell wall respond in a hypertonic environment?",
+          "back": "In a hypertonic environment, cells with a cell wall undergo plasmolysis (membrane detaches from the wall) while the wall remains intact. Cells without a cell wall undergo crenation (cell shrivels, membrane contracts and appears scalloped) [S1 p.1].",
+          "kind": "basic"
+        },
+        {
+          "id": "card-006",
+          "front": "What are the two key characteristics of the plasma membrane according to the fluid mosaic model?",
+          "back": "The plasma membrane is selectively permeable, controlling the passage of molecules into and out of the cell. It is described by the fluid mosaic model, which highlights its fluid, mosaic-like composition of lipids and proteins that can move laterally within the plane of the membrane. [S1 p.3]",
+          "kind": "basic"
+        },
+        {
+          "id": "card-007",
+          "front": "Compare the chemical linkages and hydrocarbon chains of bacterial/eukaryotic membranes to archaeal membranes.",
+          "back": "Bacterial and eukaryotic membranes contain phospholipids formed with ester linkages and have straight hydrocarbon chains, typically arranged in a standard phospholipid bilayer. [S1 p.3]",
+          "kind": "basic"
+        },
+        {
+          "id": "card-008",
+          "front": "What are the unique structural features of archaeal membranes compared to bacterial and eukaryotic membranes?",
+          "back": "Archaeal membranes contain phospholipids formed with ether linkages, have branched hydrocarbon chains, and can be structured as either a bilayer or a lipid monolayer. [S1 p.3]",
+          "kind": "basic"
+        },
+        {
+          "id": "card-009",
+          "front": "How can PLFA profiles be used to differentiate between the three domains of life?",
+          "back": "Phospholipid-derived fatty acid analysis (PLFA profiles) can be used to distinguish between Archaea, Bacteria, and Eukarya based on unique fatty acid signatures. [S1 p.3]",
+          "kind": "basic"
+        },
+        {
+          "id": "card-010",
+          "front": "What is the primary component of bacterial cell walls, and what are its repeating sugar units?",
+          "back": "Peptidoglycan (murein) is the primary component of bacterial cell walls, consisting of alternating N-acetylglucosamine (NAG) and N-acetylmuramic acid (NAM) sugar derivatives cross-linked by peptide bridges. [S1 p.4]",
+          "kind": "basic"
+        },
+        {
+          "id": "card-011",
+          "front": "What is a glycocalyx, what are its two forms, and what are its functions?",
+          "back": "A sugar coat found outside the cell wall, existing in two forms: capsule (organized, tightly bound) and slime layer (loose, unorganized, easily washed off). It aids in adherence, biofilm formation, protection from desiccation, predation, antibiotics, and disinfectants. Capsules also enhance pathogenicity by helping bacteria evade phagocytosis (e.g., Streptococcus pneumoniae). [S1 p.5]",
+          "kind": "basic"
+        },
+        {
+          "id": "card-012",
+          "front": "What mechanism do beta-lactam antibiotics such as amoxicillin use to kill bacteria?",
+          "back": "Beta-lactam antibiotics target the peptidoglycan layer of bacterial cell walls, leading to cell lysis [S1 p.5].",
+          "kind": "basic"
+        }
+      ],
+      "generatedAt": "",
+      "updatedAt": "",
+      "contentRevision": 1,
+      "annotationRevision": 1,
+      "revision": 1,
+      "isEdited": false,
+      "isPinned": false
+    },
+    "currentGenerationRunId": null,
+    "staleKinds": []
+  },
+  "cards": [
+    {
+      "id": "card-001",
+      "front": "What are the four fundamental components shared by all cells?",
+      "back": "Four components shared by all cells are cytoplasm, a selectively permeable plasma membrane, genetic material (chromosomes), and ribosomes for protein synthesis [S1 p.1].",
+      "kind": "basic"
+    },
+    {
+      "id": "card-002",
+      "front": "How do prokaryotes differ from eukaryotes?",
+      "back": "Prokaryotes lack a nuclear membrane, have a single circular haploid chromosome, lack membrane-bound organelles, and are smaller than eukaryotes [S1 p.1].",
+      "kind": "basic"
+    },
+    {
+      "id": "card-003",
+      "front": "What are plasmids and what genes do they commonly carry?",
+      "back": "Plasmids are small, circular, double-stranded DNA molecules that are extrachromosomal, can number in the hundreds, and commonly carry advantageous genes such as antibiotic resistance [S1 p.2].",
+      "kind": "basic"
+    },
+    {
+      "id": "card-004",
+      "front": "How do the ribosomes of prokaryotes, eukaryotes, and archaea differ in size and structure?",
+      "back": "Prokaryotic ribosomes are 70S, whereas eukaryotic ribosomes are 80S. Archaeal ribosomes are structurally more similar to eukaryotic ribosomes than to bacterial ribosomes [S1 p.2].",
+      "kind": "basic"
+    },
+    {
+      "id": "card-005",
+      "front": "How do cells with and without a cell wall respond in a hypertonic environment?",
+      "back": "In a hypertonic environment, cells with a cell wall undergo plasmolysis (membrane detaches from the wall) while the wall remains intact. Cells without a cell wall undergo crenation (cell shrivels, membrane contracts and appears scalloped) [S1 p.1].",
+      "kind": "basic"
+    },
+    {
+      "id": "card-006",
+      "front": "What are the two key characteristics of the plasma membrane according to the fluid mosaic model?",
+      "back": "The plasma membrane is selectively permeable, controlling the passage of molecules into and out of the cell. It is described by the fluid mosaic model, which highlights its fluid, mosaic-like composition of lipids and proteins that can move laterally within the plane of the membrane. [S1 p.3]",
+      "kind": "basic"
+    },
+    {
+      "id": "card-007",
+      "front": "Compare the chemical linkages and hydrocarbon chains of bacterial/eukaryotic membranes to archaeal membranes.",
+      "back": "Bacterial and eukaryotic membranes contain phospholipids formed with ester linkages and have straight hydrocarbon chains, typically arranged in a standard phospholipid bilayer. [S1 p.3]",
+      "kind": "basic"
+    },
+    {
+      "id": "card-008",
+      "front": "What are the unique structural features of archaeal membranes compared to bacterial and eukaryotic membranes?",
+      "back": "Archaeal membranes contain phospholipids formed with ether linkages, have branched hydrocarbon chains, and can be structured as either a bilayer or a lipid monolayer. [S1 p.3]",
+      "kind": "basic"
+    },
+    {
+      "id": "card-009",
+      "front": "How can PLFA profiles be used to differentiate between the three domains of life?",
+      "back": "Phospholipid-derived fatty acid analysis (PLFA profiles) can be used to distinguish between Archaea, Bacteria, and Eukarya based on unique fatty acid signatures. [S1 p.3]",
+      "kind": "basic"
+    },
+    {
+      "id": "card-010",
+      "front": "What is the primary component of bacterial cell walls, and what are its repeating sugar units?",
+      "back": "Peptidoglycan (murein) is the primary component of bacterial cell walls, consisting of alternating N-acetylglucosamine (NAG) and N-acetylmuramic acid (NAM) sugar derivatives cross-linked by peptide bridges. [S1 p.4]",
+      "kind": "basic"
+    },
+    {
+      "id": "card-011",
+      "front": "What is a glycocalyx, what are its two forms, and what are its functions?",
+      "back": "A sugar coat found outside the cell wall, existing in two forms: capsule (organized, tightly bound) and slime layer (loose, unorganized, easily washed off). It aids in adherence, biofilm formation, protection from desiccation, predation, antibiotics, and disinfectants. Capsules also enhance pathogenicity by helping bacteria evade phagocytosis (e.g., Streptococcus pneumoniae). [S1 p.5]",
+      "kind": "basic"
+    },
+    {
+      "id": "card-012",
+      "front": "What mechanism do beta-lactam antibiotics such as amoxicillin use to kill bacteria?",
+      "back": "Beta-lactam antibiotics target the peptidoglycan layer of bacterial cell walls, leading to cell lysis [S1 p.5].",
+      "kind": "basic"
+    }
+  ],
+  "testItems": [
+    {
+      "id": "test-001",
+      "question": "Which of the following lists correctly identifies the four fundamental components shared by all cells, as defined?",
+      "choices": [
+        "Cytoplasm, plasma membrane, chromosomes, and ribosomes",
+        "Nucleoid, cell wall, flagella, and ribosomes",
+        "Cytoplasm, nucleus, DNA, and mitochondria",
+        "Plasma membrane, cell wall, cytoplasm, and plasmids"
+      ],
+      "answer": "Cytoplasm, plasma membrane, chromosomes, and ribosomes",
+      "explanation": "The text explicitly states that all cells share four fundamental components: cytoplasm (a gel-like aqueous solution), a plasma membrane (with selective permeability), one or more chromosomes (genetic blueprints), and ribosomes (for protein synthesis) [S1 p.1]. The other options include structures not shared by all cells (such as cell walls, nuclei, or mitochondria) or misidentify prokaryotic features."
+    },
+    {
+      "id": "test-002",
+      "question": "A microbiologist observes a bacterial sample under a microscope and notes cells arranged in cubical packets of eight or more cocci. What is this specific arrangement called?",
+      "choices": [
+        "Tetrads",
+        "Sarcinae",
+        "Streptococci",
+        "Staphylococci"
+      ],
+      "answer": "Sarcinae",
+      "explanation": "The text defines cellular arrangements based on the plane of cell division. It specifies that cubical packets of eight or more cocci are termed sarcinae [S1 p.1]. In contrast, tetrads are groups of four cocci in a square, streptococci are chains of cocci, and staphylococci are irregular clusters resembling bunches of grapes."
+    },
+    {
+      "id": "test-003",
+      "question": "In a clinical lab, a patient's wound culture grows Gram-positive, spore-forming, rod-shaped bacteria that produce potent neurotoxins. Which of the following genera is most likely responsible for the patient's infection?",
+      "choices": [
+        "Clostridium",
+        "Bacillus",
+        "Escherichia",
+        "Staphylococcus"
+      ],
+      "answer": "Clostridium",
+      "explanation": "The text notes that clinically significant spore-forming, Gram-positive genera include Bacillus and Clostridium [S1 p.3]. Among the choices, Clostridium is a genus of rod-shaped (bacillus) bacteria that includes species causing severe clinical conditions like tetanus (C. tetani) and botulism (C. botulinum) via potent neurotoxins [S1 p.3]. Escherichia is Gram-negative and non-spore-forming, and Staphylococcus is cocci-shaped and does not form endospores."
+    },
+    {
+      "id": "test-004",
+      "question": "According to the structural comparison of plasma membranes, what chemical linkage distinguishes bacterial and eukaryotic membranes from archaeal membranes?",
+      "choices": [
+        "Ether linkages",
+        "Ester linkages",
+        "Glycosidic bonds",
+        "Peptide bonds"
+      ],
+      "answer": "Ester linkages",
+      "explanation": "Bacterial and eukaryotic membranes utilize phospholipids formed with ester linkages, whereas archaeal membranes are characterized by phospholipids formed with ether linkages [S1 p.3]."
+    },
+    {
+      "id": "test-005",
+      "question": "A patient with pneumonia is prescribed a full course of amoxicillin but fails to recover. Which of the following causative agents would be completely unaffected by this drug because it entirely lacks a peptidoglycan cell wall?",
+      "choices": [
+        "Streptococcus pneumoniae",
+        "Mycoplasma pneumoniae",
+        "Staphylococcus aureus",
+        "Haemophilus influenzae"
+      ],
+      "answer": "Mycoplasma pneumoniae",
+      "explanation": "Amoxicillin is a beta-lactam antibiotic that targets peptidoglycan synthesis, leading to cell lysis. Organisms that completely lack peptidoglycan, such as Mycoplasma species, are naturally resistant to this mechanism of action [S1 p.5]."
+    },
+    {
+      "id": "test-006",
+      "question": "Which flagellar arrangement is characterized by a single flagellum located at one pole of the cell, as exemplified by Vibrio cholerae?",
+      "choices": [
+        "Peritrichous",
+        "Amphitrichous",
+        "Lophotrichous",
+        "Monotrichous"
+      ],
+      "answer": "Monotrichous",
+      "explanation": "The monotrichous arrangement is defined by a single flagellum at one end (polar) of the bacterial cell, which is the specific flagellar pattern observed in Vibrio cholerae [S1 p.5]."
+    },
+    {
+      "id": "test-007",
+      "question": "What is the primary component of bacterial cell walls that is absent in archaea and eukaryotes?",
+      "choices": [
+        "Lipopolysaccharide",
+        "Peptidoglycan",
+        "Mycolic acid",
+        "Teichoic acid"
+      ],
+      "answer": "Peptidoglycan",
+      "explanation": "The primary structural component of bacterial cell walls is peptidoglycan (also known as murein), which is a unique polymer composed of alternating N-acetylglucosamine (NAG) and N-acetylmuramic acid (NAM) sugar derivatives cross-linked by peptide bridges. This polymer is entirely absent in the cell walls of archaea and eukaryotic organisms, making it a distinctive target for antibacterial agents [S1 p.4]."
+    }
+  ],
+  "sources": [
+    {
+      "id": "source-1",
+      "label": "OpenStax Microbiology §3.3",
+      "pages": [
+        {
+          "n": 1,
+          "text": "## 3.3 Unique Characteristics of Prokaryotic Cells\n\n### Learning Objectives\n\nBy the end of this section, you will be able to:\n\n- Explain the distinguishing characteristics of prokaryotic cells\n\n- Describe common cell morphologies and cellular arrangements typical of prokaryotic cells and explain how cells maintain their morphology\n\n- Describe internal and external structures of prokaryotic cells in terms of their physical structure, chemical structure, and function\n\n- Compare the distinguishing characteristics of bacterial and archaeal cells\n\nCell theory states that the cell is the fundamental unit of life. However, cells vary significantly in size, shape, structure, and function. At the simplest level of construction, all cells possess a few fundamental components. These include cytoplasm (a gel-like substance composed of water and dissolved chemicals needed for growth), which is contained within a plasma membrane (also called a cell membrane or cytoplasmic membrane); one or more chromosomes, which contain the genetic blueprints of the cell; and ribosomes, organelles used for the production of proteins.\n\nBeyond these basic components, cells can vary greatly between organisms, and even within the same multicellular organism. The two largest categories of cells—prokaryotic cells and eukaryotic cells—are defined by major differences in several cell structures. Prokaryotic cells lack a nucleus surrounded by a complex nuclear membrane and generally have a single, circular chromosome located in a nucleoid. Eukaryotic cells have a nucleus surrounded by a complex nuclear membrane that contains multiple, rod-shaped chromosomes.16\n\nAll plant cells and animal cells are eukaryotic. Some microorganisms are composed of prokaryotic cells, whereas others are composed of eukaryotic cells. Prokaryotic microorganisms are classified within the domains Archaea and Bacteria, whereas eukaryotic organisms are classified within the domain Eukarya.\n\nThe structures inside a cell are analogous to the organs inside a human body, with unique structures suited to specific functions. Some of the structures found in prokaryotic cells are similar to those found in some eukaryotic cells; others are unique to prokaryotes. Although there are some exceptions, eukaryotic cells tend to be larger than prokaryotic cells. The comparatively larger size of eukaryotic cells dictates the need to compartmentalize various chemical processes within different areas of the cell, using complex membrane-bound organelles. In contrast, prokaryotic cells generally lack membrane-bound organelles; however, they often contain inclusions that compartmentalize their cytoplasm. Figure 3.12 illustrates structures typically associated with prokaryotic cells. These structures are described in more detail in the next section.\n\n### Common Cell Morphologies and Arrangements\n\nIndividual cells of a particular prokaryotic organism are typically similar in shape, or cell morphology. Although thousands of prokaryotic organisms have been identified, only a handful of cell morphologies are commonly seen microscopically. Figure 3.13 names and illustrates cell morphologies commonly found in prokaryotic cells. In addition to cellular shape, prokaryotic cells of the same species may group together in certain distinctive arrangements depending on the plane of cell division. Some common arrangements are shown in Figure 3.14.\n\nIn most prokaryotic cells, morphology is maintained by the cell wall in combination with cytoskeletal elements. The cell wall is a structure found in most prokaryotes and some eukaryotes; it envelopes the cell membrane, protecting the cell from changes in osmotic pressure (Figure 3.15). Osmotic pressure occurs because of differences in the concentration of solutes on opposing sides of a semipermeable membrane. Water is able to pass through a semipermeable membrane, but solutes (dissolved molecules like salts, sugars, and other compounds) cannot. When the concentration of solutes is greater on one side of the membrane, water diffuses across the membrane from the side with the lower concentration (more water) to the side with the higher concentration (less water) until the concentrations on both sides become equal. This diffusion of water is called osmosis, and it can cause extreme osmotic pressure on a cell when its external environment changes.\n\nThe external environment of a cell can be described as an isotonic, hypertonic, or hypotonic medium. In an isotonic medium, the solute concentrations inside and outside the cell are approximately equal, so there is no net movement of water across the cell membrane. In a hypertonic medium, the solute concentration outside the cell exceeds that inside the cell, so water diffuses out of the cell and into the external medium. In a hypotonic medium, the solute concentration inside the cell exceeds that outside of the cell, so water will move by osmosis into the cell. This causes the cell to swell and potentially lyse, or burst.\n\nThe degree to which a particular cell is able to withstand changes in osmotic pressure is called tonicity. Cells that have a cell wall are better able to withstand subtle changes in osmotic pressure and maintain their shape. In hypertonic environments, cells that lack a cell wall can become dehydrated, causing crenation, or shriveling of the cell; the plasma membrane contracts and appears scalloped or notched (Figure 3.15). By contrast, cells that possess a cell wall undergo plasmolysis rather than crenation. In plasmolysis, the plasma membrane contracts and detaches from the cell wall, and there is a decrease in interior volume, but the cell wall remains intact, thus allowing the cell to maintain some shape and integrity for a period of time (Figure 3.16). Likewise, cells that lack a cell wall are more prone to lysis in hypotonic environments. The presence of a cell wall allows the cell to maintain its shape and integrity for a longer time before lysing (Figure 3.16)."
+        },
+        {
+          "n": 2,
+          "text": "### Check Your Understanding\n\n- Explain the difference between cell morphology and arrangement.\n\n- What advantages do cell walls provide prokaryotic cells?\n\n### The Nucleoid\n\nAll cellular life has a DNA genome organized into one or more chromosomes. Prokaryotic chromosomes are typically circular, haploid (unpaired), and not bound by a complex nuclear membrane. Prokaryotic DNA and DNA-associated proteins are concentrated within the nucleoid region of the cell (Figure 3.17). In general, prokaryotic DNA interacts with nucleoid-associated proteins (NAPs) that assist in the organization and packaging of the chromosome. In bacteria, NAPs function similar to histones, which are the DNA-organizing proteins found in eukaryotic cells. In archaea, the nucleoid is organized by either NAPs or histone-like DNA organizing proteins.\n\n### Plasmids\n\nProkaryotic cells may also contain extrachromosomal DNA, or DNA that is not part of the chromosome. This extrachromosomal DNA is found in plasmids, which are small, circular, double-stranded DNA molecules. Cells that have plasmids often have hundreds of them within a single cell. Plasmids are more commonly found in bacteria; however, plasmids have been found in archaea and eukaryotic organisms. Plasmids often carry genes that confer advantageous traits such as antibiotic resistance; thus, they are important to the survival of the organism. We will discuss plasmids in more detail in Mechanisms of Microbial Genetics.\n\n### Ribosomes\n\nAll cellular life synthesizes proteins, and organisms in all three domains of life possess ribosomes, structures responsible for protein synthesis. However, ribosomes in each of the three domains are structurally different. Ribosomes, themselves, are constructed from proteins, along with ribosomal RNA (rRNA). Prokaryotic ribosomes are found in the cytoplasm. They are called 70S ribosomes because they have a size of 70S (Figure 3.18), whereas eukaryotic cytoplasmic ribosomes have a size of 80S. (The S stands for Svedberg unit, a measure of sedimentation in an ultracentrifuge, which is based on size, shape, and surface qualities of the structure being analyzed). Although they are the same size, bacterial and archaeal ribosomes have different proteins and rRNA molecules, and the archaeal versions are more similar to their eukaryotic counterparts than to those found in bacteria.\n\n### Inclusions\n\nAs single-celled organisms living in unstable environments, some prokaryotic cells have the ability to store excess nutrients within cytoplasmic structures called inclusions. Storing nutrients in a polymerized form is advantageous because it reduces the buildup of osmotic pressure that occurs as a cell accumulates solutes. Various types of inclusions store glycogen and starches, which contain carbon that cells can access for energy. Volutin granules, also called metachromatic granules because of their staining characteristics, are inclusions that store polymerized inorganic phosphate that can be used in metabolism and assist in the formation of biofilms. Microbes known to contain volutin granules include the archaea Methanosarcina, the bacterium Corynebacterium diphtheriae, and the unicellular eukaryotic alga Chlamydomonas. Sulfur granules, another type of inclusion, are found in sulfur bacteria of the genus Thiobacillus; these granules store elemental sulfur, which the bacteria use for metabolism.\n\nOccasionally, certain types of inclusions are surrounded by a phospholipid monolayer embedded with protein. Polyhydroxybutyrate (PHB), which can be produced by species of Bacillus and Pseudomonas, is an example of an inclusion that displays this type of monolayer structure. Industrially, PHB has also been used as a source of biodegradable polymers for bioplastics. Several different types of inclusions are shown in Figure 3.19.\n\nSome prokaryotic cells have other types of inclusions that serve purposes other than nutrient storage. For example, some prokaryotic cells produce gas vacuoles, accumulations of small, protein-lined vesicles of gas. These gas vacuoles allow the prokaryotic cells that synthesize them to alter their buoyancy so that they can adjust their location in the water column. Magnetotactic bacteria, such as Magnetospirillum magnetotacticum, contain magnetosomes, which are inclusions of magnetic iron oxide or iron sulfide surrounded by a lipid layer. These allow cells to align along a magnetic field, aiding their movement (Figure 3.19). Cyanobacteria such as Anabaena cylindrica and bacteria such as Halothiobacillus neapolitanus produce carboxysome inclusions. Carboxysomes are composed of outer shells of thousands of protein subunits. Their interior is filled with ribulose-1,5-bisphosphate carboxylase/oxygenase (RuBisCO) and carbonic anhydrase. Both of these compounds are used for carbon metabolism. Some prokaryotic cells also possess carboxysomes that sequester functionally related enzymes in one location. These structures are considered proto-organelles because they compartmentalize important compounds or chemical reactions, much like many eukaryotic organelles."
+        },
+        {
+          "n": 3,
+          "text": "### Endospores\n\nBacterial cells are generally observed as vegetative cells, but some genera of bacteria have the ability to form endospores, structures that essentially protect the bacterial genome in a dormant state when environmental conditions are unfavorable. Endospores (not to be confused with the reproductive spores formed by fungi) allow some bacterial cells to survive long periods without food or water, as well as exposure to chemicals, extreme temperatures, and even radiation. Table 3.1 compares the characteristics of vegetative cells and endospores.\n\nThe process by which vegetative cells transform into endospores is called sporulation, and it generally begins when nutrients become depleted or environmental conditions become otherwise unfavorable (Figure 3.20). The process begins with the formation of a septum in the vegetative bacterial cell. The septum divides the cell asymmetrically, separating a DNA forespore from the mother cell. The forespore, which will form the core of the endospore, is essentially a copy of the cell’s chromosomes, and is separated from the mother cell by a second membrane. A cortex gradually forms around the forespore by laying down layers of calcium and dipicolinic acid between membranes. A protein coat then forms around the cortex while the DNA of the mother cell disintegrates. Further maturation of the endospore occurs with the formation of an outermost exosporium. The endospore is released upon disintegration of the mother cell, completing sporulation.\n\nEndospores of certain species have been shown to persist in a dormant state for extended periods of time, up to thousands of years.17 However, when living conditions improve, endospores undergo germination, reentering a vegetative state. After germination, the cell becomes metabolically active again and is able to carry out all of its normal functions, including growth and cell division.\n\nNot all bacteria have the ability to form endospores; however, there are a number of clinically significant endospore-forming gram-positive bacteria of the genera Bacillus and Clostridium. These include B. anthracis, the causative agent of anthrax, which produces endospores capable of surviving for many decades18; C. tetani (causes tetanus); C. perfringens (causes gas gangrene); and C. botulinum (causes botulism). Clostridioides difficile is a distant relative causing pseudomembranous colitis. Pathogens such as these are particularly difficult to combat because their endospores are so hard to kill. Special sterilization methods for endospore-forming bacteria are discussed in Control of Microbial Growth.\n\n### Check Your Understanding\n\n- What is an inclusion?\n\n- What is the function of an endospore?\n\n### Plasma Membrane\n\nStructures that enclose the cytoplasm and internal structures of the cell are known collectively as the cell envelope. In prokaryotic cells, the structures of the cell envelope vary depending on the type of cell and organism. Most (but not all) prokaryotic cells have a cell wall, but the makeup of this cell wall varies. All cells (prokaryotic and eukaryotic) have a plasma membrane (also called cytoplasmic membrane or cell membrane) that exhibits selective permeability, allowing some molecules to enter or leave the cell while restricting the passage of others.\n\nThe structure of the plasma membrane is often described in terms of the fluid mosaic model, which refers to the ability of membrane components to move fluidly within the plane of the membrane, as well as the mosaic-like composition of the components, which include a diverse array of lipid and protein components (Figure 3.21). The plasma membrane structure of most bacterial and eukaryotic cell types is a bilayer composed mainly of phospholipids formed with ester linkages and proteins. These phospholipids and proteins have the ability to move laterally within the plane of the membranes as well as between the two phospholipid layers.\n\nArchaeal membranes are fundamentally different from bacterial and eukaryotic membranes in a few significant ways. First, archaeal membrane phospholipids are formed with ether linkages, in contrast to the ester linkages found in bacterial or eukaryotic cell membranes. Second, archaeal phospholipids have branched chains, whereas those of bacterial and eukaryotic cells are straight chained. Finally, although some archaeal membranes can be formed of bilayers like those found in bacteria and eukaryotes, other archaeal plasma membranes are lipid monolayers.\n\nProteins on the cell’s surface are important for a variety of functions, including cell-to-cell communication, and sensing environmental conditions and pathogenic virulence factors. Membrane proteins and phospholipids may have carbohydrates (sugars) associated with them and are called glycoproteins or glycolipids, respectively. These glycoprotein and glycolipid complexes extend out from the surface of the cell, allowing the cell to interact with the external environment (Figure 3.21). Glycoproteins and glycolipids in the plasma membrane can vary considerably in chemical composition among archaea, bacteria, and eukaryotes, allowing scientists to use them to characterize unique species.\n\nPlasma membranes from different cells types also contain unique phospholipids, which contain fatty acids. As described in Using Biochemistry to Identify Microorganisms, phospholipid-derived fatty acid analysis (PLFA) profiles can be used to identify unique types of cells based on differences in fatty acids. Archaea, bacteria, and eukaryotes each have a unique PFLA profile."
+        },
+        {
+          "n": 4,
+          "text": "#### Membrane Transport Mechanisms\n\nOne of the most important functions of the plasma membrane is to control the transport of molecules into and out of the cell. Internal conditions must be maintained within a certain range despite any changes in the external environment. The transport of substances across the plasma membrane allows cells to do so.\n\nCells use various modes of transport across the plasma membrane. For example, molecules moving from a higher concentration to a lower concentration with the concentration gradient are transported by simple diffusion, also known as passive transport (Figure 3.22). Some small molecules, like carbon dioxide, may cross the membrane bilayer directly by simple diffusion. However, charged molecules, as well as large molecules, need the help of carriers or channels in the membrane. These structures ferry molecules across the membrane, a process known as facilitated diffusion (Figure 3.23).\n\nActive transport occurs when cells move molecules across their membrane against concentration gradients (Figure 3.24). A major difference between passive and active transport is that active transport requires adenosine triphosphate (ATP) or other forms of energy to move molecules “uphill.” Therefore, active transport structures are often called “pumps.”\n\nGroup translocation also transports substances into bacterial cells. In this case, as a molecule moves into a cell against its concentration gradient, it is chemically modified so that it does not require transport against an unfavorable concentration gradient. A common example of this is the bacterial phosphotransferase system, a series of carriers that phosphorylates (i.e., adds phosphate ions to) glucose or other sugars upon entry into cells. Since the phosphorylation of sugars is required during the early stages of sugar metabolism, the phosphotransferase system is considered to be an energy neutral system.\n\n#### Photosynthetic Membrane Structures\n\nSome prokaryotic cells, namely cyanobacteria and photosynthetic bacteria, have membrane structures that enable them to perform photosynthesis. These structures consist of an infolding of the plasma membrane that encloses photosynthetic pigments such as green chlorophylls and bacteriochlorophylls. In cyanobacteria, these membrane structures are called thylakoids; in photosynthetic bacteria, they are called chromatophores, lamellae, or chlorosomes.\n\n### Cell Wall\n\nThe primary function of the cell wall is to protect the cell from harsh conditions in the outside environment. When present, there are notable similarities and differences among the cell walls of archaea, bacteria, and eukaryotes.\n\nThe major component of bacterial cell walls is called peptidoglycan (or murein); it is only found in bacteria. Structurally, peptidoglycan resembles a layer of meshwork or fabric (Figure 3.25). Each layer is composed of long chains of alternating molecules of N-acetylglucosamine (NAG) and N-acetylmuramic acid (NAM). The structure of the long chains has significant two-dimensional tensile strength due to the formation of peptide bridges that connect NAG and NAM within each peptidoglycan layer. In gram-negative bacteria, tetrapeptide chains extending from each NAM unit are directly cross-linked, whereas in gram-positive bacteria, these tetrapeptide chains are linked by pentaglycine cross-bridges. Peptidoglycan subunits are made inside of the bacterial cell and then exported and assembled in layers, giving the cell its shape.\n\nSince peptidoglycan is unique to bacteria, many antibiotic drugs are designed to interfere with peptidoglycan synthesis, weakening the cell wall and making bacterial cells more susceptible to the effects of osmotic pressure (see Mechanisms of Antibacterial Drugs). In addition, certain cells of the human immune system are able “recognize” bacterial pathogens by detecting peptidoglycan on the surface of a bacterial cell; these cells then engulf and destroy the bacterial cell, using enzymes such as lysozyme, which breaks down and digests the peptidoglycan in their cell walls (see Pathogen Recognition and Phagocytosis).\n\nThe Gram staining protocol (see Staining Microscopic Specimens) is used to differentiate two common types of cell wall structures (Figure 3.26). Gram-positive cells have a cell wall consisting of many layers of peptidoglycan totaling 30–100 nm in thickness. These peptidoglycan layers are commonly embedded with teichoic acids (TAs), carbohydrate chains that extend through and beyond the peptidoglycan layer.19 TA is thought to stabilize peptidoglycan by increasing its rigidity. TA also plays a role in the ability of pathogenic gram-positive bacteria such as Streptococcus to bind to certain proteins on the surface of host cells, enhancing their ability to cause infection. In addition to peptidoglycan and TAs, bacteria of the family Mycobacteriaceae have an external layer of waxy mycolic acids in their cell wall; as described in Staining Microscopic Specimens, these bacteria are referred to as acid-fast, since acid-fast stains must be used to penetrate the mycolic acid layer for purposes of microscopy (Figure 3.27).\n\nGram-negative cells have a much thinner layer of peptidoglycan (no more than about 4 nm thick21) than gram-positive cells, and the overall structure of their cell envelope is more complex. In gram-negative cells, a gel-like matrix occupies the periplasmic space between the cell wall and the plasma membrane, and there is a second lipid bilayer called the outer membrane, which is external to the peptidoglycan layer (Figure 3.26). This outer membrane is attached to the peptidoglycan by murein lipoprotein. The outer leaflet of the outer membrane contains the molecule lipopolysaccharide (LPS), which functions as an endotoxin in infections involving gram-negative bacteria, contributing to symptoms such as fever, hemorrhaging, and septic shock. Each LPS molecule is composed of Lipid A, a core polysaccharide, and an O side chain that is composed of sugar-like molecules that comprise the external face of the LPS (Figure 3.28). The composition of the O side chain varies between different species and strains of bacteria. Parts of the O side chain called antigens can be detected using serological or immunological tests to identify specific pathogenic strains like Escherichia coli O157:H7, a deadly strain of bacteria that causes bloody diarrhea and kidney failure.\n\nArchaeal cell wall structure differs from that of bacteria in several significant ways. First, archaeal cell walls do not contain peptidoglycan; instead, they contain a similar polymer called pseudopeptidoglycan (pseudomurein) in which NAM is replaced with a different subunit. Other archaea may have a layer of glycoproteins or polysaccharides that serves as the cell wall instead of pseudopeptidoglycan. Last, as is the case with some bacterial species, there are a few archaea that appear to lack cell walls entirely."
+        },
+        {
+          "n": 5,
+          "text": "### Glycocalyces and S-Layers\n\nAlthough most prokaryotic cells have cell walls, some may have additional cell envelope structures exterior to the cell wall, such as glycocalyces and S-layers. A glycocalyx is a sugar coat, of which there are two important types: capsules and slime layers. A capsule is an organized layer located outside of the cell wall and usually composed of polysaccharides or proteins (Figure 3.29). A slime layer is a less tightly organized layer that is only loosely attached to the cell wall and can be more easily washed off. Slime layers may be composed of polysaccharides, glycoproteins, or glycolipids.\n\nGlycocalyces allows cells to adhere to surfaces, aiding in the formation of biofilms (colonies of microbes that form in layers on surfaces). In nature, most microbes live in mixed communities within biofilms, partly because the biofilm affords them some level of protection. Biofilms generally hold water like a sponge, preventing desiccation. They also protect cells from predation and hinder the action of antibiotics and disinfectants. All of these properties are advantageous to the microbes living in a biofilm, but they present challenges in a clinical setting, where the goal is often to eliminate microbes.\n\nThe ability to produce a capsule can contribute to a microbe’s pathogenicity (ability to cause disease) because the capsule can make it more difficult for phagocytic cells (such as white blood cells) to engulf and kill the microorganism. Streptococcus pneumoniae, for example, produces a capsule that is well known to aid in this bacterium’s pathogenicity. As explained in Staining Microscopic specimens, capsules are difficult to stain for microscopy; negative staining techniques are typically used.\n\nAn S-layer is another type of cell envelope structure; it is composed of a mixture of structural proteins and glycoproteins. In bacteria, S-layers are found outside the cell wall, but in some archaea, the S-layer serves as the cell wall. The exact function of S-layers is not entirely understood, and they are difficult to study; but available evidence suggests that they may play a variety of functions in different prokaryotic cells, such as helping the cell withstand osmotic pressure and, for certain pathogens, interacting with the host immune system.\n\n### Clinical Focus\n\n#### Part 3\n\nAfter diagnosing Barbara with pneumonia, the PA writes her a prescription for amoxicillin, a commonly-prescribed type of penicillin derivative. More than a week later, despite taking the full course as directed, Barbara still feels weak and is not fully recovered, although she is still able to get through her daily activities. She returns to the health center for a follow-up visit.\n\nMany types of bacteria, fungi, and viruses can cause pneumonia. Amoxicillin targets the peptidoglycan of bacterial cell walls. Since the amoxicillin has not resolved Barbara’s symptoms, the PA concludes that the causative agent probably lacks peptidoglycan, meaning that the pathogen could be a virus, a fungus, or a bacterium that lacks peptidoglycan. Another possibility is that the pathogen is a bacterium containing peptidoglycan but has developed resistance to amoxicillin.\n\n- How can the PA definitively identify the cause of Barbara’s pneumonia?\n\n- What form of treatment should the PA prescribe, given that the amoxicillin was ineffective?\n\nJump to the next Clinical Focus box. Go back to the previous Clinical Focus box.\n\n### Filamentous Appendages\n\nMany bacterial cells have protein appendages embedded within their cell envelopes that extend outward, allowing interaction with the environment. These appendages can attach to other surfaces, transfer DNA, or provide movement. Filamentous appendages include fimbriae, pili, and flagella."
+        },
+        {
+          "n": 6,
+          "text": "#### Fimbriae and Pili\n\nFimbriae and pili are structurally similar and, because differentiation between the two is problematic, these terms are often used interchangeably.22 23 The term fimbriae commonly refers to short bristle-like proteins projecting from the cell surface by the hundreds. Fimbriae enable a cell to attach to surfaces and to other cells. For pathogenic bacteria, adherence to host cells is important for colonization, infectivity, and virulence. Adherence to surfaces is also important in biofilm formation.\n\nThe term pili (singular: pilus) commonly refers to longer, less numerous protein appendages that aid in attachment to surfaces (Figure 3.30). A specific type of pilus, called the F pilus or sex pilus, is important in the transfer of DNA between bacterial cells, which occurs between members of the same generation when two cells physically transfer or exchange parts of their respective genomes (see How Asexual Prokaryotes Achieve Genetic Diversity).\n\n### Micro Connections\n\n#### Group A Strep\n\nBefore the structure and function of the various components of the bacterial cell envelope were well understood, scientists were already using cell envelope characteristics to classify bacteria. In 1933, Rebecca Lancefield proposed a method for serotyping various β-hemolytic strains of Streptococcus species using an agglutination assay, a technique using the clumping of bacteria to detect specific cell-surface antigens. In doing so, Lancefield discovered that one group of S. pyogenes, found in Group A, was associated with a variety of human diseases. She determined that various strains of Group A strep could be distinguished from each other based on variations in specific cell surface proteins that she named M proteins.\n\nToday, more than 80 different strains of Group A strep have been identified based on M proteins. Various strains of Group A strep are associated with a wide variety of human infections, including streptococcal pharyngitis (strep throat), impetigo, toxic shock syndrome, scarlet fever, rheumatic fever, and necrotizing fasciitis. The M protein is an important virulence factor for Group A strep, helping these strains evade the immune system. Changes in M proteins appear to alter the infectivity of a particular strain of Group A strep.\n\n#### Flagella\n\nFlagella are structures used by cells to move in aqueous environments. Bacterial flagella act like propellers. They are stiff spiral filaments composed of flagellin protein subunits that extend outward from the cell and spin in solution. The basal body is the motor for the flagellum and is embedded in the plasma membrane (Figure 3.31). A hook region connects the basal body to the filament. Gram-positive and gram-negative bacteria have different basal body configurations due to differences in cell wall structure.\n\nDifferent types of motile bacteria exhibit different arrangements of flagella (Figure 3.32). A bacterium with a singular flagellum, typically located at one end of the cell (polar), is said to have a monotrichous flagellum. An example of a monotrichously flagellated bacterial pathogen is Vibrio cholerae, the gram-negative bacterium that causes cholera. Cells with amphitrichous flagella have a flagellum or tufts of flagella at each end. An example is Spirillum minor, the cause of spirillary (Asian) rat-bite fever or sodoku. Cells with lophotrichous flagella have a tuft at one end of the cell. The gram-negative bacillus Pseudomonas aeruginosa, an opportunistic pathogen known for causing many infections, including “swimmer’s ear” and burn wound infections, has lophotrichous flagella. Flagella that cover the entire surface of a bacterial cell are called peritrichous flagella. The gram-negative bacterium E. coli shows a peritrichous arrangement of flagella.\n\nDirectional movement depends on the configuration of the flagella. Bacteria can move in response to a variety of environmental signals, including light (phototaxis), magnetic fields (magnetotaxis) using magnetosomes, and, most commonly, chemical gradients (chemotaxis). Purposeful movement toward a chemical attractant, like a food source, or away from a repellent, like a poisonous chemical, is achieved by increasing the length of runs and decreasing the length of tumbles. When running, flagella rotate in a counterclockwise direction, allowing the bacterial cell to move forward. In a peritrichous bacterium, the flagella are all bundled together in a very streamlined way (Figure 3.33), allowing for efficient movement. When tumbling, flagella are splayed out while rotating in a clockwise direction, creating a looping motion and preventing meaningful forward movement but reorienting the cell toward the direction of the attractant. When an attractant exists, runs and tumbles still occur; however, the length of runs is longer, while the length of the tumbles is reduced, allowing overall movement toward the higher concentration of the attractant. When no chemical gradient exists, the lengths of runs and tumbles are more equal, and overall movement is more random (Figure 3.34)."
+        },
+        {
+          "n": 7,
+          "text": "### Check Your Understanding\n\n- What is the peptidoglycan layer and how does it differ between gram-positive and gram-negative bacteria?\n\n- Compare and contrast monotrichous, amphitrichous, lophotrichous, and peritrichous flagella."
+        }
+      ]
+    }
+  ],
+  "generation": [
+    {
+      "step": "locked_in",
+      "ms": 69564
+    },
+    {
+      "step": "summary",
+      "ms": 30739
+    },
+    {
+      "step": "test_me",
+      "ms": 1035
+    },
+    {
+      "step": "carded",
+      "ms": 41554
+    }
+  ],
+  "asks": [
+    {
+      "id": "ask-1",
+      "question": "How does the cell wall of a gram-positive bacterium differ from that of a gram-negative bacterium?",
+      "answer": "Gram-positive bacteria have a thick peptidoglycan layer (30–100 nm) embedded with teichoic acids, whereas gram-negative bacteria have a much thinner peptidoglycan layer (about 4 nm) and an outer membrane containing lipopolysaccharide (LPS) [S1 p.4]."
+    },
+    {
+      "id": "ask-2",
+      "question": "What is the difference between a capsule and a slime layer, and why do they matter for bacteria?",
+      "answer": "A capsule is an organized, tightly bound layer of polysaccharides or proteins outside the cell wall, while a slime layer is a less organized, loosely attached layer that can be easily washed off [S1 p.5]. These structures matter because they allow bacteria to adhere to surfaces, aiding in biofilm formation, and they provide protection against desiccation, predation, and antibiotics [S1 p.5]. Additionally, capsules can enhance pathogenicity by making it harder for phagocytic cells to engulf and kill the bacterium [S1 p.5]."
+    }
+  ],
+  "unsourcedPercent": 4.07
+}
