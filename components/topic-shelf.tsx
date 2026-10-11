@@ -118,7 +118,8 @@ type TopicShelfProps = {
   topics: TopicListItem[];
   selectedId: string | null;
   dueByTopic?: Record<string, number>;
-  dueTodayTotal: number;
+  /** null while progress loads. */
+  dueTodayTotal: number | null;
 };
 
 /** The topic shelf. The demo's topics are fixed, so there are no create, rename or delete actions. */
@@ -182,7 +183,14 @@ export function TopicShelf({
           <CalendarBlank className="size-4 shrink-0" />
           <span>Due today</span>
           <span className="ml-auto tabular-nums text-foreground" aria-describedby={DUE_TODAY_DESCRIPTION_ID}>
-            {dueTodayTotal}
+            {dueTodayTotal === null ? (
+              <>
+                <span aria-hidden>–</span>
+                <span className="sr-only">loading</span>
+              </>
+            ) : (
+              dueTodayTotal
+            )}
           </span>
           <span id={DUE_TODAY_DESCRIPTION_ID} hidden>
             {DUE_TODAY_DESCRIPTION}

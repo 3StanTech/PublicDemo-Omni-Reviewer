@@ -6,9 +6,7 @@ Carded, with a Today view and per-visitor progress.
 
 ## Try it
 
-Hosting target: [omni-reviewer-demo.web.app](https://omni-reviewer-demo.web.app/).
-Deployment has not been verified yet. The scaffold is being integrated with the
-study routes, demo client and captured sample packs.
+The demo is live at [omni-reviewer-demo.web.app](https://omni-reviewer-demo.web.app/).
 
 For local development, use Node 24 (see `.nvmrc`):
 
@@ -32,8 +30,11 @@ local orchestration time. Parallel modes can have a zero completion delta.
 questions with cited answers. Free-text Ask is unavailable. The persistent header
 label is **Demo · sample packs**.
 
-Unsourced claim percentages are measured from the captured Locked In content.
-Measurements are pending pack capture; no percentages are claimed here yet.
+Share of Locked In lines flagged as not from the source sections, measured from
+the captured packs: Staining and microscopy 2.48%, Prokaryotic cell structure
+4.07%, Antimicrobial drugs 17.7%. The antimicrobial pack's higher figure comes
+mostly from drug-table side-effect and usage details that are not fully present
+in the pasted text. The flags are shown in the packs rather than hidden.
 
 ## Data boundaries
 

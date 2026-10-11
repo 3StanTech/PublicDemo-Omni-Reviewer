@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 
@@ -21,7 +21,7 @@ import {
   serializeDemoAttempts,
 } from "@/components/study-home";
 import { DEMO_TOPIC } from "@/components/topic-tabs";
-import { ViewTabs } from "@/components/view-tabs";
+import { ViewTabs, type ProgressStatus } from "@/components/view-tabs";
 import { GenerationControls, useGenerationReplay } from "@/components/generation-controls";
 import { GenerationStatus } from "@/components/generation-status";
 import type { ModeMenuItem } from "@/components/mode-toolbar";
@@ -42,9 +42,20 @@ import type { MasteryResult } from "@/lib/mastery";
 import type { ViewKind } from "@/lib/types";
 import { useIsClient } from "@/lib/use-is-client";
 
+/** The visitor's saved progress for this pack; it loads after the pack is on screen. */
+export type WorkspaceProgress =
+  | { status: "loading" }
+  | { status: "error"; message: string; onRetry: () => void }
+  | {
+      status: "ready";
+      /** The visitor's anonymous id. */
+      uid: string;
+      cards: SerializedCard[];
+      attempts: SerializedAttemptStats[];
+      examDate: string | null;
+    };
+
 type ReviewerWorkspaceProps = {
-  /** The visitor's anonymous id. */
-  userId: string;
   topicName: string;
   reviewerId: PackId;
   reviewerName: string;
@@ -53,10 +64,8 @@ type ReviewerWorkspaceProps = {
   /** The pack's pasted sections, in citation order. */
   sources: PackSource[];
   initialViews: ViewsPayload;
-  examDate: string | null;
   initialMode?: ViewKind;
-  initialCards: SerializedCard[];
-  initialTestAttemptStats: SerializedAttemptStats[];
+  progress: WorkspaceProgress;
 };
 
 /** A pack card with this visitor's schedule (named as in the source). */
@@ -88,23 +97,34 @@ function sectionsCopy(sections: string[]): string {
 }
 
 export function ReviewerWorkspace({
-  userId,
   topicName,
   reviewerId,
   reviewerName,
   sections,
   sources,
   initialViews,
-  examDate,
-  initialCards,
-  initialTestAttemptStats,
+  progress,
   initialMode = "locked_in",
 }: ReviewerWorkspaceProps) {
   const views = initialViews;
-  const [cards, setCards] = useState(initialCards);
-  const [testAttemptStats, setTestAttemptStats] = useState(initialTestAttemptStats);
-  const [currentExamDate, setCurrentExamDate] = useState(examDate);
-  const [examDateDraft, setExamDateDraft] = useState(examDate ?? "");
+  const progressReady = progress.status === "ready";
+  const [cards, setCards] = useState<SerializedCard[]>([]);
+  const [testAttemptStats, setTestAttemptStats] = useState<SerializedAttemptStats[]>([]);
+  const [currentExamDate, setCurrentExamDate] = useState<string | null>(null);
+  const [examDateDraft, setExamDateDraft] = useState("");
+  // Progress arrives after the first paint: adopt it once per load (later edits stay local).
+  const [adoptedProgress, setAdoptedProgress] = useState<WorkspaceProgress | null>(null);
+  if (progress !== adoptedProgress) {
+    setAdoptedProgress(progress);
+    if (progress.status === "ready") {
+      setCards(progress.cards);
+      setTestAttemptStats(progress.attempts);
+      setCurrentExamDate(progress.examDate);
+      setExamDateDraft(progress.examDate ?? "");
+    }
+  }
+  const viewProgress: ProgressStatus =
+    progress.status === "ready" ? { status: "ready" } : progress;
   const [examDateBusy, setExamDateBusy] = useState(false);
   const [examDateError, setExamDateError] = useState<string | null>(null);
   const [examDateOpen, setExamDateOpen] = useState(false);
@@ -133,7 +153,10 @@ export function ReviewerWorkspace({
   }
 
   const sourcesLabel = `Sources (${sources.length})`;
-  const examDateLabel = currentExamDate ? `Exam date: ${currentExamDate}` : "Set exam date";
+  // The saved date is unknown until progress loads; the control waits rather than offering "Set".
+  const examDateLabel = !progressReady
+    ? "Exam date (loading)"
+    : currentExamDate ? `Exam date: ${currentExamDate}` : "Set exam date";
   const packMenuItems: ModeMenuItem[] = [
     {
       id: "sources",
@@ -143,6 +166,7 @@ export function ReviewerWorkspace({
     {
       id: "exam-date",
       label: examDateLabel,
+      disabled: !progressReady,
       onSelect: () => setExamDateOpen(true),
     },
   ];
@@ -156,7 +180,7 @@ export function ReviewerWorkspace({
       <Button type="button" variant="ghost" size="sm" className="h-9 min-h-9 w-full justify-start" onClick={() => setSourcesOpen(true)}>
         {sourcesLabel}
       </Button>
-      <Button type="button" variant="ghost" size="sm" className="h-9 min-h-9 w-full justify-start" onClick={() => setExamDateOpen(true)}>
+      <Button type="button" variant="ghost" size="sm" className="h-9 min-h-9 w-full justify-start" disabled={!progressReady} onClick={() => setExamDateOpen(true)}>
         {examDateLabel}
       </Button>
     </section>
@@ -199,7 +223,7 @@ export function ReviewerWorkspace({
       </h2>
       <ViewTabs
         views={views}
-        userId={userId}
+        userId={progress.status === "ready" ? progress.uid : undefined}
         cards={cards}
         examDate={currentExamDate}
         testAttemptStats={testAttemptStats}
@@ -212,6 +236,7 @@ export function ReviewerWorkspace({
         onValueChange={setActiveMode}
         packMenuItems={packMenuItems}
         railPack={railPack}
+        progress={viewProgress}
       />
     </section>
   );
@@ -318,6 +343,10 @@ export function ReviewerWorkspace({
         </div>
       </div>
 
+      {/* Announces once when the saved progress arrives (no focus move). */}
+      <p className="sr-only" role="status">
+        {progress.status === "ready" ? "Your saved progress has loaded." : ""}
+      </p>
       {generationNotice}
       {studySection}
       {sourcesDialog}
@@ -335,19 +364,21 @@ export function ReviewerWorkspace({
 /* assembled in the browser from the pack file and the visitor's progress.    */
 /* ------------------------------------------------------------------------- */
 
-type LoadedPack = {
-  uid: string;
-  pack: DemoPack;
-  cards: SerializedCard[];
-  attempts: SerializedAttemptStats[];
-  examDate: string | null;
-  mastery: MasteryResult;
-};
+type LoadedProgress = Extract<WorkspaceProgress, { status: "ready" }> & { mastery: MasteryResult };
 
-type LoadState =
+type PackState =
   | { status: "loading" }
   | { status: "error"; message: string }
-  | { status: "ready"; data: LoadedPack };
+  | { status: "ready"; pack: DemoPack };
+
+type ProgressState =
+  | { status: "loading" }
+  | { status: "error"; message: string }
+  | LoadedProgress;
+
+function errorMessage(error: unknown, fallback: string): string {
+  return error instanceof Error ? error.message : fallback;
+}
 
 function isViewKind(value: string | null): value is ViewKind {
   return VIEW_KINDS.includes(value as ViewKind);
@@ -372,41 +403,59 @@ export function PackLoading() {
   );
 }
 
-/** Loads one sample pack and the visitor's progress, then renders the workspace. */
+/**
+ * Shows the pack as soon as its static file loads; the visitor's progress (anonymous sign-in, App Check,
+ * Firestore) loads in parallel and merges in when it arrives.
+ */
 export function ReviewerWorkspaceLoader({ packId }: { packId: PackId }) {
   const searchParams = useSearchParams();
   const modeParam = searchParams.get("mode");
   const initialMode: ViewKind = isViewKind(modeParam) ? modeParam : "locked_in";
-  const [state, setState] = useState<LoadState>({ status: "loading" });
-  const [attempt, setAttempt] = useState(0);
-  const [dueTodayTotal, setDueTodayTotal] = useState(0);
+  const [packState, setPackState] = useState<PackState>({ status: "loading" });
+  const [packAttempt, setPackAttempt] = useState(0);
+  const [progressState, setProgressState] = useState<ProgressState>({ status: "loading" });
+  const [progressAttempt, setProgressAttempt] = useState(0);
+  const [dueTodayTotal, setDueTodayTotal] = useState<number | null>(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    demoApi.loadPack(packId).then(
+      (pack) => { if (!cancelled) setPackState({ status: "ready", pack }); },
+      (error: unknown) => {
+        if (!cancelled) setPackState({ status: "error", message: errorMessage(error, "Could not load this study pack.") });
+      },
+    );
+    return () => {
+      cancelled = true;
+    };
+  }, [packId, packAttempt]);
 
   useEffect(() => {
     let cancelled = false;
     async function load() {
-      setState({ status: "loading" });
+      setProgressState({ status: "loading" });
       try {
-        const [{ uid }, pack] = await Promise.all([demoApi.ready(), demoApi.loadPack(packId)]);
-        const progress = await demoApi.getProgress(packId);
+        const [{ uid }, pack, progress] = await Promise.all([
+          demoApi.ready(),
+          demoApi.loadPack(packId),
+          demoApi.getProgress(packId),
+        ]);
         const now = new Date();
-        const data: LoadedPack = {
+        if (cancelled) return;
+        setProgressState({
+          status: "ready",
           uid,
-          pack,
           cards: toDurableCardViews(pack.cards, progress.cards, progress.examDate, now),
           attempts: serializeDemoAttempts(progress.attempts),
           examDate: progress.examDate,
           mastery: demoPackMastery(pack, progress, now),
-        };
-        if (!cancelled) setState({ status: "ready", data });
-        // The shelf total covers every pack; it fills in after the workspace shows.
+        });
+        // The shelf total covers every pack; it fills in last.
         const total = await loadDueTodayTotal();
         if (!cancelled) setDueTodayTotal(total);
       } catch (error) {
         if (!cancelled) {
-          setState({
-            status: "error",
-            message: error instanceof Error ? error.message : "Could not load this study pack.",
-          });
+          setProgressState({ status: "error", message: errorMessage(error, "Your progress could not load.") });
         }
       }
     }
@@ -414,18 +463,32 @@ export function ReviewerWorkspaceLoader({ packId }: { packId: PackId }) {
     return () => {
       cancelled = true;
     };
-  }, [packId, attempt]);
+  }, [packId, progressAttempt]);
 
-  if (state.status === "loading") return <PackLoading />;
+  const progress = useMemo<WorkspaceProgress>(() => {
+    if (progressState.status === "error") {
+      return { status: "error", message: progressState.message, onRetry: () => setProgressAttempt((n) => n + 1) };
+    }
+    return progressState;
+  }, [progressState]);
 
-  if (state.status === "error") {
+  if (packState.status === "loading") return <PackLoading />;
+
+  if (packState.status === "error") {
     return (
       <AppShell topics={[DEMO_TOPIC]} selectedTopicId={DEMO_TOPIC.id} wide>
         <EmptyState
           title="This study pack did not load"
-          description={state.message}
+          description={packState.message}
           action={
-            <Button type="button" onClick={() => setAttempt((n) => n + 1)}>
+            <Button
+              type="button"
+              onClick={() => {
+                setPackState({ status: "loading" });
+                setPackAttempt((n) => n + 1);
+                if (progressState.status === "error") setProgressAttempt((n) => n + 1);
+              }}
+            >
               Try again
             </Button>
           }
@@ -434,28 +497,25 @@ export function ReviewerWorkspaceLoader({ packId }: { packId: PackId }) {
     );
   }
 
-  const { data } = state;
+  const { pack } = packState;
   return (
     <AppShell
       topics={[DEMO_TOPIC]}
       selectedTopicId={DEMO_TOPIC.id}
-      dueByTopic={{ [DEMO_TOPIC.id]: dueTodayTotal }}
+      dueByTopic={dueTodayTotal === null ? undefined : { [DEMO_TOPIC.id]: dueTodayTotal }}
       dueTodayTotal={dueTodayTotal}
       wide
     >
-      <SectionMasteryProvider sections={data.mastery.sections}>
+      <SectionMasteryProvider sections={progressState.status === "ready" ? progressState.mastery.sections : null}>
         <ReviewerWorkspace
-          userId={data.uid}
           topicName={DEMO_TOPIC.name}
-          reviewerId={data.pack.id}
-          reviewerName={data.pack.name}
-          sections={data.pack.sections}
-          sources={data.pack.sources}
-          initialViews={data.pack.views}
-          examDate={data.examDate}
+          reviewerId={pack.id}
+          reviewerName={pack.name}
+          sections={pack.sections}
+          sources={pack.sources}
+          initialViews={pack.views}
           initialMode={initialMode}
-          initialCards={data.cards}
-          initialTestAttemptStats={data.attempts}
+          progress={progress}
         />
       </SectionMasteryProvider>
     </AppShell>
