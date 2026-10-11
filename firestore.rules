@@ -1,0 +1,116 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function owner(uid) {
+      return request.auth != null && request.auth.uid == uid;
+    }
+
+    function packId(id) {
+      return id in ['staining-microscopy', 'prokaryotic-cell', 'antimicrobial-drugs'];
+    }
+
+    function compoundId(id) {
+      return id.matches('^[a-z0-9-]{1,48}__[a-z0-9-]{1,64}$')
+        && id.split('__').size() == 2 && packId(id.split('__')[0]);
+    }
+
+    // The capture schema permits at most 100 cards and 100 questions per pack.
+    function fixedItem(id, prefix) {
+      return id.matches('^' + prefix + '-(00[1-9]|0[1-9][0-9]|100)$');
+    }
+
+    function currentWrite() {
+      return request.resource.data.updatedAt is timestamp
+        && request.resource.data.updatedAt == request.time;
+    }
+
+    function spacedWrite() {
+      return currentWrite()
+        && request.time >= resource.data.updatedAt + duration.value(1, 's');
+    }
+
+    function profile() {
+      let data = request.resource.data;
+      return data.keys().hasOnly(['createdAt', 'updatedAt'])
+        && data.createdAt is timestamp;
+    }
+
+    function card(id) {
+      let data = request.resource.data;
+      return compoundId(id) && fixedItem(id.split('__')[1], 'card')
+        && data.keys().hasOnly(['packId', 'cardId', 'dueAt', 'intervalDays',
+          'repetitions', 'easeFactor', 'lastReviewedAt', 'revision', 'updatedAt',
+          'fsrsState', 'stability', 'difficulty', 'lapses', 'scheduledDays'])
+        && data.packId is string && packId(data.packId)
+        && data.cardId is string && id == data.packId + '__' + data.cardId
+        && data.dueAt is timestamp
+        && data.intervalDays is int && data.intervalDays >= 0 && data.intervalDays <= 365
+        && data.repetitions is int && data.repetitions >= 0
+        && data.easeFactor is number && data.easeFactor >= 0
+        && (data.lastReviewedAt == null || data.lastReviewedAt is timestamp)
+        && data.revision is int && data.revision >= 1
+        && data.fsrsState is int && data.fsrsState >= 0 && data.fsrsState <= 3
+        && data.stability is number && data.stability >= 0
+        && data.difficulty is number
+        && data.lapses is int && data.lapses >= 0
+        && data.scheduledDays is int && data.scheduledDays >= 0;
+    }
+
+    function attempt(id) {
+      let data = request.resource.data;
+      return compoundId(id) && fixedItem(id.split('__')[1], 'test')
+        && data.keys().hasOnly(['attempts', 'misses', 'lastAttemptedAt', 'updatedAt'])
+        && data.attempts is int && data.attempts >= 1
+        && data.misses is int && data.misses >= 0 && data.misses <= data.attempts
+        && data.lastAttemptedAt is timestamp;
+    }
+
+    function session(id) {
+      let data = request.resource.data;
+      return compoundId(id) && id.split('__')[1] in ['practice', 'timed']
+        && data.keys().hasOnly(['state', 'updatedAt'])
+        && data.state is string && data.state.toUtf8().size() <= 20 * 1024;
+    }
+
+    function settings(id) {
+      let data = request.resource.data;
+      return packId(id) && data.keys().hasOnly(['examDate', 'lastOpenedAt', 'updatedAt'])
+        && (data.examDate == null || (data.examDate is string
+          && data.examDate.matches('^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$')))
+        && data.lastOpenedAt is timestamp;
+    }
+
+    match /demos/{uid} {
+      allow read, delete: if owner(uid);
+      allow create: if owner(uid) && profile() && currentWrite()
+        && request.resource.data.createdAt == request.time;
+      allow update: if owner(uid) && profile() && spacedWrite()
+        && request.resource.data.createdAt == resource.data.createdAt;
+
+      match /cards/{id} {
+        allow read, delete: if owner(uid);
+        allow create: if owner(uid) && card(id) && currentWrite();
+        allow update: if owner(uid) && card(id) && spacedWrite()
+          && request.resource.data.revision == resource.data.revision + 1;
+      }
+      match /attempts/{id} {
+        allow read, delete: if owner(uid);
+        allow create: if owner(uid) && attempt(id) && currentWrite();
+        allow update: if owner(uid) && attempt(id) && spacedWrite();
+      }
+      match /sessions/{id} {
+        allow read, delete: if owner(uid);
+        allow create: if owner(uid) && session(id) && currentWrite();
+        allow update: if owner(uid) && session(id) && spacedWrite();
+      }
+      match /packs/{id} {
+        allow read, delete: if owner(uid);
+        allow create: if owner(uid) && settings(id) && currentWrite();
+        allow update: if owner(uid) && settings(id) && spacedWrite();
+      }
+    }
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

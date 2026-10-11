@@ -1,0 +1,32 @@
+[
+  {
+    "id": "staining-microscopy",
+    "name": "Staining and microscopy",
+    "sections": [
+      "2.3",
+      "2.4"
+    ],
+    "cardCount": 10,
+    "testItemCount": 11
+  },
+  {
+    "id": "prokaryotic-cell",
+    "name": "Prokaryotic cell structure",
+    "sections": [
+      "3.3"
+    ],
+    "cardCount": 12,
+    "testItemCount": 7
+  },
+  {
+    "id": "antimicrobial-drugs",
+    "name": "Antimicrobial drugs",
+    "sections": [
+      "14.1",
+      "14.2",
+      "14.3"
+    ],
+    "cardCount": 18,
+    "testItemCount": 9
+  }
+]
