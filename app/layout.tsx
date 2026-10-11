@@ -58,11 +58,12 @@ export const viewport: Viewport = {
 
 const OPENSTAX_BOOK_URL = "https://openstax.org/details/books/microbiology";
 
-/** Pack attribution, on every page (the packs are CC BY-NC-SA 4.0). */
+/** Demo disclosure and pack attribution, on every page (the packs are CC BY-NC-SA 4.0). */
 function AttributionFooter() {
   return (
     <footer className="border-t border-border/70 bg-chrome/60">
       <p className="mx-auto w-full max-w-5xl px-4 py-4 text-xs leading-relaxed text-muted-foreground sm:px-6">
+        Demo: no account, no uploads and no live AI calls. Generate and Ask play back recorded runs.{" "}
         Sample content adapted from OpenStax <em>Microbiology</em> (Rice University), CC BY-NC-SA 4.0. Access for free at{" "}
         <a
           href={OPENSTAX_BOOK_URL}

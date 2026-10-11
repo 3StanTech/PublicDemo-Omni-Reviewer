@@ -36,6 +36,7 @@ function schedule(data: DocumentData): CardSchedule {
   const dueAt = date(data.dueAt);
   if (!dueAt) throw new Error("Saved card schedule has no due date.");
   const lastReviewedAt = date(data.lastReviewedAt);
+  const firstReviewedAt = date(data.firstReviewedAt) ?? lastReviewedAt;
   const fsrs: FsrsCardState | null = !lastReviewedAt || data.fsrsState == null || data.fsrsState === 0 ? null : {
     state: data.fsrsState, stability: data.stability, difficulty: data.difficulty,
     reps: data.repetitions, lapses: data.lapses, scheduledDays: data.scheduledDays,
@@ -43,7 +44,7 @@ function schedule(data: DocumentData): CardSchedule {
   };
   return {
     dueAt, intervalDays: data.intervalDays, repetitions: data.repetitions,
-    easeFactor: data.easeFactor, lastReviewedAt, revision: data.revision, fsrs,
+    easeFactor: data.easeFactor, lastReviewedAt, firstReviewedAt, revision: data.revision, fsrs,
   };
 }
 
@@ -108,6 +109,7 @@ export const reviewCard: DemoApi["reviewCard"] = (id, cardId, rating, expectedRe
       intervalDays: Math.max(0, Math.round((next.due.getTime() - reviewedAt.getTime()) / DAY_MS)),
       repetitions: next.reps, easeFactor: previous?.easeFactor ?? 25,
       lastReviewedAt: reviewedAt, revision: revision + 1, fsrs: next,
+      firstReviewedAt: previous?.firstReviewedAt ?? reviewedAt,
     } satisfies CardSchedule;
     const { fsrs, ...fields } = saved;
     transaction.set(ref, {

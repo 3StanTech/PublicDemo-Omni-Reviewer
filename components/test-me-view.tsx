@@ -315,7 +315,8 @@ function UntimedSitting({
   const [openedAt, setOpenedAt] = useState<number | null>(() => (initialView.finished ? null : Date.now()));
   const [finishedAt, setFinishedAt] = useState<number | null>(null);
   const inFlight = useRef(false);
-  const saveSession = useSessionSaver(packId, "practice");
+  const { save: saveSession, error: sessionSaveError } = useSessionSaver(packId, "practice");
+  const shownSaveMessage = saveMessage ?? sessionSaveError;
 
   const sittingItems = useMemo(
     () => session ? sittingItemsForIds(items, session.itemIds) : items,
@@ -457,8 +458,8 @@ function UntimedSitting({
         <h2 id="test-me-sitting-title" className="sr-only">
           Test Me
         </h2>
-        {saveMessage ? (
-          <p role="alert" className="text-sm text-destructive">{saveMessage}</p>
+        {shownSaveMessage ? (
+          <p role="alert" className="text-sm text-destructive">{shownSaveMessage}</p>
         ) : (
           <p className="text-sm text-muted-foreground">Opening the sitting.</p>
         )}
@@ -569,9 +570,9 @@ function UntimedSitting({
               Start again
             </Button>
           </div>
-          {saveMessage ? (
+          {shownSaveMessage ? (
             <p role="alert" className="mt-2 text-sm text-destructive">
-              {saveMessage}
+              {shownSaveMessage}
             </p>
           ) : null}
         </SittingRecap>
@@ -632,9 +633,9 @@ function UntimedSitting({
           </Button>
         )}
       </div>
-      {saveMessage ? (
+      {shownSaveMessage ? (
         <p role="alert" className="text-sm text-destructive">
-          {saveMessage}
+          {shownSaveMessage}
         </p>
       ) : null}
     </section>

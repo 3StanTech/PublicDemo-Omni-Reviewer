@@ -94,13 +94,18 @@ export function StudySidePanel({ markdown, className }: StudySidePanelProps) {
   useEffect(() => {
     if (!open) return;
     function onKeyDown(event: KeyboardEvent) {
+      // Another open dialog (Sources, Exam date) owns Escape and Tab while it is open.
+      const panel = panelRef.current;
+      const otherDialogOpen = [...document.querySelectorAll("[role='dialog']:not([hidden])")].some(
+        (dialog) => dialog !== panel && !panel?.contains(dialog),
+      );
+      if (otherDialogOpen) return;
       if (event.key === "Escape") {
         event.preventDefault();
         setOpen(false);
         return;
       }
       if (event.key === "Tab") {
-        const panel = panelRef.current;
         if (!panel) return;
         const focusable = [...panel.querySelectorAll<HTMLElement>(
           'a[href], button:not([disabled]), textarea, input, select, [tabindex]:not([tabindex="-1"])',

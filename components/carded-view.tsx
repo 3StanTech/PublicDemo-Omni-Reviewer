@@ -84,6 +84,7 @@ export function toDurableCardViews(
       repetitions: 0,
       easeFactor: 0,
       lastReviewedAt: null,
+      firstReviewedAt: null,
       revision: 0,
       fsrs: null,
     };
@@ -100,8 +101,7 @@ export function toDurableCardViews(
       easeFactor: schedule.easeFactor,
       lastReviewedAt: schedule.lastReviewedAt?.toISOString() ?? null,
       createdAt: createdAt.toISOString(),
-      // The demo stores only the last review; it stands in for the first one in pacing.
-      firstReviewedAt: schedule.lastReviewedAt?.toISOString() ?? null,
+      firstReviewedAt: schedule.firstReviewedAt?.toISOString() ?? null,
       isNew: schedule.repetitions <= 0,
       fsrs: schedule.fsrs,
       nextIntervals: {
@@ -336,11 +336,7 @@ export function CardedView({
       if (epoch !== reviewEpoch.current) return;
       const [updated] = toDurableCardViews([card], { [card.id]: reviewed }, examDate);
       const data = {
-        card: {
-          ...updated,
-          createdAt: card.createdAt,
-          firstReviewedAt: card.firstReviewedAt ?? reviewed.lastReviewedAt?.toISOString() ?? new Date().toISOString(),
-        },
+        card: { ...updated, createdAt: card.createdAt },
       };
       onCardsChange(durableCards.map((item) => item.id === data.card.id ? data.card : item));
       setRatedIds((current) => current.includes(card.id) ? current : [...current, card.id]);

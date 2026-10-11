@@ -51,21 +51,30 @@ export function isCorrect(selected: string, answer: string): boolean {
 
 /** Firestore refuses a second write to one document within a second; this leaves a margin. */
 const SESSION_SAVE_GAP_MS = 1100;
+/** Longest wait between retries of a failed save. */
+const SESSION_SAVE_MAX_BACKOFF_MS = 30_000;
 
 /**
  * Saves a sitting's state without blocking the sitting: one write at a time,
  * at least SESSION_SAVE_GAP_MS after the previous one finished, latest state
- * wins. A failed save is retried by the next change; attempts are saved apart.
+ * wins. A failed save keeps its state (unless a newer one arrived) and retries
+ * with a doubling backoff; `error` holds the failure until a save succeeds.
+ * Attempts are saved apart.
  */
 export function useSessionSaver(packId: PackId, kind: "practice" | "timed") {
   const latest = useRef<{ state: unknown } | null>(null);
   const timer = useRef<number | null>(null);
   const writing = useRef(false);
   const lastWriteAt = useRef(0);
+  const failures = useRef(0);
+  const [error, setError] = useState<string | null>(null);
 
   const flush = useCallback(function run() {
     if (timer.current !== null || writing.current || !latest.current) return;
-    const wait = Math.max(0, lastWriteAt.current + SESSION_SAVE_GAP_MS - Date.now());
+    const gap = failures.current > 0
+      ? Math.min(SESSION_SAVE_GAP_MS * 2 ** failures.current, SESSION_SAVE_MAX_BACKOFF_MS)
+      : SESSION_SAVE_GAP_MS;
+    const wait = Math.max(0, lastWriteAt.current + gap - Date.now());
     timer.current = window.setTimeout(() => {
       timer.current = null;
       const next = latest.current;
@@ -73,7 +82,15 @@ export function useSessionSaver(packId: PackId, kind: "practice" | "timed") {
       latest.current = null;
       writing.current = true;
       void demoApi.saveSession(packId, kind, next.state)
-        .catch(() => undefined)
+        .then(() => {
+          failures.current = 0;
+          setError(null);
+        }, (caught: unknown) => {
+          // Keep the unsaved state unless a newer one arrived while writing.
+          latest.current ??= next;
+          failures.current += 1;
+          setError(caught instanceof Error ? caught.message : "Could not save this sitting.");
+        })
         .finally(() => {
           writing.current = false;
           lastWriteAt.current = Date.now();
@@ -82,10 +99,12 @@ export function useSessionSaver(packId: PackId, kind: "practice" | "timed") {
     }, wait);
   }, [kind, packId]);
 
-  return useCallback((state: unknown) => {
+  const save = useCallback((state: unknown) => {
     latest.current = { state };
     flush();
   }, [flush]);
+
+  return { save, error };
 }
 
 type TimedSessionResponse = {
@@ -169,7 +188,8 @@ export function TimedTestMe({
   const [finishedAt, setFinishedAt] = useState<number | null>(null);
   const inFlight = useRef(false);
   const itemsRef = useRef(items);
-  const saveSession = useSessionSaver(packId, "timed");
+  const { save: saveSession, error: sessionSaveError } = useSessionSaver(packId, "timed");
+  const shownMessage = message ?? sessionSaveError;
   useEffect(() => {
     itemsRef.current = items;
   }, [items]);
@@ -374,7 +394,7 @@ export function TimedTestMe({
           </Button>
           <Button type="button" variant="ghost" onClick={onExit} disabled={busy}>Back to study list</Button>
         </div>
-        {message ? <p role="alert" className="text-sm text-destructive">{message}</p> : null}
+        {shownMessage ? <p role="alert" className="text-sm text-destructive">{shownMessage}</p> : null}
       </section>
     );
   }
@@ -492,8 +512,8 @@ export function TimedTestMe({
           )}
         </div>
       </div>
-      {message ? <p role="alert" className="text-sm text-destructive">{message}</p> : null}
-      {expired && !message ? <p role="status" className="text-sm text-destructive">Time is up. Your next answer cannot be saved.</p> : null}
+      {shownMessage ? <p role="alert" className="text-sm text-destructive">{shownMessage}</p> : null}
+      {expired && !shownMessage ? <p role="status" className="text-sm text-destructive">Time is up. Your next answer cannot be saved.</p> : null}
     </section>
   );
 }

@@ -12,13 +12,13 @@ export type DemoPack = PackSummary & {
   sources: PackSource[]; generation: RecordedStep[]; asks: RecordedAsk[];
   unsourcedPercent: number | null;
 };
-export type CardSchedule = Pick<DurableCard, 'dueAt' | 'intervalDays' | 'repetitions' | 'easeFactor' | 'lastReviewedAt' | 'revision'> & { fsrs: FsrsCardState | null };
+export type CardSchedule = Pick<DurableCard, 'dueAt' | 'intervalDays' | 'repetitions' | 'easeFactor' | 'lastReviewedAt' | 'revision'> & { fsrs: FsrsCardState | null; firstReviewedAt: Date | null };
 export interface DemoApi {
   ready(): Promise<{ uid: string }>;                          // anonymous sign-in + App Check
   listPacks(): Promise<PackSummary[]>;
   loadPack(id: PackId): Promise<DemoPack>;
   getProgress(id: PackId): Promise<{ cards: Record<string, CardSchedule>; attempts: TestAttemptStats[]; examDate: string | null }>;
-  reviewCard(id: PackId, cardId: string, rating: CardRating, expectedRevision: number): Promise<DurableCard & { fsrs: FsrsCardState }>;
+  reviewCard(id: PackId, cardId: string, rating: CardRating, expectedRevision: number): Promise<DurableCard & { fsrs: FsrsCardState; firstReviewedAt: Date | null }>;
   recordAttempts(id: PackId, answers: { itemId: string; correct: boolean }[]): Promise<TestAttemptStats[]>;
   getSession(id: PackId, kind: 'practice' | 'timed'): Promise<unknown | null>;
   saveSession(id: PackId, kind: 'practice' | 'timed', state: unknown | null): Promise<void>;

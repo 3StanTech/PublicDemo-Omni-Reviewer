@@ -17,6 +17,7 @@ const fixtures: { name: string; path: string; data: () => DocumentData; wrong: D
   { name: "cards", path: `demos/${UID}/cards/${PACK}__card-001`, data: () => ({
     packId: PACK, cardId: "card-001", dueAt: now(), intervalDays: 1,
     repetitions: 1, easeFactor: 25, lastReviewedAt: now(), revision: 2, updatedAt: serverTimestamp(),
+    firstReviewedAt: old(),
     fsrsState: 2, stability: 3.5, difficulty: 5, lapses: 0, scheduledDays: 1,
   }), wrong: { intervalDays: "one" } },
   { name: "attempts", path: `demos/${UID}/attempts/${PACK}__test-001`, data: () => ({
@@ -86,7 +87,7 @@ describe.each(fixtures)("$name isolation and schema", (fixture) => {
   it("denies wrong field types", async () => {
     await assertFails(setDoc(doc(visitor(), fixture.path), { ...fixture.data(), ...fixture.wrong }));
     if (fixture.name === "cards") {
-      for (const field of ["fsrsState", "stability", "difficulty", "lapses", "scheduledDays"]) {
+      for (const field of ["fsrsState", "stability", "difficulty", "lapses", "scheduledDays", "firstReviewedAt"]) {
         await assertFails(setDoc(doc(visitor(), fixture.path), { ...fixture.data(), [field]: "wrong-type" }));
       }
     }
@@ -143,6 +144,29 @@ describe("fixed paths and bounded state", () => {
     const fixture = fixtures[1];
     await seed(fixture.path, fixture.data());
     await assertFails(setDoc(doc(visitor(), fixture.path), fixture.data()));
+  });
+  it("accepts a first review at request time", async () => {
+    const fixture = fixtures[1];
+    await assertSucceeds(setDoc(doc(visitor(), fixture.path), { ...fixture.data(), firstReviewedAt: serverTimestamp() }));
+  });
+  it("accepts legacy cards without firstReviewedAt and their timestamp migration", async () => {
+    const fixture = fixtures[1];
+    const legacy = fixture.data();
+    delete legacy.firstReviewedAt;
+    await assertSucceeds(setDoc(doc(visitor(), fixture.path), legacy));
+    await seed(fixture.path, legacy);
+    const ref = doc(visitor(), fixture.path);
+    const saved = (await getDoc(ref)).data()!;
+    await assertSucceeds(setDoc(ref, {
+      ...saved, firstReviewedAt: saved.lastReviewedAt,
+      revision: saved.revision + 1, updatedAt: serverTimestamp(),
+    }));
+  });
+  it("denies firstReviewedAt after request time or null", async () => {
+    const fixture = fixtures[1];
+    for (const firstReviewedAt of [Timestamp.fromMillis(Date.now() + 60_000), null]) {
+      await assertFails(setDoc(doc(visitor(), fixture.path), { ...fixture.data(), firstReviewedAt }));
+    }
   });
   it("denies out-of-range FSRS values", async () => {
     const fixture = fixtures[1];

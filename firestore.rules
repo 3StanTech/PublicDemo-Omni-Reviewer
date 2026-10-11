@@ -39,7 +39,7 @@ service cloud.firestore {
       let data = request.resource.data;
       return compoundId(id) && fixedItem(id.split('__')[1], 'card')
         && data.keys().hasOnly(['packId', 'cardId', 'dueAt', 'intervalDays',
-          'repetitions', 'easeFactor', 'lastReviewedAt', 'revision', 'updatedAt',
+          'repetitions', 'easeFactor', 'lastReviewedAt', 'firstReviewedAt', 'revision', 'updatedAt',
           'fsrsState', 'stability', 'difficulty', 'lapses', 'scheduledDays'])
         && data.packId is string && packId(data.packId)
         && data.cardId is string && id == data.packId + '__' + data.cardId
@@ -48,6 +48,8 @@ service cloud.firestore {
         && data.repetitions is int && data.repetitions >= 0
         && data.easeFactor is number && data.easeFactor >= 0
         && (data.lastReviewedAt == null || data.lastReviewedAt is timestamp)
+        && (!('firstReviewedAt' in data) || (data.firstReviewedAt is timestamp
+          && data.firstReviewedAt <= request.time))
         && data.revision is int && data.revision >= 1
         && data.fsrsState is int && data.fsrsState >= 0 && data.fsrsState <= 3
         && data.stability is number && data.stability >= 0
