@@ -48,8 +48,7 @@ service cloud.firestore {
         && data.repetitions is int && data.repetitions >= 0
         && data.easeFactor is number && data.easeFactor >= 0
         && (data.lastReviewedAt == null || data.lastReviewedAt is timestamp)
-        && (!('firstReviewedAt' in data) || (data.firstReviewedAt is timestamp
-          && data.firstReviewedAt <= request.time))
+        && data.firstReviewedAt is timestamp
         && data.revision is int && data.revision >= 1
         && data.fsrsState is int && data.fsrsState >= 0 && data.fsrsState <= 3
         && data.stability is number && data.stability >= 0
@@ -91,9 +90,14 @@ service cloud.firestore {
 
       match /cards/{id} {
         allow read, delete: if owner(uid);
-        allow create: if owner(uid) && card(id) && currentWrite();
+        allow create: if owner(uid) && card(id) && currentWrite()
+          && request.resource.data.firstReviewedAt == request.time;
         allow update: if owner(uid) && card(id) && spacedWrite()
-          && request.resource.data.revision == resource.data.revision + 1;
+          && request.resource.data.revision == resource.data.revision + 1
+          && (('firstReviewedAt' in resource.data
+            && request.resource.data.firstReviewedAt == resource.data.firstReviewedAt)
+            || (!('firstReviewedAt' in resource.data)
+              && request.resource.data.firstReviewedAt == request.time));
       }
       match /attempts/{id} {
         allow read, delete: if owner(uid);

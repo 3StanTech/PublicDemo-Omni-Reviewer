@@ -17,7 +17,7 @@ const fixtures: { name: string; path: string; data: () => DocumentData; wrong: D
   { name: "cards", path: `demos/${UID}/cards/${PACK}__card-001`, data: () => ({
     packId: PACK, cardId: "card-001", dueAt: now(), intervalDays: 1,
     repetitions: 1, easeFactor: 25, lastReviewedAt: now(), revision: 2, updatedAt: serverTimestamp(),
-    firstReviewedAt: old(),
+    firstReviewedAt: serverTimestamp(),
     fsrsState: 2, stability: 3.5, difficulty: 5, lapses: 0, scheduledDays: 1,
   }), wrong: { intervalDays: "one" } },
   { name: "attempts", path: `demos/${UID}/attempts/${PACK}__test-001`, data: () => ({
@@ -143,7 +143,9 @@ describe("fixed paths and bounded state", () => {
   it("requires the next card revision", async () => {
     const fixture = fixtures[1];
     await seed(fixture.path, fixture.data());
-    await assertFails(setDoc(doc(visitor(), fixture.path), fixture.data()));
+    const ref = doc(visitor(), fixture.path);
+    const saved = (await getDoc(ref)).data()!;
+    await assertFails(setDoc(ref, { ...saved, updatedAt: serverTimestamp() }));
   });
   it("accepts a first review at request time", async () => {
     const fixture = fixtures[1];
@@ -153,19 +155,64 @@ describe("fixed paths and bounded state", () => {
     const fixture = fixtures[1];
     const legacy = fixture.data();
     delete legacy.firstReviewedAt;
-    await assertSucceeds(setDoc(doc(visitor(), fixture.path), legacy));
     await seed(fixture.path, legacy);
     const ref = doc(visitor(), fixture.path);
+    await assertSucceeds(getDoc(ref));
     const saved = (await getDoc(ref)).data()!;
     await assertSucceeds(setDoc(ref, {
-      ...saved, firstReviewedAt: saved.lastReviewedAt,
+      ...saved, firstReviewedAt: serverTimestamp(),
       revision: saved.revision + 1, updatedAt: serverTimestamp(),
     }));
+  });
+  it("requires firstReviewedAt on new writes", async () => {
+    const fixture = fixtures[1];
+    const data = fixture.data();
+    delete data.firstReviewedAt;
+    await assertFails(setDoc(doc(visitor(), fixture.path), data));
+    await seed(fixture.path, data);
+    await assertFails(setDoc(doc(visitor(), fixture.path), { ...data, revision: data.revision + 1 }));
+  });
+  it("denies a client timestamp in the past for a first review", async () => {
+    const fixture = fixtures[1];
+    await assertFails(setDoc(doc(visitor(), fixture.path), { ...fixture.data(), firstReviewedAt: old() }));
   });
   it("denies firstReviewedAt after request time or null", async () => {
     const fixture = fixtures[1];
     for (const firstReviewedAt of [Timestamp.fromMillis(Date.now() + 60_000), null]) {
       await assertFails(setDoc(doc(visitor(), fixture.path), { ...fixture.data(), firstReviewedAt }));
+    }
+  });
+  it("denies changing an existing firstReviewedAt", async () => {
+    const fixture = fixtures[1];
+    await seed(fixture.path, fixture.data());
+    const ref = doc(visitor(), fixture.path);
+    const saved = (await getDoc(ref)).data()!;
+    for (const firstReviewedAt of [old(), serverTimestamp()]) {
+      await assertFails(setDoc(ref, {
+        ...saved, firstReviewedAt, revision: saved.revision + 1, updatedAt: serverTimestamp(),
+      }));
+    }
+  });
+  it("allows preserving an existing firstReviewedAt", async () => {
+    const fixture = fixtures[1];
+    await seed(fixture.path, { ...fixture.data(), firstReviewedAt: old() });
+    const ref = doc(visitor(), fixture.path);
+    const saved = (await getDoc(ref)).data()!;
+    await assertSucceeds(setDoc(ref, {
+      ...saved, revision: saved.revision + 1, updatedAt: serverTimestamp(),
+    }));
+  });
+  it("denies migrating a legacy firstReviewedAt from the client clock", async () => {
+    const fixture = fixtures[1];
+    const legacy = fixture.data();
+    delete legacy.firstReviewedAt;
+    await seed(fixture.path, legacy);
+    const ref = doc(visitor(), fixture.path);
+    const saved = (await getDoc(ref)).data()!;
+    for (const firstReviewedAt of [old(), Timestamp.fromMillis(Date.now() + 60_000)]) {
+      await assertFails(setDoc(ref, {
+        ...saved, firstReviewedAt, revision: saved.revision + 1, updatedAt: serverTimestamp(),
+      }));
     }
   });
   it("denies out-of-range FSRS values", async () => {
