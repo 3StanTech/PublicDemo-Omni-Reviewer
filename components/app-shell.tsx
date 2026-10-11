@@ -33,7 +33,8 @@ type AppShellProps = {
   topics?: TopicListItem[];
   selectedTopicId?: string | null;
   dueByTopic?: Record<string, number>;
-  dueTodayTotal?: number;
+  /** null while the visitor's progress is still loading (the shelf shows a placeholder, not 0). */
+  dueTodayTotal?: number | null;
   showTopicShelf?: boolean;
   /** The pack page uses the desktop width (90rem) for its document and rail; other pages stay at 64rem. */
   wide?: boolean;

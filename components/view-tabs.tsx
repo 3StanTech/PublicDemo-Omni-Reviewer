@@ -39,7 +39,8 @@ import type { ViewKind } from "@/lib/types";
 import type { SerializedAttemptStats, SerializedCard } from "@/components/reviewer-workspace";
 
 type ViewTabsProps = {
-  userId: string;
+  /** The visitor's anonymous id; unknown until progress loads (reading position waits for it). */
+  userId?: string;
   views: ViewsPayload;
   viewsLoading?: boolean;
   reviewerId: PackId;
@@ -57,7 +58,19 @@ type ViewTabsProps = {
   packMenuItems?: ModeMenuItem[];
   /** The rail's Pack section from the workspace (Sources, Exam date). */
   railPack?: ReactNode;
+  /**
+   * The visitor's saved schedule and answers. Test Me and Carded mount only once it is "ready",
+   * so no answer or review can be recorded against an unknown revision.
+   */
+  progress?: ProgressStatus;
 };
+
+export type ProgressStatus =
+  | { status: "loading" }
+  | { status: "error"; message: string; onRetry: () => void }
+  | { status: "ready" };
+
+const PROGRESS_READY: ProgressStatus = { status: "ready" };
 
 const MODE_JOB_LINES = Object.fromEntries(
   MODE_KIT_ITEMS.map((item) => [item.kind, item.job]),
@@ -97,6 +110,7 @@ export function ViewTabs({
   onValueChange,
   packMenuItems = [],
   railPack = null,
+  progress = PROGRESS_READY,
 }: ViewTabsProps) {
   const [uncontrolledTab, setUncontrolledTab] = useState<ViewKind>("locked_in");
   const tab = value ?? uncontrolledTab;
@@ -197,6 +211,8 @@ export function ViewTabs({
             view={views.summary}
             reviewerId={reviewerId}
           />
+        ) : progress.status !== "ready" ? (
+          <ProgressPending label={copy.label} progress={progress} />
         ) : tab === "test_me" ? (
           <TestMeView
             contentJson={views.test_me?.contentJson ?? null}
@@ -225,7 +241,7 @@ export function ViewTabs({
       <aside aria-label="Study rail" className={cn("print-hide hidden", railActive && "@min-[64rem]/pack:block")}>
         <div className="sticky top-[7.5rem] flex max-h-[calc(100vh-8.5rem)] flex-col gap-4 overflow-y-auto pb-4">
           <ModeRailSlot />
-          {tab === "test_me" || tab === "carded" ? (
+          {(tab === "test_me" || tab === "carded") && progress.status === "ready" ? (
             <SectionMasteryList headings={lockedInHeadings} sections={sectionMastery} />
           ) : null}
           {railPack}
@@ -237,6 +253,28 @@ export function ViewTabs({
     </Tabs>
     </ModeToolbarProvider>
     </SourceViewerProvider>
+  );
+}
+
+/** Test Me and Carded wait for the saved progress; the documents never do. */
+function ProgressPending({ label, progress }: { label: string; progress: Exclude<ProgressStatus, { status: "ready" }> }) {
+  if (progress.status === "error") {
+    return (
+      <div role="alert" className="space-y-3 rounded-xl border border-border p-4 text-sm">
+        <p className="text-foreground">{label} needs your saved progress, and it did not load.</p>
+        <p className="text-muted-foreground">{progress.message}</p>
+        <Button type="button" variant="outline" onClick={progress.onRetry}>
+          Try again
+        </Button>
+      </div>
+    );
+  }
+  return (
+    <div className="space-y-3" aria-busy="true">
+      <p className="text-sm text-muted-foreground">Loading your saved progress for {label}…</p>
+      <Skeleton className="h-5 w-40" />
+      <Skeleton className="h-48 w-full rounded-xl" />
+    </div>
   );
 }
 
