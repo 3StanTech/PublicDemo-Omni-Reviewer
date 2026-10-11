@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react";
 import {
   ArrowCounterClockwise,
   ArrowRight,
@@ -54,55 +54,137 @@ const SESSION_SAVE_GAP_MS = 1100;
 /** Longest wait between retries of a failed save. */
 const SESSION_SAVE_MAX_BACKOFF_MS = 30_000;
 
-/**
- * Saves a sitting's state without blocking the sitting: one write at a time,
- * at least SESSION_SAVE_GAP_MS after the previous one finished, latest state
- * wins. A failed save keeps its state (unless a newer one arrived) and retries
- * with a doubling backoff; `error` holds the failure until a save succeeds.
- * Attempts are saved apart.
- */
-export function useSessionSaver(packId: PackId, kind: "practice" | "timed") {
-  const latest = useRef<{ state: unknown } | null>(null);
-  const timer = useRef<number | null>(null);
-  const writing = useRef(false);
-  const lastWriteAt = useRef(0);
-  const failures = useRef(0);
-  const [error, setError] = useState<string | null>(null);
+type SessionKindName = "practice" | "timed";
 
-  const flush = useCallback(function run() {
-    if (timer.current !== null || writing.current || !latest.current) return;
-    const gap = failures.current > 0
-      ? Math.min(SESSION_SAVE_GAP_MS * 2 ** failures.current, SESSION_SAVE_MAX_BACKOFF_MS)
-      : SESSION_SAVE_GAP_MS;
-    const wait = Math.max(0, lastWriteAt.current + gap - Date.now());
-    timer.current = window.setTimeout(() => {
-      timer.current = null;
-      const next = latest.current;
-      if (!next) return;
-      latest.current = null;
-      writing.current = true;
-      void demoApi.saveSession(packId, kind, next.state)
-        .then(() => {
-          failures.current = 0;
-          setError(null);
-        }, (caught: unknown) => {
-          // Keep the unsaved state unless a newer one arrived while writing.
-          latest.current ??= next;
-          failures.current += 1;
-          setError(caught instanceof Error ? caught.message : "Could not save this sitting.");
-        })
-        .finally(() => {
-          writing.current = false;
-          lastWriteAt.current = Date.now();
-          run();
-        });
-    }, wait);
-  }, [kind, packId]);
+/** One pack and kind's save queue. Lives at module level so it outlasts the component. */
+type SessionSaveQueue = {
+  /** Bumped by every save; a write may only re-queue while it is still the newest. */
+  generation: number;
+  pending: { state: unknown; generation: number } | null;
+  timer: number | null;
+  writing: boolean;
+  lastWriteAt: number;
+  failures: number;
+  error: string | null;
+  /** Set by clearSessionSaves; a cleared queue's writes settle without effect. */
+  cleared: boolean;
+};
+
+const sessionSaveQueues = new Map<string, SessionSaveQueue>();
+const sessionSaveListeners = new Map<string, Set<() => void>>();
+
+function sessionSaveKey(packId: PackId, kind: SessionKindName): string {
+  return `${packId}:${kind}`;
+}
+
+function notifySessionSave(key: string) {
+  for (const listener of sessionSaveListeners.get(key) ?? []) listener();
+}
+
+function sessionSaveQueue(key: string): SessionSaveQueue {
+  let queue = sessionSaveQueues.get(key);
+  if (!queue) {
+    queue = {
+      generation: 0, pending: null, timer: null, writing: false,
+      lastWriteAt: 0, failures: 0, error: null, cleared: false,
+    };
+    sessionSaveQueues.set(key, queue);
+  }
+  return queue;
+}
+
+function setSessionSaveError(key: string, queue: SessionSaveQueue, error: string | null) {
+  if (queue.error === error) return;
+  queue.error = error;
+  notifySessionSave(key);
+}
+
+function flushSessionSave(key: string, packId: PackId, kind: SessionKindName) {
+  const queue = sessionSaveQueue(key);
+  if (queue.timer !== null || queue.writing || !queue.pending) return;
+  const gap = queue.failures > 0
+    ? Math.min(SESSION_SAVE_GAP_MS * 2 ** queue.failures, SESSION_SAVE_MAX_BACKOFF_MS)
+    : SESSION_SAVE_GAP_MS;
+  const wait = Math.max(0, queue.lastWriteAt + gap - Date.now());
+  queue.timer = window.setTimeout(() => {
+    queue.timer = null;
+    const next = queue.pending;
+    if (!next || queue.cleared) return;
+    queue.pending = null;
+    queue.writing = true;
+    void demoApi.saveSession(packId, kind, next.state)
+      .then(() => {
+        if (queue.cleared) return;
+        queue.failures = 0;
+        // A newer state may still be pending; its own failure would set a new error.
+        setSessionSaveError(key, queue, null);
+      }, (caught: unknown) => {
+        if (queue.cleared) return;
+        queue.failures += 1;
+        // Re-queue only while no newer state has been saved or queued since.
+        if (queue.generation === next.generation && !queue.pending) queue.pending = next;
+        setSessionSaveError(key, queue, caught instanceof Error ? caught.message : "Could not save this sitting.");
+      })
+      .finally(() => {
+        queue.writing = false;
+        queue.lastWriteAt = Date.now();
+        if (!queue.cleared) flushSessionSave(key, packId, kind);
+      });
+  }, wait);
+}
+
+/**
+ * Drops every queued or retrying sitting save and its error, so a progress
+ * reset is not undone by a later retry. A write already in flight is not
+ * cancelled, but it runs ahead of the reset (demo writes are serialized) and
+ * its outcome is ignored.
+ */
+export function clearSessionSaves() {
+  for (const [key, queue] of sessionSaveQueues) {
+    queue.cleared = true;
+    queue.pending = null;
+    if (queue.timer !== null) window.clearTimeout(queue.timer);
+    queue.timer = null;
+    sessionSaveQueues.delete(key);
+    notifySessionSave(key);
+  }
+}
+
+/**
+ * Saves a sitting's state without blocking the sitting: one write at a time
+ * per pack and kind, at least SESSION_SAVE_GAP_MS after the previous one
+ * finished, latest state wins. A failed save keeps its state (unless a newer
+ * one arrived) and retries with a doubling backoff; `error` holds the failure
+ * until a save succeeds. The queue outlives the component, so a remount sees
+ * the same error and a pending save is never cancelled. Attempts are saved apart.
+ */
+export function useSessionSaver(packId: PackId, kind: SessionKindName) {
+  const key = sessionSaveKey(packId, kind);
+
+  const subscribe = useCallback((listener: () => void) => {
+    let listeners = sessionSaveListeners.get(key);
+    if (!listeners) {
+      listeners = new Set();
+      sessionSaveListeners.set(key, listeners);
+    }
+    listeners.add(listener);
+    return () => {
+      listeners.delete(listener);
+      if (listeners.size === 0) sessionSaveListeners.delete(key);
+    };
+  }, [key]);
+  const error = useSyncExternalStore(
+    subscribe,
+    () => sessionSaveQueues.get(key)?.error ?? null,
+    () => null,
+  );
 
   const save = useCallback((state: unknown) => {
-    latest.current = { state };
-    flush();
-  }, [flush]);
+    const queue = sessionSaveQueue(key);
+    queue.generation += 1;
+    queue.pending = { state, generation: queue.generation };
+    flushSessionSave(key, packId, kind);
+  }, [key, packId, kind]);
 
   return { save, error };
 }

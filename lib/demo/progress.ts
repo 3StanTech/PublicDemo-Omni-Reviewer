@@ -104,16 +104,19 @@ export const reviewCard: DemoApi["reviewCard"] = (id, cardId, rating, expectedRe
     const previous = data ? schedule(data) : null;
     const reviewedAt = new Date();
     const next = fsrsNext(previous?.fsrs ?? null, rating, reviewedAt, settings.data()?.examDate ?? null);
+    const storedFirstReviewedAt = date(data?.firstReviewedAt);
     const saved = {
       dueAt: next.due,
       intervalDays: Math.max(0, Math.round((next.due.getTime() - reviewedAt.getTime()) / DAY_MS)),
       repetitions: next.reps, easeFactor: previous?.easeFactor ?? 25,
       lastReviewedAt: reviewedAt, revision: revision + 1, fsrs: next,
-      firstReviewedAt: previous?.firstReviewedAt ?? reviewedAt,
+      // The UI uses local review time until the server timestamp resolves; pacing is day-level.
+      firstReviewedAt: storedFirstReviewedAt ?? reviewedAt,
     } satisfies CardSchedule;
     const { fsrs, ...fields } = saved;
     transaction.set(ref, {
       packId: id, cardId, ...fields,
+      firstReviewedAt: data?.firstReviewedAt ?? serverTimestamp(),
       fsrsState: fsrs.state, stability: fsrs.stability, difficulty: fsrs.difficulty,
       lapses: fsrs.lapses, scheduledDays: fsrs.scheduledDays,
       updatedAt: serverTimestamp(),

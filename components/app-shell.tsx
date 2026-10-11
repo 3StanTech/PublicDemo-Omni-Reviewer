@@ -5,6 +5,7 @@ import { ArrowCounterClockwise, BookOpen, CircleNotch } from "@phosphor-icons/re
 import { useState, type ReactNode } from "react";
 
 import { MoodControl } from "@/components/mood-control";
+import { clearSessionSaves } from "@/components/timed-test-me";
 import {
   TopicNavProvider,
   TopicShelf,
@@ -59,6 +60,7 @@ function ResetProgress() {
     setBusy(true);
     setError(null);
     try {
+      clearSessionSaves();
       await demoApi.resetProgress();
       window.location.reload();
     } catch {
