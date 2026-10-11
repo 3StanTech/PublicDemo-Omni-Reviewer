@@ -8,7 +8,7 @@ import { UnsourcedActionsProvider } from "@/components/unsourced-tag";
 import type { CitationSourceRef } from "@/lib/citations";
 import { cn } from "@/lib/utils";
 
-export const ASK_REFUSED_LABEL = "Not in your slides";
+export const ASK_REFUSED_LABEL = "Not in the source sections";
 export const ASK_REFUSED_COPY =
   "Your lecture does not cover this. I will not answer from outside knowledge here. Check your reference or ask your professor.";
 

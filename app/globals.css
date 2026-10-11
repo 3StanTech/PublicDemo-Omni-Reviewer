@@ -678,7 +678,7 @@
   }
 
   .study-unsourced::after {
-    content: "(not from your uploaded sources)";
+    content: "(not from the source sections)";
     font-family: var(--font-ui), ui-sans-serif, sans-serif;
     font-size: 0.75rem;
     font-style: italic;

@@ -216,7 +216,7 @@ export function AskPanel({
           <div role="status" className="flex justify-start">
             <p className="inline-flex items-center gap-2 rounded-2xl rounded-bl-md border border-border bg-card px-3.5 py-2 text-sm text-muted-foreground">
               <CircleNotch weight="bold" className="size-4 animate-spin motion-reduce:animate-none" aria-hidden />
-              Reading your slides
+              Reading the source sections
             </p>
           </div>
         ) : null}

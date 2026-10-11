@@ -4,10 +4,10 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
   ArrowCounterClockwise,
   ArrowRight,
+  BookOpen,
   CheckCircle,
   Clock,
   Play,
-  Presentation,
   XCircle,
 } from "@phosphor-icons/react";
 
@@ -492,7 +492,7 @@ export function TimedTestMe({
             <div className="text-sm text-muted-foreground"><strong className="text-foreground">Answer:</strong> <MarkdownBody source={item.answer} inline /></div>
             {item.explanation ? <MarkdownBody source={item.explanation} /> : null}
             <div className="flex flex-wrap gap-2 empty:-mt-2">
-              {results[item.id] ? null : <OpenCitedSlide texts={[item.explanation, item.answer]} />}
+              {results[item.id] ? null : <OpenCitedPage texts={[item.explanation, item.answer]} />}
             </div>
           </div>
         ) : null}
@@ -518,7 +518,7 @@ export function TimedTestMe({
   );
 }
 
-/** First citation with a page or slide number across the given texts, in order. */
+/** First citation with a page number across the given texts, in order. */
 export function firstPageCitation(texts: ReadonlyArray<string | null | undefined>): Citation | null {
   for (const text of texts) {
     if (!text) continue;
@@ -529,10 +529,10 @@ export function firstPageCitation(texts: ReadonlyArray<string | null | undefined
 }
 
 /**
- * "Open slide N" after a wrong answer, for the first page cited by the
+ * "Open page N" after a wrong answer, for the first page cited by the
  * explanation or answer. Renders nothing when no viewer or page is available.
  */
-export function OpenCitedSlide({ texts }: { texts: ReadonlyArray<string | null | undefined> }) {
+export function OpenCitedPage({ texts }: { texts: ReadonlyArray<string | null | undefined> }) {
   const { openSource, available } = useSourceViewer();
   const citation = firstPageCitation(texts);
   if (!available || !citation || citation.pageStart === null) return null;
@@ -545,8 +545,8 @@ export function OpenCitedSlide({ texts }: { texts: ReadonlyArray<string | null |
       size="sm"
       onClick={() => openSource({ source: citation.source, page, pageEnd: citation.pageEnd, claim })}
     >
-      <Presentation weight="bold" />
-      Open slide {page}
+      <BookOpen weight="bold" />
+      Open page {page}
     </Button>
   );
 }

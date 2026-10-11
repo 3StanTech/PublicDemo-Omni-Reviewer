@@ -16,7 +16,7 @@ import { MarkdownBody } from "@/components/study-markdown";
 import {
   isCorrect,
   mergeAttemptStats,
-  OpenCitedSlide,
+  OpenCitedPage,
   TimedTestMe,
   useSessionSaver,
   type AttemptStats,
@@ -744,7 +744,7 @@ function SittingItem({
           </div>
           {item.explanation ? <MarkdownBody source={item.explanation} /> : null}
           <div className="flex flex-wrap gap-2 empty:-mt-2">
-            {correct ? null : <OpenCitedSlide texts={[item.explanation, item.answer]} />}
+            {correct ? null : <OpenCitedPage texts={[item.explanation, item.answer]} />}
           </div>
         </div>
       ) : null}

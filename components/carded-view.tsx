@@ -2,12 +2,12 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
+  BookOpen,
   CaretLeft,
   CaretRight,
   Cards,
   Eye,
   EyeSlash,
-  Presentation,
 } from "@phosphor-icons/react";
 
 import { EmptyState } from "@/components/empty-state";
@@ -544,8 +544,8 @@ export function CardedView({
               claim: stripCitations(card.back).trim() || null,
             })}
           >
-            <Presentation weight="bold" />
-            Slide {backPage}
+            <BookOpen weight="bold" />
+            Page {backPage}
           </Button>
         ) : null}
       </div>
