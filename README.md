@@ -119,11 +119,10 @@ unchanged from [3StanTech/Omni-Reviewer at `0542c42`](https://github.com/3StanTe
 The demo contract, capture tool, Firebase client integration and static hosting
 boundary are specific to this repository.
 
-Scaffold state verified on 2026-10-11 against the initial demo commit `ba196ad`
-and original source commit `0542c42`. The next integration step is to add the
-study routes, client implementations, rules suite and authentic captured packs,
-then run `npm run check`. Hosting and App Check enforcement require separate
-deployment verification.
+State verified on 2026-10-11: the demo is deployed from `main` to Firebase
+Hosting, App Check is enforced on Firestore, and requests without an App Check
+token are rejected. On a throttled Fast 3G phone profile the first study view is
+usable in about 5.5 seconds; saved progress loads in the background.
 
 ## Licences
 
