@@ -15,6 +15,7 @@ import { SittingRecap } from "@/components/sitting-recap";
 import { MarkdownBody } from "@/components/study-markdown";
 import {
   isCorrect,
+  loadSession,
   mergeAttemptStats,
   OpenCitedPage,
   TimedTestMe,
@@ -163,7 +164,7 @@ async function loadUntimedSitting(
   items: TestMeItem[],
 ): Promise<UntimedSittingLoadResult> {
   try {
-    const stored = readStoredSitting(await demoApi.getSession(packId, "practice"), viewRevision, items);
+    const stored = readStoredSitting(await loadSession(packId, "practice"), viewRevision, items);
     return stored ? sittingPayload(stored) : newSitting(snapshotTestItemIds(items), viewRevision, null);
   } catch (caught) {
     return { error: caught instanceof Error ? caught.message : "Could not open this sitting." };
