@@ -4,6 +4,8 @@ on:
   pull_request:
   push:
     branches: [main]
+  # The Hosting workflows run these checks before they deploy.
+  workflow_call:
 
 permissions:
   contents: read

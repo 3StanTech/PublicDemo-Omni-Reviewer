@@ -62,7 +62,8 @@ type SessionSaveQueue = {
   generation: number;
   pending: { state: unknown; generation: number } | null;
   timer: number | null;
-  writing: boolean;
+  /** The state being written, until its write settles. */
+  writing: { state: unknown; generation: number } | null;
   lastWriteAt: number;
   failures: number;
   error: string | null;
@@ -85,7 +86,7 @@ function sessionSaveQueue(key: string): SessionSaveQueue {
   let queue = sessionSaveQueues.get(key);
   if (!queue) {
     queue = {
-      generation: 0, pending: null, timer: null, writing: false,
+      generation: 0, pending: null, timer: null, writing: null,
       lastWriteAt: 0, failures: 0, error: null, cleared: false,
     };
     sessionSaveQueues.set(key, queue);
@@ -111,7 +112,7 @@ function flushSessionSave(key: string, packId: PackId, kind: SessionKindName) {
     const next = queue.pending;
     if (!next || queue.cleared) return;
     queue.pending = null;
-    queue.writing = true;
+    queue.writing = next;
     void demoApi.saveSession(packId, kind, next.state)
       .then(() => {
         if (queue.cleared) return;
@@ -126,7 +127,7 @@ function flushSessionSave(key: string, packId: PackId, kind: SessionKindName) {
         setSessionSaveError(key, queue, caught instanceof Error ? caught.message : "Could not save this sitting.");
       })
       .finally(() => {
-        queue.writing = false;
+        queue.writing = null;
         queue.lastWriteAt = Date.now();
         if (!queue.cleared) flushSessionSave(key, packId, kind);
       });
@@ -147,6 +148,24 @@ export function clearSessionSaves() {
     queue.timer = null;
     sessionSaveQueues.delete(key);
     notifySessionSave(key);
+  }
+}
+
+/**
+ * The newest state of a pack and kind's sitting: a queued or in-flight save
+ * wins over Firestore, which lags it by the save gap. A Firestore read that a
+ * newer save or a reset overtook is discarded and the lookup runs again.
+ */
+export async function loadSession(packId: PackId, kind: SessionKindName): Promise<unknown> {
+  const key = sessionSaveKey(packId, kind);
+  for (;;) {
+    const queue = sessionSaveQueues.get(key);
+    const local = queue ? queue.pending ?? queue.writing : null;
+    if (local) return local.state;
+    const generation = queue?.generation ?? 0;
+    const stored = await demoApi.getSession(packId, kind);
+    const current = sessionSaveQueues.get(key);
+    if (current === queue && (current?.generation ?? 0) === generation) return stored;
   }
 }
 
@@ -196,6 +215,8 @@ type TimedSessionResponse = {
   expiresAt: string;
   durationSeconds: number;
   answeredItemIds: string[];
+  /** Correctness per answered item. Runs saved before this field have none. */
+  results: Record<string, boolean>;
 };
 
 /** A stored timed run, or null when it is missing, malformed or for another revision. */
@@ -219,6 +240,10 @@ function readTimedSession(value: unknown, viewRevision: number): TimedSessionRes
     expiresAt: data.expiresAt,
     durationSeconds: data.durationSeconds,
     answeredItemIds: data.answeredItemIds.filter((itemId): itemId is string => typeof itemId === "string"),
+    results: Object.fromEntries(
+      Object.entries(data.results && typeof data.results === "object" ? data.results : {})
+        .filter((entry): entry is [string, boolean] => typeof entry[1] === "boolean"),
+    ),
   };
 }
 
@@ -297,7 +322,7 @@ export function TimedTestMe({
     setIndex(nextIndex === -1 ? Math.max(0, currentItems.length - 1) : nextIndex);
     setSelected("");
     setSubmitted(false);
-    setResults({});
+    setResults(data.results);
     setSecondsRemaining(Math.max(0, Math.ceil((expiresAtMs - Date.now()) / 1000)));
     return true;
   }, []);
@@ -306,7 +331,7 @@ export function TimedTestMe({
     let cancelled = false;
     async function resumeActiveSession() {
       try {
-        const stored = readTimedSession(await demoApi.getSession(packId, "timed"), viewRevision);
+        const stored = readTimedSession(await loadSession(packId, "timed"), viewRevision);
         if (cancelled || !stored) return;
         // Only a run still on the clock resumes, as an expired run has nothing left to answer.
         if (Date.parse(stored.expiresAt) <= Date.now()) return;
@@ -354,6 +379,7 @@ export function TimedTestMe({
       expiresAt: new Date(now + DEFAULT_TIMED_TEST_SECONDS * 1000).toISOString(),
       durationSeconds: DEFAULT_TIMED_TEST_SECONDS,
       answeredItemIds: [],
+      results: {},
     };
     if (!applySession(data)) {
       setMessage("Could not start timed run.");
@@ -376,7 +402,8 @@ export function TimedTestMe({
       const correct = isCorrect(answer, item.answer);
       const saved = await demoApi.recordAttempts(packId, [{ itemId: item.id, correct }]);
       onAttemptStatsChange(mergeAttemptStats(attemptStats, saved));
-      setResults((previous) => ({ ...previous, [item.id]: correct }));
+      const nextResults = { ...results, [item.id]: correct };
+      setResults(nextResults);
       const answeredItemIds = session.answeredItemIds.includes(item.id)
         ? session.answeredItemIds
         : [...session.answeredItemIds, item.id];
@@ -388,6 +415,7 @@ export function TimedTestMe({
         expiresAt: session.expiresAt,
         durationSeconds: session.durationSeconds,
         answeredItemIds,
+        results: nextResults,
       } satisfies TimedSessionResponse);
       setSubmitted(true);
     } catch (caught) {
@@ -486,11 +514,13 @@ export function TimedTestMe({
       .filter((candidate) => results[candidate.id] === false)
       .map((missed) => [missed.explanation, missed.answer].filter(Boolean).join("\n"));
     const startedAtMs = Date.parse(session.startedAt);
+    // A run saved before results were stored cannot be scored.
+    const scoreKnown = session.answeredItemIds.every((itemId) => typeof results[itemId] === "boolean");
     return (
       <SittingRecap
         title="Timed run complete"
         lines={[
-          `${score} of ${items.length} correct`,
+          ...(scoreKnown ? [`${score} of ${items.length} correct`] : []),
           ...(finishedAt !== null
             ? [`Studied for ${formatSittingDuration(Math.max(0, finishedAt - startedAtMs))}`]
             : []),
