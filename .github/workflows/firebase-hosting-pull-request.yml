@@ -4,9 +4,7 @@
 name: Deploy to Firebase Hosting on PR
 on: pull_request
 permissions:
-  checks: write
   contents: read
-  pull-requests: write
 jobs:
   checks:
     if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
@@ -15,16 +13,21 @@ jobs:
       contents: read
   build_and_preview:
     needs: checks
-    if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
+    # Dependabot runs get no Actions secrets, so the preview deploy is skipped for them.
+    if: ${{ github.event.pull_request.head.repo.full_name == github.repository && github.actor != 'dependabot[bot]' }}
     runs-on: ubuntu-latest
+    permissions:
+      checks: write
+      contents: read
+      pull-requests: write
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
           node-version-file: .nvmrc
           cache: npm
       - run: npm ci && npm run build
-      - uses: FirebaseExtended/action-hosting-deploy@v0
+      - uses: FirebaseExtended/action-hosting-deploy@500ac625ca2dd40cbd15f7659af953801858032a # v0.11.0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_OMNI_REVIEWER_DEMO }}
